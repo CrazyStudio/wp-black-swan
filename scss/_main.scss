@@ -1,0 +1,54 @@
+// ------------------------------- Header
+.site-header {
+	height:  ms(6);
+	width: 100%;
+	border-bottom: 1px solid $bordergray;
+}
+
+.site-branding {
+	.site-title {
+		display: inline-block;
+		margin: ms(0) ms(-3) 0 0;
+		padding: 0;
+		img {
+			height: ms(3);
+			display: block;
+		}
+	} // site-title
+
+	.site-description {
+		display: inline-block;
+
+		color: $textgray;
+
+		font-size: ms(2) - ms(-6);
+		font-weight: 200;
+		vertical-align: 3px;
+	}
+
+}
+
+.site-menu-toggle {
+	button {
+		float: right;
+		padding: ms(0);
+		margin: ms(-6) 0 0 0;
+
+		background: none;
+		color: $textgray;
+
+		font-weight: 200;
+	}
+	.icon-grid {
+		width: ms(1);
+		height: ms(1);
+	}
+	span {
+		margin-right: ms(0);
+		vertical-align: 3px;
+	}
+} // site-menu-toggle
+
+
+
+
