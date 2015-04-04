@@ -6165,7 +6165,6 @@ th.hide-for-touch {
     display: block; }
 .site-branding .site-description {
   display: inline-block;
-  color: #999999;
   font-size: 19px;
   font-weight: 200;
   vertical-align: 3px; }
@@ -6175,7 +6174,6 @@ th.hide-for-touch {
   padding: 14px;
   margin: 4px 0 0 0;
   background: none;
-  color: #999999;
   font-weight: 200; }
 .site-menu-toggle .icon-grid {
   width: 16px;

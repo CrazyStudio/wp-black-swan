@@ -2,7 +2,7 @@
 .site-header {
 	height:  ms(6);
 	width: 100%;
-	border-bottom: 1px solid $bordergray;
+	border-bottom: 1px solid map-get($site_static_color, border);
 }
 
 .site-branding {
@@ -19,7 +19,7 @@
 	.site-description {
 		display: inline-block;
 
-		color: $textgray;
+		color: map-get($site_static_color, light_text);
 
 		font-size: ms(2) - ms(-6);
 		font-weight: 200;
@@ -35,7 +35,7 @@
 		margin: ms(-6) 0 0 0;
 
 		background: none;
-		color: $textgray;
+		color: map-get($site_static_color, light_text);
 
 		font-weight: 200;
 	}
