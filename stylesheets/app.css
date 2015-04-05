@@ -6179,15 +6179,19 @@ th.hide-for-touch {
   color: #999999;
   font-weight: 200;
   outline: none; }
+  .site-navigation-toggle button .toggle-animation {
+    transform: rotate(45deg);
+    transition: all 0.7s ease; }
 .site-navigation-toggle .icon-grid {
   width: 16px;
-  height: 16px; }
+  height: 16px;
+  transition: all 0.5s ease; }
 .site-navigation-toggle span {
   margin-right: 14px;
   vertical-align: 3px; }
 
 #site-navigation {
-  display: block;
+  display: none;
   margin-top: 14px; }
   #site-navigation ul {
     list-style: none; }

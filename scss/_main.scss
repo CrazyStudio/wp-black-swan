@@ -39,10 +39,17 @@
 		font-weight: 200;
 
 		outline:none;
+
+		.toggle-animation {
+			transform: rotate(45deg);
+			transition: all 0.7s ease;
+		}
+
 	}
 	.icon-grid {
 		width: ms(1);
 		height: ms(1);
+		transition: all 0.5s ease;
 	}
 	span {
 		margin-right: ms(0);
@@ -51,7 +58,7 @@
 } // site-menu-toggle
 
 #site-navigation {
-	display: block;
+	display: none;
 	margin-top: ms(0);
 	ul {
 		list-style: none;
