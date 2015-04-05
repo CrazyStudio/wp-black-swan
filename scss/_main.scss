@@ -1,5 +1,5 @@
-// ------------------------------- Header
-.site-header {
+// ------------------------------- site-Header
+.main-header {
 	height:  ms(6);
 	width: 100%;
 	border-bottom: 1px solid map-get($site_static_color, border);
@@ -28,7 +28,7 @@
 
 }
 
-.site-menu-toggle {
+.site-navigation-toggle  {
 	button {
 		float: right;
 		padding: ms(0);
