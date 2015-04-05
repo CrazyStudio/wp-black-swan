@@ -1,9 +1,10 @@
 // ------------------------------- site-Header
 .main-header {
-	height:  ms(6);
+	min-height:  ms(6);
 	width: 100%;
+	margin-bottom: 400px;
 	border-bottom: 1px solid map-get($site_static_color, border);
-}
+} // main-header
 
 .site-branding {
 	.site-title {
@@ -14,8 +15,7 @@
 			height: ms(3);
 			display: block;
 		}
-	} // site-title
-
+	} 
 	.site-description {
 		display: inline-block;
 
@@ -24,20 +24,21 @@
 		font-size: ms(2) - ms(-6);
 		font-weight: 200;
 		vertical-align: 3px;
-	}
-
-}
+	} 
+} // site-branding
 
 .site-navigation-toggle  {
 	button {
 		float: right;
 		padding: ms(0);
-		margin: ms(-6) 0 0 0;
+		margin: ms(-6) 0 ms(-6) 0;
 
 		background: none;
 		color: map-get($site_static_color, light_text);
 
 		font-weight: 200;
+
+		outline:none;
 	}
 	.icon-grid {
 		width: ms(1);
@@ -48,6 +49,31 @@
 		vertical-align: 3px;
 	}
 } // site-menu-toggle
+
+#site-navigation {
+	display: block;
+	margin-top: ms(0);
+	ul {
+		list-style: none;
+	}
+	.menu-item {
+		padding: 0;
+		text-align: center;
+		a {
+			color: map-get($site_static_color, body_text);
+		}
+	}
+	.sub-item {
+		color: map-get($site_static_color, light_text);
+
+		font-weight: 200;
+	}
+	.dropdown {
+		margin: 0;
+	}
+
+
+} //site-navigation
 
 
 

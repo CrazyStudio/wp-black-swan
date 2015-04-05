@@ -6152,8 +6152,9 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 .main-header {
-  height: 59px;
+  min-height: 59px;
   width: 100%;
+  margin-bottom: 400px;
   border-bottom: 1px solid #d6d6d6; }
 
 .site-branding .site-title {
@@ -6173,10 +6174,11 @@ th.hide-for-touch {
 .site-navigation-toggle button {
   float: right;
   padding: 14px;
-  margin: 4px 0 0 0;
+  margin: 4px 0 4px 0;
   background: none;
   color: #999999;
-  font-weight: 200; }
+  font-weight: 200;
+  outline: none; }
 .site-navigation-toggle .icon-grid {
   width: 16px;
   height: 16px; }
@@ -6185,4 +6187,17 @@ th.hide-for-touch {
   vertical-align: 3px; }
 
 #site-navigation {
-  display: none; }
+  display: block;
+  margin-top: 14px; }
+  #site-navigation ul {
+    list-style: none; }
+  #site-navigation .menu-item {
+    padding: 0;
+    text-align: center; }
+    #site-navigation .menu-item a {
+      color: #222; }
+  #site-navigation .sub-item {
+    color: #999999;
+    font-weight: 200; }
+  #site-navigation .dropdown {
+    margin: 0; }
