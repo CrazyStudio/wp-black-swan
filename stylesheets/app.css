@@ -6191,8 +6191,9 @@ th.hide-for-touch {
   vertical-align: 3px; }
 
 #site-navigation {
-  display: none;
-  margin-top: 14px; }
+  max-height: 0px;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden; }
   #site-navigation ul {
     list-style: none; }
   #site-navigation .menu-item {
@@ -6205,3 +6206,13 @@ th.hide-for-touch {
     font-weight: 200; }
   #site-navigation .dropdown {
     margin: 0; }
+
+#ssdaite-navigation {
+  max-height: 0px;
+  transition: max-height 0.9s ease-out;
+  overflow: hidden;
+  display: block; }
+
+.toggle {
+  max-height: 500px !important;
+  transition: max-height 0.9s ease-in; }

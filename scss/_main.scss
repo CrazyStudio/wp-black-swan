@@ -58,8 +58,9 @@
 } // site-menu-toggle
 
 #site-navigation {
-	display: none;
-	margin-top: ms(0);
+	max-height: 0px;
+	transition: max-height 0.5s ease-out;
+    overflow: hidden;
 	ul {
 		list-style: none;
 	}
@@ -81,6 +82,21 @@
 
 
 } //site-navigation
+
+
+
+#ssdaite-navigation {
+    max-height: 0px;
+    transition: max-height 0.9s ease-out;
+    overflow: hidden;
+    display: block;
+}
+
+.toggle {
+    max-height: 500px !important;
+    transition: max-height 0.9s ease-in;
+}
+
 
 
 

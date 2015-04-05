@@ -8,7 +8,15 @@ var animationToYellow = document.getElementById("animation-to-yellow");
 
 $("#site-navigation-toggle").on( "click", function() {
 
-	$("#site-navigation").toggle();
+	if($("#site-navigation").hasClass("toggle")) {
+		$("#site-navigation").removeClass("toggle");
+	} else {
+		$("#site-navigation").addClass("toggle");
+	}
+
+	//$("#site-navigation").toggle();
+
+	$("#site-header").animate({ 'min-height': "59px" }, '400', 'linear');
 
 	if (icon_grid.classList.contains("toggle-animation")) {
     icon_grid.classList.remove("toggle-animation");
@@ -20,13 +28,3 @@ $("#site-navigation-toggle").on( "click", function() {
 
 });
 
-
-
-if (document.getElementById('top-3') != null) {
-    var str = document.getElementById("top-3").value;
-    alert("Hello! I am an alert box!!");
-}
-else {
-    var str = null;
-    alert("Hello! I am an alert box!!!!!!!!!!!!!!!");
-}
