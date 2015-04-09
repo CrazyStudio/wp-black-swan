@@ -1,0 +1,16 @@
+@media #{$small-only} { 
+
+	.site-navigation-toggle {
+		button {
+			margin: 0 auto;
+			float: none;
+			display: block;
+		}
+	}
+	.site-branding {
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+	}
+
+}

@@ -67,7 +67,7 @@
 	}
 } // site-menu-toggle
 
-#site-navigation {
+.site-navigation {
 	max-height: 0px;
     overflow: hidden;
 
@@ -94,7 +94,7 @@
 } //site-navigation
 
 .toggle {
-    max-height: 500px !important;
+    max-height: 3000px !important;
 
     transition: max-height 0.9s ease-in;
 }
