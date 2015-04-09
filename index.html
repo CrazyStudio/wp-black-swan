@@ -14,12 +14,14 @@
 <script src="/js/svg4everybody.ie8.min.js"></script>
 <script src="bower_components/modernizr/modernizr.js"></script>
 <link rel="stylesheet" href="stylesheets/app.css" />
+<link rel="stylesheet" href="inc/font-awesome.min.css">
 <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
 
 </head>
 
 
 <body>
+
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" enable-background="new 0 0 100 100" xml:space="preserve" style="display: none;">
       <defs>
         <symbol id="icon-grid" viewBox="0 0 30 30">
@@ -56,37 +58,44 @@
         </symbol>
         <symbol id="icon-search" viewBox="0 0 92 92">
         <title>search</title>
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-            <g id="search-+-Line" sketch:type="MSLayerGroup">
-                <path d="M71.879,35.94 C71.879,16.123 55.757,0 35.94,0 C16.122,0 0,16.123 0,35.94 C0,55.75 16.122,71.871 35.94,71.871 C44.329,71.871 52.275,69.012 58.686,63.749 L84.4,89.699 L89.724,84.429 L63.961,58.421 C69.091,52.063 71.879,44.203 71.879,35.94 Z M35.893,62.8020645 C21.0754427,62.8020645 9.02459718,50.7520536 9.02459718,35.9395038 C9.02459718,21.1219464 21.0754427,9.07193554 35.893,9.07193554 C50.7038806,9.07193554 62.7614029,21.1219464 62.7614029,35.9395038 C62.7614029,50.7520536 50.7038806,62.8020645 35.893,62.8020645 L35.893,62.8020645 L35.893,62.8020645 Z" id="search" fill="#000000" sketch:type="MSShapeGroup"></path>
-                <path d="M82.5,82.5 L72.5805947,72.5805947 L59.5,59.5" id="Line" stroke="#000000" stroke-width="13" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
-            </g>
-        </g>
+        <path d="M64.02,58.467c5.146-6.379,7.942-14.266,7.942-22.556c0-19.884-16.172-36.061-36.05-36.061
+        c-19.879,0-36.051,16.177-36.051,36.061c0,19.876,16.172,36.052,36.051,36.052c8.415,0,16.385-2.869,22.816-8.149l25.793,26.037
+        l5.34-5.288L64.02,58.467z M35.865,62.862c-14.863,0-26.951-12.09-26.951-26.953c0-14.867,12.088-26.958,26.951-26.958
+        c14.856,0,26.951,12.09,26.951,26.958C62.816,50.772,50.722,62.862,35.865,62.862z"/>
         </symbol>
         </svg>
       </defs>
     </svg> <!-- Svg-defs -->
+
     <header id="site-header" class="main-header" role="banner">
+
         <div class="top-header row">  
-            <div id="site-branding" class="site-branding small-10 columns">
+
+            <div id="site-branding" class="site-branding medium-9 columns">
                 <h1 class="site-title"><a href="" rel="home"><img src="/images/logo.svg" alt=""></a></h1>
                 <h2 class="site-description">The Impossible Reality</h2>
             </div> <!-- site-branding -->
-            <div id="site-navigation-toggle" class="site-navigation-toggle small-2 columns">
+            
+
+            <div id="site-navigation-toggle" class="site-navigation-toggle medium-3 columns">
                 <button>
                     <span>Explore</span>
                     <svg id="main-button" class="icon-grid">
                         <use xlink:href="#icon-grid">
                         </use>
                     </svg>
-                     
                 </button> 
             </div> <!-- site-navigation-toggle -->
+
         </div> <!-- top-header -->
-        <nav id="site-navigation" class="site-navigation toggle" role="navigation">
+
+        <nav id="site-navigation" class="site-navigation" role="navigation">
+
             <div id="site-primary-menu" class="site-primary-menu">
+                
                 <ul class="row">
-                    <li class="menu-item small-3 columns">
+                
+                    <li class="menu-item medium-3 columns">
                         <a href="#">About Black Swan</a>
                         <ul class="dropdown">
                             <li class="sub-item">Johan Smith</li>
@@ -96,7 +105,8 @@
                             <li class="sub-item">Press</li>
                         </ul>
                     </li>
-                    <li class="menu-item small-3 columns">
+
+                    <li class="menu-item medium-3 columns">
                     <a href="#">Features</a>
                         <ul class="dropdown">
                             <li class="sub-item">Shortcodes</li>
@@ -106,7 +116,8 @@
                             <li class="sub-item">404 Page</li>
                         </ul>
                     </li>
-                    <li class="menu-item small-3 columns">
+
+                    <li class="menu-item medium-3 columns">
                     <a href="#">Post Styles</a>
                         <ul class="dropdown">
                             <li class="sub-item">Typography</li>
@@ -116,7 +127,8 @@
                             <li class="sub-item">Video</li>
                         </ul>
                     </li>
-                    <li class="menu-item small-3 columns end">
+
+                    <li class="menu-item medium-3 columns end">
                     <a href="#">Categories</a>
                         <ul class="dropdown">
                             <li class="sub-item">Spirituality</li>
@@ -126,9 +138,13 @@
                             <li class="sub-item">Music</li>
                         </ul>
                     </li>
+
                 </ul>
+
             </div> <!-- site-menu -->
+
             <div id="site-search" class="site-search row">
+
                 <form id="site-search-form" class="small-4 small-centered columns" role="search" method="get" action="http://google.com/">
                     <input id="search-input" type="text" placeholder="Search and hit enter..." name="search">
                     <button class="search-submit" type="submit">
@@ -138,9 +154,26 @@
                         </svg>
                     </button>
                 </form>
+
             </div> <!-- site-search -->
+
+            <div id="site-social" class="site-social small-centered small-3 columns">
+                
+                <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
+               <a href="http://bloglovin.com/"><i class="fa fa-heart"></i></a>
+                <a href="http://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+                <a href="http://"><i class="fa fa-tumblr"></i></a>
+                <a href="http://youtube.com/"><i class="fa fa-youtube-play"></i></a>
+                
+            </div> <!-- site-social -->
+
         </nav> <!-- site-navigation -->
+
     </header> <!-- site-header -->
+
 <!-- script -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/foundation/js/foundation.min.js"></script>

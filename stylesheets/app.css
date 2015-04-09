@@ -6172,6 +6172,14 @@ th.hide-for-touch {
   font-size: 19px;
   font-weight: 200; }
 
+.site-social {
+  text-align: center;
+  margin-bottom: 14px; }
+  .site-social a {
+    color: #222; }
+  .site-social i {
+    padding: 0 5px 0 5px; }
+
 .site-navigation-toggle button {
   float: right;
   margin: 4px 0 4px 0;
@@ -6228,15 +6236,31 @@ th.hide-for-touch {
     height: 16px; }
   .site-search ::-webkit-input-placeholder {
     color: #999999;
-    font-weight: 200; }
+    font-weight: 200;
+    transition: opacity 0.5s ease-out; }
   .site-search :-moz-placeholder {
     /* Firefox 18- */
     color: #999999;
-    font-weight: 200; }
+    font-weight: 200;
+    transition: opacity 0.5s ease-out; }
   .site-search ::-moz-placeholder {
     /* Firefox 19+ */
     color: #999999;
-    font-weight: 200; }
+    font-weight: 200;
+    transition: opacity 0.5s ease-out; }
   .site-search :-ms-input-placeholder {
     color: #999999;
-    font-weight: 200; }
+    font-weight: 200;
+    transition: opacity 0.5s ease-out; }
+  .site-search input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.5s ease-out; }
+  .site-search input:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.5s ease-out; }
+  .site-search input:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.5s ease-out; }
+  .site-search input:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.5s ease-out; }

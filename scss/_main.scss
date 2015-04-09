@@ -27,6 +27,17 @@
 	font-weight: 200;
 } 
 
+.site-social {
+	text-align: center;
+	margin-bottom: ms(0);
+	a {
+		color: map-get($site-static-color, body_text);
+	}
+	i {
+		padding: 0 ms(-5) 0 ms(-5);
+	}
+}
+
 .site-navigation-toggle  {
 	button {
 		float: right;
@@ -110,18 +121,39 @@
 	::-webkit-input-placeholder {
 	   color: map-get($site_static_color, light_text);
 	   font-weight: 200;
+	   transition: opacity 0.5s ease-out;
 	}
 	:-moz-placeholder { /* Firefox 18- */
 	   color: map-get($site_static_color, light_text);
-	   font-weight: 200; 
+	   font-weight: 200;
+	   transition: opacity 0.5s ease-out; 
 	}
 	::-moz-placeholder {  /* Firefox 19+ */
 	   color: map-get($site_static_color, light_text);
-	   font-weight: 200; 
+	   font-weight: 200;
+	   transition: opacity 0.5s ease-out; 
 	}
 	:-ms-input-placeholder {  
 	   color: map-get($site_static_color, light_text);
-	   font-weight: 200; 
+	   	font-weight: 200;
+		transition: opacity 0.5s ease-out; 
+	}
+
+	input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+	}
+	input:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+	}
+	input:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+	}
+	input:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
 	}
 }
 
