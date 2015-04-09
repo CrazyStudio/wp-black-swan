@@ -1,66 +1,66 @@
 // ------------------------------- site-Header
 .main-header {
-	min-height:  ms(6);
-	width: 100%;
 	margin-bottom: 400px;
 	border-bottom: 1px solid map-get($site_static_color, border);
+
+	width: 100%;
+	min-height:  ms(6);
 } // main-header
 
-.site-branding {
-	.site-title {
-		display: inline-block;
-		margin: ms(0) ms(-3) 0 0;
-		padding: 0;
-		img {
-			height: ms(3);
-			display: block;
-		}
-	} 
-	.site-description {
-		display: inline-block;
+.site-title {	
+	display: inline-block;
+	
+	margin: ms(0) ms(-3) 0 0;
+	padding: 0;
+	img {
+		display: block;
+		
+		height: ms(3);
+	}
+} 
+.site-description {
+	display: inline-block;
 
-		color: map-get($site_static_color, light_text);
-
-		font-size: ms(2) - ms(-6);
-		font-weight: 200;
-		vertical-align: 3px;
-	} 
-} // site-branding
+	vertical-align: 3px;
+	color: map-get($site_static_color, light_text);
+	font-size: ms(2) - ms(-6);
+	font-weight: 200;
+} 
 
 .site-navigation-toggle  {
 	button {
 		float: right;
-		padding: ms(0);
+		
 		margin: ms(-6) 0 ms(-6) 0;
-
-		background: none;
-		color: map-get($site_static_color, light_text);
-
-		font-weight: 200;
-
 		outline:none;
-
-		.toggle-animation {
+		padding: ms(0);
+		background: none;
+		
+		color: map-get($site_static_color, light_text);
+		font-weight: 200;
+		.js-css-toggle-animation {
 			transform: rotate(45deg);
 			transition: all 0.7s ease;
 		}
-
 	}
 	.icon-grid {
 		width: ms(1);
 		height: ms(1);
+		
 		transition: all 0.5s ease;
 	}
 	span {
 		margin-right: ms(0);
+
 		vertical-align: 3px;
 	}
 } // site-menu-toggle
 
 #site-navigation {
 	max-height: 0px;
-	transition: max-height 0.5s ease-out;
     overflow: hidden;
+
+    transition: max-height 0.5s ease-out;
 	ul {
 		list-style: none;
 	}
@@ -73,7 +73,6 @@
 	}
 	.sub-item {
 		color: map-get($site_static_color, light_text);
-
 		font-weight: 200;
 	}
 	.dropdown {
@@ -83,20 +82,11 @@
 
 } //site-navigation
 
-
-
-#ssdaite-navigation {
-    max-height: 0px;
-    transition: max-height 0.9s ease-out;
-    overflow: hidden;
-    display: block;
-}
-
 .toggle {
     max-height: 500px !important;
+
     transition: max-height 0.9s ease-in;
 }
-
 
 
 

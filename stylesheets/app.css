@@ -6152,34 +6152,35 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 .main-header {
-  min-height: 59px;
-  width: 100%;
   margin-bottom: 400px;
-  border-bottom: 1px solid #d6d6d6; }
+  border-bottom: 1px solid #d6d6d6;
+  width: 100%;
+  min-height: 59px; }
 
-.site-branding .site-title {
+.site-title {
   display: inline-block;
   margin: 14px 9px 0 0;
   padding: 0; }
-  .site-branding .site-title img {
-    height: 26px;
-    display: block; }
-.site-branding .site-description {
+  .site-title img {
+    display: block;
+    height: 26px; }
+
+.site-description {
   display: inline-block;
+  vertical-align: 3px;
   color: #999999;
   font-size: 19px;
-  font-weight: 200;
-  vertical-align: 3px; }
+  font-weight: 200; }
 
 .site-navigation-toggle button {
   float: right;
-  padding: 14px;
   margin: 4px 0 4px 0;
+  outline: none;
+  padding: 14px;
   background: none;
   color: #999999;
-  font-weight: 200;
-  outline: none; }
-  .site-navigation-toggle button .toggle-animation {
+  font-weight: 200; }
+  .site-navigation-toggle button .js-css-toggle-animation {
     transform: rotate(45deg);
     transition: all 0.7s ease; }
 .site-navigation-toggle .icon-grid {
@@ -6192,8 +6193,8 @@ th.hide-for-touch {
 
 #site-navigation {
   max-height: 0px;
-  transition: max-height 0.5s ease-out;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: max-height 0.5s ease-out; }
   #site-navigation ul {
     list-style: none; }
   #site-navigation .menu-item {
@@ -6206,12 +6207,6 @@ th.hide-for-touch {
     font-weight: 200; }
   #site-navigation .dropdown {
     margin: 0; }
-
-#ssdaite-navigation {
-  max-height: 0px;
-  transition: max-height 0.9s ease-out;
-  overflow: hidden;
-  display: block; }
 
 .toggle {
   max-height: 500px !important;

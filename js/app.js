@@ -14,15 +14,13 @@ $("#site-navigation-toggle").on( "click", function() {
 		$("#site-navigation").addClass("toggle");
 	}
 
-	//$("#site-navigation").toggle();
-
 	$("#site-header").animate({ 'min-height': "59px" }, '400', 'linear');
 
-	if (icon_grid.classList.contains("toggle-animation")) {
-    icon_grid.classList.remove("toggle-animation");
+	if (icon_grid.classList.contains("js-css-toggle-animation")) {
+    icon_grid.classList.remove("js-css-toggle-animation");
     animationToYellow.beginElement();
   	} else {
-    icon_grid.classList.add("toggle-animation");
+    icon_grid.classList.add("js-css-toggle-animation");
     animationToGreen.beginElement();
 	}
 
