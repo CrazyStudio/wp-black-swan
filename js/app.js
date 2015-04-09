@@ -24,5 +24,5 @@ $("#site-navigation-toggle").on( "click", function() {
     animationToGreen.beginElement();
 	}
 
-});
+});	
 

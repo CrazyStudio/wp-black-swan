@@ -54,6 +54,16 @@
                 
             </path>
         </symbol>
+        <symbol id="icon-search" viewBox="0 0 92 92">
+        <title>search</title>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+            <g id="search-+-Line" sketch:type="MSLayerGroup">
+                <path d="M71.879,35.94 C71.879,16.123 55.757,0 35.94,0 C16.122,0 0,16.123 0,35.94 C0,55.75 16.122,71.871 35.94,71.871 C44.329,71.871 52.275,69.012 58.686,63.749 L84.4,89.699 L89.724,84.429 L63.961,58.421 C69.091,52.063 71.879,44.203 71.879,35.94 Z M35.893,62.8020645 C21.0754427,62.8020645 9.02459718,50.7520536 9.02459718,35.9395038 C9.02459718,21.1219464 21.0754427,9.07193554 35.893,9.07193554 C50.7038806,9.07193554 62.7614029,21.1219464 62.7614029,35.9395038 C62.7614029,50.7520536 50.7038806,62.8020645 35.893,62.8020645 L35.893,62.8020645 L35.893,62.8020645 Z" id="search" fill="#000000" sketch:type="MSShapeGroup"></path>
+                <path d="M82.5,82.5 L72.5805947,72.5805947 L59.5,59.5" id="Line" stroke="#000000" stroke-width="13" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+        </symbol>
+        </svg>
       </defs>
     </svg> <!-- Svg-defs -->
     <header id="site-header" class="main-header" role="banner">
@@ -69,10 +79,11 @@
                         <use xlink:href="#icon-grid">
                         </use>
                     </svg>
+                     
                 </button> 
             </div> <!-- site-navigation-toggle -->
         </div> <!-- top-header -->
-        <nav id="site-navigation" class="site-navigation" role="navigation">
+        <nav id="site-navigation" class="site-navigation toggle" role="navigation">
             <div id="site-primary-menu" class="site-primary-menu">
                 <ul class="row">
                     <li class="menu-item small-3 columns">
@@ -117,10 +128,15 @@
                     </li>
                 </ul>
             </div> <!-- site-menu -->
-            <div id="site-search" class="primary-search row">
+            <div id="site-search" class="site-search row">
                 <form id="site-search-form" class="small-4 small-centered columns" role="search" method="get" action="http://google.com/">
-                    <input type="text" placeholder="Search and hit enter..." name="search">
-                    <button class="search-submit" type="submit"><i class="fa fa-search"></i></button>
+                    <input id="search-input" type="text" placeholder="Search and hit enter..." name="search">
+                    <button class="search-submit" type="submit">
+                        <svg id="search-button" class="icon-search">
+                            <use xlink:href="#icon-search">
+                            </use>
+                        </svg>
+                    </button>
                 </form>
             </div> <!-- site-search -->
         </nav> <!-- site-navigation -->

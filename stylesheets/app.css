@@ -6211,3 +6211,32 @@ th.hide-for-touch {
 .toggle {
   max-height: 500px !important;
   transition: max-height 0.9s ease-in; }
+
+.site-search {
+  margin-top: 14px; }
+  .site-search .search-input {
+    position: relative; }
+  .site-search .search-submit {
+    padding: 0;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 11px;
+    left: 87%; }
+  .site-search .icon-search {
+    width: 16px;
+    height: 16px; }
+  .site-search ::-webkit-input-placeholder {
+    color: #999999;
+    font-weight: 200; }
+  .site-search :-moz-placeholder {
+    /* Firefox 18- */
+    color: #999999;
+    font-weight: 200; }
+  .site-search ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #999999;
+    font-weight: 200; }
+  .site-search :-ms-input-placeholder {
+    color: #999999;
+    font-weight: 200; }
