@@ -1,7 +1,19 @@
+/*
+Theme Name: Black Swan
+Author: Crazy Polish Guy
+Author: URI: http://crazypolishguy.com/
+Description: A clean blog theme for thinkers.
+Version: 1.0
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
 //Foundation
 @import "settings";
-@import "foundation";
+//@import "foundation";
 @import "../bower_components/modular-scale/stylesheets/modular-scale";
+@import "foundation/components/grid";
+@import "foundation/components/visibility";
 
 // Crazy polish 
 @import "bits";
@@ -11,6 +23,7 @@
 
 // To hide part of the site when I'm developing
 @import "hide";
+
 
 // Or selectively include components
 // @import
