@@ -6211,9 +6211,13 @@ th.hide-for-touch {
     text-align: center; }
     .site-navigation .menu-item a {
       color: #222; }
-  .site-navigation .sub-item {
+    .site-navigation .menu-item :hover {
+      color: #999999; }
+  .site-navigation .sub-item a {
     color: #999999;
     font-weight: 200; }
+  .site-navigation .sub-item :hover {
+    color: #222; }
   .site-navigation .dropdown {
     margin: 0; }
 

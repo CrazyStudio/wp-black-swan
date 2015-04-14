@@ -83,10 +83,18 @@
 		a {
 			color: map-get($site_static_color, body_text);
 		}
+		:hover {
+			color: map-get($site_static_color, light_text);
+		}
 	}
 	.sub-item {
+		a {
 		color: map-get($site_static_color, light_text);
 		font-weight: 200;
+		}
+		:hover {
+			color: map-get($site_static_color, body_text);
+		}
 	}
 	.dropdown {
 		margin: 0;
