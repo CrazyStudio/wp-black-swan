@@ -1,0 +1,342 @@
+# Header
+    Header fixed
+    ## Pages
+        Home
+            Home W/ Sidebar
+            Full Post Layout
+            Grid Post layout
+        Features
+            Post W/ Sidebar
+            Standard Post
+            Gallery Post
+            Video Post
+            Music Post
+            Typography
+            Page W/ Sidebar
+        Liftstyle
+        Travel
+        Music
+        About
+        Contact Me
+
+    ## Socialbuttons
+        Facebook
+        Twitter
+        Instgram
+        Pinterest
+        Bloglovin
+        Google+ 
+        Tumblr
+
+    ## Search
+        Search and hit enter...
+
+# logo Section
+    h1
+        PNG Image
+        alt="Hemlock"
+
+# Homepage Slider
+    Article style
+        Big image
+        Darker transparent mask
+            Small text - Category
+            Big text - Article Name
+        
+        Slider six images
+        Page based on screen size
+            page small dots
+
+# Article
+    ## Article names
+        Slider
+            Brunch with friends - Lifestyle
+            My trip to New York - Travel
+            Flowers & Decorations - Lifestyle
+            Fragments of iceland - Travel
+            Summer salad recipe - Lifestyle
+            logo design 2014 - Music, travel
+        
+        Favorite colors - lifestyle - July 10, 2014
+        Brunch with friends - Lifestyle - July 9, 2014
+        My trip to New York - Travel - July 8, 2014
+        Flowers & Decorations - Lifestyle - July 8, 2014: Gallery Post
+        Fragments of iceland - Travel - July 7, 2014: Video Post
+        Of Monsters and men - Music - July 7, 2014: Music Post
+        Cali road trip - Travel - July 7, 2014: Gallery post
+        Sommar Salad Recipe - Lifestyle - July 7, 2014
+        The Lion's Roar - Music - July 7, 2014: Video
+        Logo Design 2104 - Music, Lifestyle - July 4, 2014
+        Roskilde festival - Music - July 4, 2014
+        Adventures in oregon - travel - July 6, 2014
+        My latest Adventure - Travel - July 3, 2014
+
+
+    ## Article info
+        Post in slider: 6
+        Post in blog: 13
+        Categories: 3
+        Categories name: Lifestyle, Travel, Music
+        Use of random text genrator: Unknown
+        Reuse of same text: Yes
+        Read more: Yes
+        Cut off: 2 paragraphs
+        Read More button or link: color styled Link
+        Read more text: Continue Reading…
+
+    ## Article Structure
+        Categories name
+        Title
+        Date
+        Feature image
+        2 Paragraphs
+        Read more
+        Share buttons
+            Facebook
+            Twitter
+            Pinterest
+            Google+
+            Comment button
+
+# Widgets
+    About Me
+    Find us on Facebook
+    Follow on Instgram
+    Follow us on instgram: full length page 
+
+# home page Design
+
+    ## Standard Homepage
+        Header
+            Menu
+                Submenu
+            Social buttons
+            Search
+
+        Big logo: Full length
+
+        Slider
+        
+        9x Article
+            Categories
+            Title
+            date
+            Feature Image
+            2 Paragraphs 
+            Read more link
+            Social buttons
+
+        Pagination
+            Older Post >>
+            << Newer  Post
+
+        Widget area
+            About me
+            Find us on Facebook
+            Follow on Instgram
+
+        Instagram: Full length
+
+        Social buttons: Full Length
+
+        Big logo: Full length
+
+        Footer
+            Copy
+            back to top button
+
+    ## Homepage with Sidebar
+        Header
+            Menu
+                Submenu
+            Social buttons
+            Search
+
+        Big logo: Full length
+
+        Slider
+
+        Content / Sidebar split
+            9x Article
+                Categories
+                Title
+                date
+                Feature Image
+                2 Paragraphs 
+                Read more link
+                Social buttons
+
+            Pagination
+                Older Post >>
+                << Newer  Post
+
+            Widget area
+                About me
+                Find us on Facebook
+                Follow on Instgram
+
+        Sidebar / Content Split
+            About me: Widget
+            Subscribe & follow : Widget
+            Banner Spot
+            Instgram slider: widget
+            Latest Posts
+                3x articles
+                    image 
+                    title
+                    date
+            Categories
+            Find us on Facebook: widget
+
+
+        Instagram: Full length
+
+        Social buttons: Full Length
+
+        Big logo: Full length
+
+        Footer
+            Copy
+            back to top button
+
+    ## Grid Homepage
+        Header
+            Menu
+                Submenu
+            Social buttons
+            Search
+
+        Big logo: Full length
+
+        Slider
+
+        Article area
+            Title: Lastest Post
+            Subtitle: Lorem
+        
+        9x Articles in a grid of 3
+            Feature Image
+            Categories
+            Title
+            1 Paragraphs 
+            date
+
+        Pagination
+            Older Post >>
+            << Newer  Post
+
+        Widget area
+            About me
+            Find us on Facebook
+            Follow on Instgram
+
+        Instagram: Full length
+
+        Social buttons: Full Length
+
+        Big logo: Full length
+
+        Footer
+            Copy
+            back to top button
+
+
+# Post and page types
+    ## Standard Post / gallery / music / Video
+        Categories
+        title
+        Date
+        Feature Image / Gallery / music / video
+        Content
+        Social Buttons
+        IF POST
+            Author section
+            Cirle image
+            title
+            paragraph
+            Social button to author
+                Facebook
+                Twitter
+                Instgram
+                google+
+                Pintrest
+                tumbler
+            You might also like
+                3x Articles
+                    Feature image
+                    Title
+                    Date
+            Comments
+                Comment
+                    cirle image
+                    title
+                    date: July 7, 2014 at 9:35pm 
+                    Comment content
+                    Replay far right
+                    // Comment use tabsspace to nest
+
+                Comment form
+                    Title: Leave a replay
+                    Name
+                    email
+                    website
+                    Comment form
+                    Submit button: Post comment
+            Pagination
+                previous Post
+                title of post
+
+                or
+
+                Next Post
+                title of post
+
+        IF Sidebar
+            About me: Widget
+            Subscribe & follow : Widget
+            Banner Spot
+            Instgram slider: widget
+            Latest Posts
+                3x articles
+                    image 
+                    title
+                    date
+            Categories
+            Find us on Facebook: widget
+
+# Typography
+    Image left
+    Image right
+    heading 1
+    heading 2
+    heading 3
+    heading 4
+    heading 5
+    heading 6
+    link
+    hr
+    blockquote
+    Unordered List
+    Ordered List
+
+# Contakt me
+    title
+    feature image
+    content
+    Contact form
+        Name
+        Email
+        subject
+        Message
+        Submit: Send
+    Socialbuttons
+        Facebook
+        Twitter
+        pintrest
+        google+
+
+
+
+
+
+

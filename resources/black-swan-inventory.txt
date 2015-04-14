@@ -1,0 +1,30 @@
+#header
+	header fixed
+	Menu-icon
+	## Pages
+		About Black Swan
+			Johan Smith
+			Typography
+			Community
+			404 page
+			Contact
+		Features
+			Home with Sidebar
+			Page with Sidebar
+			Split post layout
+			Full post layout
+			Grid post layout
+		Post Styles
+			With Sidebar
+			Standard
+			Gallery
+			Video
+			Music
+		Categories
+			Spirituality
+			Lifestyle
+			Design
+			Travel
+			Music
+
+Footer

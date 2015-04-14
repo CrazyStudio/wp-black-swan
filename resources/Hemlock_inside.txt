@@ -1,0 +1,87 @@
+3d-party plugins
+	BxSlider v4.1.2 - Fully loaded, responsive content slider
+ 	http://bxslider.com
+
+ 	slicknav - Responsive Mobile Menu
+ 	http://slicknav.com/
+
+ 	FitVids 1.0
+
+ 	Retina.js 
+
+
+# File structure
+css
+functions
+img
+inc
+js
+lang
+plugins
+404.php
+archive.php
+category.php
+class-thm-plugin-activation.php
+comments.php
+content-grid.php
+content-page.php
+content-video.php
+content.php
+footer.php
+founctions.php
+header.php
+index.php
+page-sidebar.php
+page.php
+screenshot.png
+search.php
+searchform.php
+sidebar.php
+single.php
+style.css
+tag.php
+
+
+# css
+folder css
+	grabbling.png (Why here?)
+	jquery.bxslider.css (extra request, use Sass)
+	owl.carousel.css (use Sass)
+		She link in this file to grabbling.png (line 58)
+		better to use SVG
+	owl.theme.css
+	responsive.css
+	slicknav.css
+
+Comments:
+She seem to not know about Sass and html request. 
+Not very good in that way. I think that her good looks very good.
+Its Consistant. 
+
+# Functions.php
+	Functions list
+		Set Content Width
+		Theme set up
+			Register navigation menu
+			Localization support
+			Feed Links
+			Post formats
+			Post thumbnails
+		Register & enqueue styles/scripts
+		Include files
+			Theme Options
+			Widgets
+		Register footer widgets
+		PAGINATION
+		COMMENTS LAYOUT
+		AUTHOR SOCIAL LINKS
+		TGM-Plugin-Activation
+		EXCLUDE FEATURED CATEGORY
+		THE EXCERPT
+
+
+
+
+
+
+

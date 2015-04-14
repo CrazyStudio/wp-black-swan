@@ -1,5 +1,9 @@
 @media #{$small-only} { 
 
+	body {
+		margin-top: ms(9);
+	}
+
 	.site-navigation-toggle {
 		button {
 			margin: 0 auto;
@@ -11,6 +15,9 @@
 		margin: 0 auto;
 		display: block;
 		text-align: center;
+	}
+	.site-description {
+		display: none;
 	}
 
 }
