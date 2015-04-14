@@ -24,8 +24,6 @@ $("#site-navigation-toggle").on( "click", function() {
 		$("#toggle-title").text($("#toggle-title").data("open"));
 	}
 
-
-
 	// Animate the menu button
 	if (icon_grid.classList.contains("js-css-toggle-animation")) {
     icon_grid.classList.remove("js-css-toggle-animation");
@@ -34,6 +32,4 @@ $("#site-navigation-toggle").on( "click", function() {
     icon_grid.classList.add("js-css-toggle-animation");
     animationToGreen.beginElement();
 	}
-
 });	
-
