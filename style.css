@@ -7705,6 +7705,10 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+h1 {
+  font-size: 42px;
+}
+
 body {
   margin-top: 101px;
 }
@@ -7870,7 +7874,7 @@ body {
 
 @media only screen and (max-width: 40em) {
   body {
-    margin-top: 110px;
+    margin-top: 96px;
   }
 
   .site-navigation-toggle button {
@@ -7887,6 +7891,14 @@ body {
 
   .site-description {
     display: none;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .article-box p {
+    display: block;
   }
 }
 .content-article {
@@ -7941,7 +7953,7 @@ body {
 
 @media only screen and (max-width: 40em) {
   body {
-    margin-top: 110px;
+    margin-top: 96px;
   }
 
   .site-navigation-toggle button {
@@ -7958,5 +7970,13 @@ body {
 
   .site-description {
     display: none;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .article-box p {
+    display: block;
   }
 }
