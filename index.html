@@ -21,163 +21,150 @@
 
 
 <body>
-    
+    <!-- SVG code to create menu icon and search icon -->
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" enable-background="new 0 0 100 100" xml:space="preserve" style="display: none;">
       <defs>
         <symbol id="icon-grid" viewBox="0 0 30 30">
           <title>Basketball</title>
             <g>
-                <path d="M22,22 L25.1758929,22 L28,22 L28,28 L22,28 L22,22 Z" id="dow-3">
-                </path>
-                <path d="M0,22 L3.87388393,22 L6,22 L6,28 L0,28 L0,22 Z" id="dow-1">
-                </path>
-                <path d="M22,0 L24.712995,0 L28,0 L28,6 L22,6 L22,0 Z" id="top-3">
-                </path>
-                <path d="M0,0 L3.28835404,0 L6,0 L6,6 L0,6 L0,0 Z" id="top-1">
-                </path>
-                <animate id="animation-to-green" begin="indefinite" fill="freeze" attributeName="opacity" dur="300ms" to="0"></animate>
-                <animate id="animation-to-yellow" begin="indefinite" fill="freeze" attributeName="opacity" dur="300ms" to="1"></animate>
-
+                <path d="M22,22 L25.1758929,22 L28,22 L28,28 L22,28 L22,22 Z" id="dow-3"></path>
+                <path d="M0,22 L3.87388393,22 L6,22 L6,28 L0,28 L0,22 Z" id="dow-1"></path>
+                <path d="M22,0 L24.712995,0 L28,0 L28,6 L22,6 L22,0 Z" id="top-3"></path>
+                <path d="M0,0 L3.28835404,0 L6,0 L6,6 L0,6 L0,0 Z" id="top-1"></path>
+                <animate id="animation-to-close" begin="indefinite" fill="freeze" attributeName="opacity" dur="300ms" to="0"></animate>
+                <animate id="animation-to-explore" begin="indefinite" fill="freeze" attributeName="opacity" dur="300ms" to="1"></animate>
             </g>
-            <path d="M11,22 L13.1125388,22 L17,22 L17,28 L11,28 L11,22 Z" id="dow-2">
-                    
-            </path>
-            <path fill="000" d="M22,11 L24.5763587,11 L28,11 L28,17 L22,17 L22,11 Z" id="mid-3">
-                
-            </path>
-            <path d="M11,11 L14.716974,11 L17,11 L17,17 L11,17 L11,11 Z" id="mid-2">
-                
-            </path>
-            <path d="M0,11 L3.20243595,11 L6,11 L6,17 L0,17 L0,11 Z" id="mid-1">
-                
-            </path>
-           
-            <path d="M11,0 L14.017139,0 L17,0 L17,6 L11,6 L11,0 Z" id="top-2">
-                
-            </path>
+            <path d="M11,22 L13.1125388,22 L17,22 L17,28 L11,28 L11,22 Z" id="dow-2"></path>
+            <path fill="000" d="M22,11 L24.5763587,11 L28,11 L28,17 L22,17 L22,11 Z" id="mid-3"></path>
+            <path d="M11,11 L14.716974,11 L17,11 L17,17 L11,17 L11,11 Z" id="mid-2"></path>
+            <path d="M0,11 L3.20243595,11 L6,11 L6,17 L0,17 L0,11 Z" id="mid-1"></path>
+            <path d="M11,0 L14.017139,0 L17,0 L17,6 L11,6 L11,0 Z" id="top-2"></path>
         </symbol>
+
         <symbol id="icon-search" viewBox="0 0 92 92">
-        <title>search</title>
-        <path d="M64.02,58.467c5.146-6.379,7.942-14.266,7.942-22.556c0-19.884-16.172-36.061-36.05-36.061
-        c-19.879,0-36.051,16.177-36.051,36.061c0,19.876,16.172,36.052,36.051,36.052c8.415,0,16.385-2.869,22.816-8.149l25.793,26.037
-        l5.34-5.288L64.02,58.467z M35.865,62.862c-14.863,0-26.951-12.09-26.951-26.953c0-14.867,12.088-26.958,26.951-26.958
-        c14.856,0,26.951,12.09,26.951,26.958C62.816,50.772,50.722,62.862,35.865,62.862z"/>
+            <title>search</title>
+            <path d="M64.02,58.467c5.146-6.379,7.942-14.266,7.942-22.556c0-19.884-16.172-36.061-36.05-36.061
+            c-19.879,0-36.051,16.177-36.051,36.061c0,19.876,16.172,36.052,36.051,36.052c8.415,0,16.385-2.869,22.816-8.149l25.793,26.037
+            l5.34-5.288L64.02,58.467z M35.865,62.862c-14.863,0-26.951-12.09-26.951-26.953c0-14.867,12.088-26.958,26.951-26.958
+            c14.856,0,26.951,12.09,26.951,26.958C62.816,50.772,50.722,62.862,35.865,62.862z"/>
         </symbol>
-        </svg>
       </defs>
     </svg> <!-- Svg-defs -->
-    <div id="page-wrap" class="header-fixed">
-        <header id="site-header" class="main-header" role="banner">
 
-        <div class="top-header row">  
-
-            <div id="site-branding" class="site-branding small-12 medium-9 small-centered medium-uncentered columns">
-                <h1 class="site-title"><a href="" rel="home"><img src="/images/logo.svg" alt=""></a></h1>
-                <h2 class="site-description">Theme for Thinkers</h2>
-            </div> <!-- site-branding -->
-            
-
-            <div id="site-navigation-toggle" class="site-navigation-toggle small-8 medium-3 small-centered medium-uncentered columns">
-                <button>
-                    <span id="toggle-title" data-open="Explore" data-close="Close">Explore</span>
-                    <svg id="main-button" class="icon-grid">
-                        <use xlink:href="#icon-grid">
-                        </use>
-                    </svg>
-                </button> 
-            </div> <!-- site-navigation-toggle -->
-
-        </div> <!-- top-header -->
-
-        <nav id="site-navigation" class="site-navigation" role="navigation">
-
-            <div id="site-primary-menu" class="site-primary-menu">
+    <div id="page" class="hfeed site header-fixed">
+        
+        <header id="site-header" class="site-header" role="banner">
+        
+            <div class="top-header row">  
                 
-                <ul class="row">
+                <div id="site-branding" class="site-branding small-12 medium-9 small-centered medium-uncentered columns">
+                    <h1 class="site-title"><a href="" rel="home"><img src="/images/logo.svg" alt=""></a></h1>
+                    <h2 class="site-description">Theme for Thinkers</h2>
+                </div> <!-- site-branding -->
 
-                    <li class="menu-item medium-3 columns">
-                        <a href="#">About Black Swan</a>
-                        <ul class="dropdown">
-                            <li class="sub-item"><a href="#">Johan Smith</a></li>
-                            <li class="sub-item"><a href="#">Typography</a></li>
-                            <li class="sub-item"><a href="#">Community</a></li>
-                            <li class="sub-item"><a href="#">404 page</a></li>
-                            <li class="sub-item"><a href="#">Contact</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-item medium-3 columns">
-                    <a href="#">Features</a>
-                        <ul class="dropdown">
-                            <li class="sub-item"><a href="#">Home with Sidebar</a></li>
-                            <li class="sub-item"><a href="#">Page with Sidebar</a></li>
-                            <li class="sub-item"><a href="#">Split post layout</a></li>
-                            <li class="sub-item"><a href="#">Grid post layout</a></li>
-                            <li class="sub-item"><a href="#">Full post layout</a></li>
-                            
-                        </ul>
-                    </li>
-
-                    <li class="menu-item medium-3 columns">
-                    <a href="#">Post Styles</a>
-                        <ul class="dropdown">
-                            <li class="sub-item"><a href="#">With Sidebar</a></li>
-                            <li class="sub-item"><a href="#">Standard</a></li> 
-                            <li class="sub-item"><a href="#">Gallery</a></li>
-                            <li class="sub-item"><a href="#">Music</a></li>
-                            <li class="sub-item"><a href="#">Video</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-item medium-3 columns end">
-                    <a href="#">Categories</a>
-                        <ul class="dropdown">
-                            <li class="sub-item"><a href="#">Spirituality</a></li>
-                            <li class="sub-item"><a href="#">Lifestyle</a></li>
-                            <li class="sub-item"><a href="#">Design</a></li>
-                            <li class="sub-item"><a href="#">Travel</a></li>
-                            <li class="sub-item"><a href="#">Music</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-
-            </div> <!-- site-menu -->
-
-            <div id="site-search" class="site-search row">
-
-                <form id="site-search-form" class="small-11 medium-5 large-4 small-centered columns" role="search" method="get" action="http://google.com/">
-                    <input id="search-input" type="text" placeholder="Search and hit enter..." name="search">
-                    <button class="search-submit" type="submit">
-                        <svg id="search-button" class="icon-search">
-                            <use xlink:href="#icon-search">
+                <div id="site-navigation-toggle" class="site-navigation-toggle small-8 medium-3 small-centered medium-uncentered columns">
+                    <button>
+                        <span id="toggle-title" data-open="Explore" data-close="Close">Explore</span>
+                        <svg id="main-button" class="icon-grid">
+                            <use xlink:href="#icon-grid">
                             </use>
                         </svg>
-                    </button>
-                </form>
+                    </button> 
+                </div> <!-- site-navigation-toggle -->
 
-            </div> <!-- site-search -->
+            </div> <!-- top-header -->
 
-            <div id="site-social" class="site-social small-centered small-12 columns">
-                
-                <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                <a href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
-               <a href="http://bloglovin.com/"><i class="fa fa-heart"></i></a>
-                <a href="http://plus.google.com/"><i class="fa fa-google-plus"></i></a>
-                <a href="http://"><i class="fa fa-tumblr"></i></a>
-                <a href="http://youtube.com/"><i class="fa fa-youtube-play"></i></a>
-                
-            </div> <!-- site-social -->
+            <nav id="site-navigation" class="site-navigation" role="navigation">
 
-        </nav> <!-- site-navigation -->
+                <div id="site-primary-menu" class="site-primary-menu">
+                    
+                    <ul class="row">
+
+                        <li class="menu-item medium-3 columns">
+                            <a href="#">About Black Swan</a>
+                            <ul class="dropdown">
+                                <li class="sub-item"><a href="#">Johan Smith</a></li>
+                                <li class="sub-item"><a href="#">Typography</a></li>
+                                <li class="sub-item"><a href="#">Community</a></li>
+                                <li class="sub-item"><a href="#">404 page</a></li>
+                                <li class="sub-item"><a href="#">Contact</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item medium-3 columns">
+                        <a href="#">Features</a>
+                            <ul class="dropdown">
+                                <li class="sub-item"><a href="#">Home with Sidebar</a></li>
+                                <li class="sub-item"><a href="#">Page with Sidebar</a></li>
+                                <li class="sub-item"><a href="#">Split post layout</a></li>
+                                <li class="sub-item"><a href="#">Grid post layout</a></li>
+                                <li class="sub-item"><a href="#">Full post layout</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        <li class="menu-item medium-3 columns">
+                        <a href="#">Post Styles</a>
+                            <ul class="dropdown">
+                                <li class="sub-item"><a href="#">With Sidebar</a></li>
+                                <li class="sub-item"><a href="#">Standard</a></li> 
+                                <li class="sub-item"><a href="#">Gallery</a></li>
+                                <li class="sub-item"><a href="#">Music</a></li>
+                                <li class="sub-item"><a href="#">Video</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item medium-3 columns end">
+                        <a href="#">Categories</a>
+                            <ul class="dropdown">
+                                <li class="sub-item"><a href="#">Spirituality</a></li>
+                                <li class="sub-item"><a href="#">Lifestyle</a></li>
+                                <li class="sub-item"><a href="#">Design</a></li>
+                                <li class="sub-item"><a href="#">Travel</a></li>
+                                <li class="sub-item"><a href="#">Music</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div> <!-- site-menu -->
+
+                <div id="site-search" class="site-search row">
+
+                    <form id="site-search-form" class="small-11 medium-5 large-4 small-centered columns" role="search" method="get" action="http://google.com/">
+                        <input id="search-input" type="text" placeholder="Search and hit enter..." name="search">
+                        <button class="search-submit" type="submit">
+                            <svg id="search-button" class="icon-search">
+                                <use xlink:href="#icon-search">
+                                </use>
+                            </svg>
+                        </button>
+                    </form>
+
+                </div> <!-- site-search -->
+
+                <div id="site-social" class="site-social small-centered small-12 columns">
+                    
+                    <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
+                   <a href="http://bloglovin.com/"><i class="fa fa-heart"></i></a>
+                    <a href="http://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+                    <a href="http://"><i class="fa fa-tumblr"></i></a>
+                    <a href="http://youtube.com/"><i class="fa fa-youtube-play"></i></a>
+                    
+                </div> <!-- site-social -->
+
+            </nav> <!-- site-navigation -->
 
         </header> <!-- site-header -->
-    </div>
 
-    <div class="site-content">
-        <div class="row">
+    </div> <!-- header-fixed -->
+
+    <div id="site-content" class="site-content">
+        <main id="content-area" class="content-area row">
+            
             <article class="content-article">
                 <img src="images/article-1.jpg" alt="" class="feature-image">
                 <div class="article-box small-11 large-8 small-centered columns">
@@ -193,6 +180,7 @@
                     <time>4 July, 2014</time>
                 </div>
             </article>
+            
             <article class="content-article">
                 <img src="images/article-2.jpg" alt="" class="feature-image">
                 <div class="article-box small-11 large-8 small-centered columns">
@@ -305,7 +293,7 @@
                     </div>
                 </div>
             </article>  
-        </div>
+        </main>
     </div>
      
 <!-- script -->

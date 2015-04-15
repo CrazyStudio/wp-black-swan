@@ -6,16 +6,18 @@
 
 	.site-navigation-toggle {
 		button {
-			margin: 0 auto;
-			float: none;
 			display: block;
+			float: none;
+			margin: 0 auto;
 		}
 	}
+
 	.site-branding {
-		margin: 0 auto;
 		display: block;
+		margin: 0 auto;
 		text-align: center;
 	}
+
 	.site-description {
 		display: none;
 	}
@@ -23,6 +25,7 @@
 	h1 {
 		font-size: ms(3);
 	}
+
 	.article-box p {
 		display: block;
 	}
