@@ -1,15 +1,15 @@
 // ------------------------------- Body
 body { 
-	margin-top: ms(6) + ms(4);
+	margin-top: ms(6) + ms(5);
 }
 // ------------------------------- site-Header
 .header-fixed {
     top: 0;
-    bottom:0;
     position:fixed;
     overflow-y:scroll;
     overflow-x:hidden;
     width: 100%;
+    z-index: 999;
 }
 
 .main-header {
@@ -19,6 +19,7 @@ body {
 	min-height:  ms(6);
 
 	background: #fff;
+
 } // main-header
 
 .site-title {	

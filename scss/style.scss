@@ -10,14 +10,15 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 //Foundation
 @import "settings";
-//@import "foundation";
+@import "foundation";
 @import "../bower_components/modular-scale/stylesheets/modular-scale";
-@import "foundation/components/grid";
-@import "foundation/components/visibility";
+//@import "foundation/components/grid";
+//@import "foundation/components/visibility";
 
 // Crazy polish 
 @import "bits";
 @import "main";
+@import "media_queries";
 @import "experimental";
 @import "media_queries";
 
