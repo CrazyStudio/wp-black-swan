@@ -16,14 +16,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-<!-- stylesheet and script -->
-<script src="/js/svg4everybody.ie8.min.js"></script>
-<script src="bower_components/modernizr/modernizr.js"></script>
-<link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="inc/font-awesome.min.css">
-<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
-
 <?php wp_head(); ?>
 </head>
 
@@ -55,6 +47,10 @@
                         </svg>
                     </button> 
                 </div> <!-- site-navigation-toggle -->
+                </div>
+                </header>
+                </div>
+
 
 
 
