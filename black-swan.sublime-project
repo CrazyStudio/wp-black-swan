@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+   			"folder_exclude_patterns": [".codekit-cache", ".codekit", ".metadata", ".settings"],
+    		"file_exclude_patterns": ["*.codekit", "README.md", "screenshot.png", "gemfile","*.lock", "config.rb", "bower.json"]
+		},
+		{
+			"path": "/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/twentyfifteen"
+		},
+		{
+			"path": "/Users/MateuszRybinski/Documents/Development/black-swan"
+		},
+		{
+			"path": "/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock"
+		}
+	]
+}
