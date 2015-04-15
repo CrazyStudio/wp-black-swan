@@ -27,3 +27,13 @@
 		display: block;
 	}
 }
+
+@media #{$medium-only} { 
+
+	body {
+		margin-top: ms(6);
+	}
+
+
+
+}

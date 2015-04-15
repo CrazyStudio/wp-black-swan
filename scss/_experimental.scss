@@ -25,8 +25,9 @@
 		color: map-get($site_static_color, light_text);
 	}
 	time {
+		margin-top: ms(2);
 		font-weight: 200;
-		display: inline;
+		display: block;
 	}
 	span {
 		color: #cea525;
@@ -34,7 +35,7 @@
 }
 
 .content-social {
-	margin-top: ms(4);
+	margin-top: ms(3);
 	a {
 		color: map-get($site_static_color, body_text);
 		width: ms(4);

@@ -7901,6 +7901,11 @@ body {
     display: block;
   }
 }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  body {
+    margin-top: 59px;
+  }
+}
 .content-article {
   margin-bottom: 37px;
 }
@@ -7925,15 +7930,16 @@ body {
   color: #999999;
 }
 .article-box time {
+  margin-top: 23px;
   font-weight: 200;
-  display: inline;
+  display: block;
 }
 .article-box span {
   color: #cea525;
 }
 
 .content-social {
-  margin-top: 37px;
+  margin-top: 26px;
 }
 .content-social a {
   color: #222;
@@ -7978,5 +7984,10 @@ body {
 
   .article-box p {
     display: block;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  body {
+    margin-top: 59px;
   }
 }
