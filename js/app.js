@@ -32,4 +32,11 @@ $("#site-navigation-toggle").on( "click", function() {
     icon_grid.classList.add("js-css-toggle-animation");
     animationToGreen.beginElement();
 	}
+
+	// Fix a bugg in scroll function when the menu is to high (on weed...)
+	if($(".header-fixed").css("bottom") === "auto") {
+		$(".header-fixed").css("bottom", "0px")
+	} else {
+		$(".header-fixed").css("bottom", "auto")
+	}
 });	
