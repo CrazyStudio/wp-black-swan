@@ -11,7 +11,7 @@
 		Features
 			Home with Sidebar
 			Page with Sidebar
-			Split post layout
+			Standard post layout
 			Full post layout
 			Grid post layout
 		Post Styles
@@ -28,3 +28,21 @@
 			Music
 
 Footer
+
+
+# post layouts
+	## Standard post layout
+		First article
+			Feature image
+			cateogry
+			title 
+			date
+		Secound article
+			catoegry
+			title 
+			date
+			Feature image
+			2 parah
+			Read more
+			Social buttons
+			
