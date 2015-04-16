@@ -30,26 +30,58 @@
 		<div class="top-header row">
 
 			<div id="site-branding" class="site-branding small-12 medium-9 small-centered medium-uncentered columns">
-	        	<h1 class="site-title">
-	        		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-	        			<img src="<?php echo bloginfo('template_directory') . '/images/logo.svg'; ?>" alt="<?php bloginfo( 'name' ); ?>">
-	        		</a>
-	        	</h1>
-	            <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-	        </div> <!-- site-branding -->
+				<h1 class="site-title">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo bloginfo('template_directory') . '/images/logo.svg'; ?>" alt="<?php bloginfo( 'name' ); ?>">
+					</a>
+				</h1>
+				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			</div> <!-- site-branding -->
 
-	        <div id="site-navigation-toggle" class="site-navigation-toggle small-8 medium-3 small-centered medium-uncentered columns">
-                    <button>
-                        <span id="toggle-title" data-open="Explore" data-close="Close">Explore</span>
-                        <svg id="main-button" class="icon-grid">
-                            <use xlink:href="#icon-grid">
-                            </use>
-                        </svg>
-                    </button> 
-                </div> <!-- site-navigation-toggle -->
-                </div>
-                </header>
-                </div>
+			<div id="site-navigation-toggle" class="site-navigation-toggle small-8 medium-3 small-centered medium-uncentered columns">
+				<button>
+					<span id="toggle-title" data-open="Explore" data-close="Close">Explore</span>
+					<svg id="main-button" class="icon-grid">
+						<use xlink:href="#icon-grid">
+						</use>
+					</svg>
+				</button> 
+			</div> <!-- site-navigation-toggle -->
+
+		</div> <!-- top-header -->
+
+		<nav id="site-navigation" class="site-navigation" role="navigation">
+
+			<div id="site-primary-menu" class="site-primary-menu">
+
+				<ul class="row">
+
+					<li class="menu-item medium-3 columns">
+						<a href="#">About Black Swan</a>
+						<ul class="dropdown">
+							<li class="sub-item"><a href="#">Johan Smith</a></li>
+							<li class="sub-item"><a href="#">Typography</a></li>
+							<li class="sub-item"><a href="#">404 page</a></li>
+							<li class="sub-item"><a href="#">Archive</a></li>
+							<li class="sub-item"><a href="#">Contact</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+
+			</div> <!-- site-primary-menu -->
+
+			
+
+
+
+
+
+
+
+				</div>
+				</header>
+				</div>
 
 
 
