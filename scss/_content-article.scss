@@ -30,7 +30,7 @@
 		display: block;
 	}
 	span {
-		color: #cea525;
+		color: map-get($site_dynamic_color, main_color);
 	}
 }
 
@@ -41,14 +41,29 @@
 		width: ms(4);
 		height: ms(4);
 		display: inline-block;
-		border: 1px #d3d3d3 solid;
+		border: 1px map-get($site_static_color, border) solid;
 		-moz-border-radius: 50%;
 		-webkit-border-radius: 50%;
 		border-radius: 50%;
-		padding-top: 4px;
+		padding-top: 5px;
 		margin: 0 ms(-1) 0 ms(-1);
+		transition: all 0.3s ease;
+
+		
 	}
+
 	i {
-		color: #cea525;
+		color: map-get($site_dynamic_color, main_color);
 	}
+}
+
+.content-social a:hover {
+	background-color: map-get($site_static_color, border);		
+	border: 1px map-get($site_dynamic_color, main_color) solid;
+	transition: all 0.3s ease;
+}
+
+.content-social a:hover i {
+	color: darken(map-get($site_dynamic_color, main_color), 30%);
+	transition: all 0.3s ease;
 }

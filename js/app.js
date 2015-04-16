@@ -26,7 +26,6 @@ jQuery(document).ready(function($) {
 		$( "#primary-menu > li:first" ).addClass( "menu-offset-3-item" );
 
 	} else {
-		return;
 	}
 
 	// Make the navigation toggle button work
