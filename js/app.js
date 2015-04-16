@@ -5,6 +5,32 @@ jQuery(document).ready(function($) {
 	var icon_grid = document.getElementById( "main-button" );
 	var animation_to_close = document.getElementById( "animation-to-close" );
 	var animation_to_explore = document.getElementById( "animation-to-explore" );
+	
+	// add class to site-menu
+	$( "#primary-menu > li" ).addClass( "medium-3 columns" );
+
+	// add .end class to last menu item
+	$( '#primary-menu > li' ).last().addClass('end');
+
+	// add offset depending on how many menu-items
+	if($( "#primary-menu > li" ).length === 1 ) {
+
+		$( "#primary-menu > li:first" ).addClass( "menu-offset-1-item" );
+
+	} else if ($( "#primary-menu > li" ).length === 2 ) {
+
+		$( "#primary-menu > li:first" ).addClass( "menu-offset-2-item" );
+
+	} else if ($( "#primary-menu > li" ).length === 3 ) {
+
+		$( "#primary-menu > li:first" ).addClass( "menu-offset-3-item" );
+
+	} else {
+		return;
+	}
+
+	alert($( "#primary-menu > li" ).length );
+
 
 	// Make the navigation toggle button work
 	$( "#site-navigation-toggle" ).on( "click", function() {

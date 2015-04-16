@@ -54,7 +54,20 @@
 
 			<div id="site-primary-menu" class="site-primary-menu">
 
-				<ul class="row">
+			<?php
+
+				$defaults = array(
+					'container' 		=> false,
+					'theme_location' 	=> 'primary',
+					'menu_class' 		=> 'row',
+					'menu_id'			=> 'primary-menu'
+					);
+
+				wp_nav_menu( $defaults );
+
+			?>
+
+				<!-- <ul class="row">
 
 					<li class="menu-item medium-3 columns">
 						<a href="#">About Black Swan</a>
@@ -67,7 +80,7 @@
 						</ul>
 					</li>
 					
-				</ul>
+				</ul> -->
 
 			</div> <!-- site-primary-menu -->
 

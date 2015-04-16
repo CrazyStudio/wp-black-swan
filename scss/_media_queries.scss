@@ -36,7 +36,21 @@
 	body {
 		margin-top: ms(6);
 	}
+}
 
+//4,166666
 
+@media #{$medium-up} {
 
+	.menu-offset-3-item {
+		margin-left: 12.499999% !important;
+	}
+
+	.menu-offset-2-item {
+		margin-left: 25% !important;
+	}
+
+	.menu-offset-1-item {
+		margin-left: 37.4999999% !important;
+	}
 }

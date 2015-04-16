@@ -86,7 +86,7 @@ body {
 		list-style: none;
 	}
 
-	.menu-item {
+	ul > li {
 		padding: 0;
 		text-align: center;
 		a {
@@ -97,7 +97,7 @@ body {
 		}
 	}
 
-	.sub-item {
+	.sub-menu > li {
 		a {
 			color: map-get($site_static_color, light_text);
 			font-weight: 200;
@@ -107,7 +107,7 @@ body {
 		}
 	}
 
-	.dropdown {
+	.sub-menu {
 		margin: 0;
 	}
 
@@ -184,6 +184,8 @@ body {
     transition: opacity 0.5s ease-out;
 	}
 }
+
+
 
 
 
