@@ -29,9 +29,6 @@ jQuery(document).ready(function($) {
 		return;
 	}
 
-	alert($( "#primary-menu > li" ).length );
-
-
 	// Make the navigation toggle button work
 	$( "#site-navigation-toggle" ).on( "click", function() {
 

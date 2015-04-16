@@ -67,23 +67,13 @@
 
 			?>
 
-				<!-- <ul class="row">
-
-					<li class="menu-item medium-3 columns">
-						<a href="#">About Black Swan</a>
-						<ul class="dropdown">
-							<li class="sub-item"><a href="#">Johan Smith</a></li>
-							<li class="sub-item"><a href="#">Typography</a></li>
-							<li class="sub-item"><a href="#">404 page</a></li>
-							<li class="sub-item"><a href="#">Archive</a></li>
-							<li class="sub-item"><a href="#">Contact</a></li>
-						</ul>
-					</li>
-					
-				</ul> -->
-
 			</div> <!-- site-primary-menu -->
+			
+			<div id="site-search" class="site-search row">
 
+                <?php get_search_form(); ?>
+
+            </div> <!-- site-search -->
 			
 
 
