@@ -13,6 +13,8 @@
 
 get_header(); ?>
 
+<main id="content-standard" class="content-standard row">
+
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						
 		<?php get_template_part('inc/layout/content', '' ); ?>
@@ -20,5 +22,7 @@ get_header(); ?>
 	<?php endwhile; ?>
 	
 	<?php endif; ?>
+
+</main>
 
 <?php get_footer(); ?>

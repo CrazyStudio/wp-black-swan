@@ -6317,29 +6317,40 @@ body {
 /*--------------------------------------------------------------
 # Content Article
 --------------------------------------------------------------*/
-.content-article {
+.standard-article {
   margin-bottom: 37px; }
 
-.article-box {
+.entry-header {
   background: #fff;
   padding: 16px;
   text-align: center; }
-  .article-box p {
+  .entry-header p {
     text-align: left;
     display: inline; }
-  .article-box h1 {
+  .entry-header h1,
+  .entry-header .entry-title {
     text-transform: capitalize;
     margin: 0;
     line-height: 1.3;
     margin-bottom: 9px; }
-  .article-box span,
-  .article-box time {
+    .entry-header h1 a,
+    .entry-header .entry-title a {
+      color: #222; }
+  .entry-header span,
+  .entry-header time {
     color: #999999; }
-  .article-box time {
+  .entry-header .entry-category a {
+    color: #cea525; }
+  .entry-header .more-link {
+    color: #cea525;
+    display: block;
+    text-align: center;
+    margin-top: 14px; }
+  .entry-header time {
     margin-top: 23px;
     font-weight: 200;
     display: block; }
-  .article-box span {
+  .entry-header span {
     color: #cea525; }
 
 .content-social {
@@ -6389,10 +6400,7 @@ body {
     display: none; }
 
   h1 {
-    font-size: 26px; }
-
-  .article-box p {
-    display: block; } }
+    font-size: 26px; } }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   body {
     margin-top: 59px; } }

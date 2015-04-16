@@ -83,21 +83,3 @@
 </div> <!-- header-fixed -->
 
 <div id="site-content" class="site-content">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
