@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<main id="content-standard" class="content-standard row">
+<main id="content-standard" class="content-standard">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						

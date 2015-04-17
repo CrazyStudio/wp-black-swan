@@ -100,34 +100,4 @@ function black_swan_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'black_swan_scripts' );
 
-/**
- * Make the excerpt one paragraph long
- *
- * ref: http://wpshout.com/changing-wordpress-excerpt-length-learning-spelunking/
- */
-
-//ref: http://wpshout.com/changing-wordpress-excerpt-length-learning-spelunking/
-add_filter( 'wp_trim_excerpt', 'wpshout_excerpt');
-function wpshout_excerpt($text = '') {
-	$raw_excerpt = $text;
-	if ( '' == $text ) {
-		$text = get_the_content('');
-
-		$text = strip_shortcodes( $text );
-
-		$text = apply_filters( 'the_content', $text );
-		$text = str_replace(']]>', ']]&gt;', $text);
-
-		$text = substr( $text, 0, strpos( $text, '</p>' ) + 4 );
-	}
-	return $text;
-}
-
-// Replaces the excerpt "more" text by a link
-function new_excerpt_more($more) {
-       global $post;
-	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Continue Reading...</a>';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
-
 

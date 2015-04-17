@@ -82,4 +82,4 @@
 
 </div> <!-- header-fixed -->
 
-<div id="site-content" class="site-content">
+<div id="site-content" class="site-content row">

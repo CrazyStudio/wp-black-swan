@@ -26,7 +26,7 @@
                 <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
                 <a href="http://pinterest.com/"><i class="fa fa-google-plus"></i></a>
             </div>
-            <time>4 July, 2014</time>
+            <time><?php the_time('F j, Y'); ?></time>
 
 
     </div>

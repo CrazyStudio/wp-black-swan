@@ -18,6 +18,7 @@ Black Swan is based on Underscores http://underscores.me/, (C) 2012-2015 Automat
 ----------------------------------------------------------------
 # Foundation
 # Header
+# Footer
 # Content Article
 # Media Queries
 
@@ -25,7 +26,6 @@ Black Swan is based on Underscores http://underscores.me/, (C) 2012-2015 Automat
 @import "settings";
 @import "../bower_components/modular-scale/stylesheets/modular-scale";
 @import "bits";
-@import "experimental";
 
 /*--------------------------------------------------------------
 # Foundation
@@ -38,6 +38,11 @@ Black Swan is based on Underscores http://underscores.me/, (C) 2012-2015 Automat
 @import "site-header";
 
 /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+@import "site-footer";
+
+/*--------------------------------------------------------------
 # Content Article
 --------------------------------------------------------------*/
 @import "content-article";
@@ -46,6 +51,8 @@ Black Swan is based on Underscores http://underscores.me/, (C) 2012-2015 Automat
 # Media Queries
 --------------------------------------------------------------*/
 @import "media_queries";
+
+@import "experimental";
 
 
 // Or selectively include components

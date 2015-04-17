@@ -9,6 +9,53 @@
 ?>
 </div> <!-- site-content: Found bottom of header.php -->
 
+<footer id="site-footer" class="site-footer">
+	
+	<section class="footer-widgetarea row">
+		
+	<div class="large-6 columns">
+		<h3 class="widget-title">About</h3>
+		<p>This attention to details requires discipline. There is no room for sloppiness, for carelessness, for procrastination. Every detail is important because the end result is the sum of all the details involved in the creative process no matter what we are doing. There are no hierarchies when it comes to quality. Quality is there or is not there, and if is not there we have lost our time.</p>
+
+		<a href="">Buy This Theme</a>
+	</div>
+
+	<div class="large-3 large-offset-1 columns">
+		<h3 class="widget-title">Categories</h3>
+		<ul>
+			<li>Happiness</li>
+			<li>Lifestyle</li>
+			<li>Travel</li>
+			<li>Design</li>
+			<li>Music</li>
+		</ul>
+	</div>
+
+	<div class="large-2 columns"></div>
+		<h3 class="widget-title">Social</h3>
+		<ul>
+			<li>Instagram</li>
+			<li>Facebook</li>
+			<li>Youtube</li>
+			<li>Twitter</li>
+			<li>Tumblr</li>
+		</ul>
+	
+	</section> <!-- Footer-widgetarea -->
+
+	<section class="footer-copyarea row">
+
+		<div class="small-10 columns">	
+			<copy>Copyright © 2015 Black Swan. All rights reserved.</copy>
+		</div>
+
+		<div class="small-2 columns">	
+			
+		</div>
+	</section>
+
+</footer>
+
 <?php wp_footer(); ?>
 
 </body>

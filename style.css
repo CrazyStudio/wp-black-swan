@@ -17,6 +17,7 @@ Black Swan is based on Underscores http://underscores.me/, (C) 2012-2015 Automat
 ----------------------------------------------------------------
 # Foundation
 # Header
+# Footer
 # Content Article
 # Media Queries
 
@@ -6315,6 +6316,27 @@ body {
     transition: opacity 0.5s ease-out; }
 
 /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+  border-top: 1px solid #d6d6d6;
+  padding-top: 37px; }
+
+.widget-title {
+  font-size: 26px;
+  margin-top: 0; }
+
+.footer-widgetarea {
+  padding-bottom: 37px; }
+
+.footer-copyarea {
+  border-top: 1px solid #d6d6d6;
+  min-height: 59px;
+  padding-top: 16px;
+  color: #999999;
+  font-weight: 200; }
+
+/*--------------------------------------------------------------
 # Content Article
 --------------------------------------------------------------*/
 .standard-article {
@@ -6324,9 +6346,6 @@ body {
   background: #fff;
   padding: 16px;
   text-align: center; }
-  .entry-header p {
-    text-align: left;
-    display: inline; }
   .entry-header h1,
   .entry-header .entry-title {
     text-transform: capitalize;
@@ -6413,3 +6432,5 @@ body {
 
   .menu-offset-1-item {
     margin-left: 37.4999999% !important; } }
+a {
+  color: #cea525; }
