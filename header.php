@@ -20,10 +20,10 @@
 </head>
 
 <body <?php body_class(); ?>>
-<!-- SVG System Ref: https://css-tricks.com/svg-sprites-use-better-icon-fonts/ -->
-<?php get_template_part( 'inc/parts/svg', 'system' ); ?> 
+
+<?php get_template_part( 'inc/parts/svg', 'system' ); ?> <!-- SVG System Ref: https://css-tricks.com/svg-sprites-use-better-icon-fonts/ -->
 	
-<div id="page" class="hfeed site header-fixed">
+<div id="site" class="hfeed site site-header-fixed">
 	
 	<header id="site-header" class="site-header" role="banner">
 
@@ -39,9 +39,9 @@
 			</div> <!-- site-branding -->
 
 			<div id="site-navigation-toggle" class="site-navigation-toggle small-8 medium-3 small-centered medium-uncentered columns">
-				<button>
-					<span id="toggle-title" data-open="Explore" data-close="Close">Explore</span>
-					<svg id="main-button" class="icon-grid">
+				<button class="toggle-button">
+					<span id="toggle-title" class="toggle-title" data-open="Explore" data-close="Close">Explore</span>
+					<svg id="toggle-icon" class="toggle-icon">
 						<use xlink:href="#icon-grid">
 						</use>
 					</svg>

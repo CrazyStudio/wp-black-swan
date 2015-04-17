@@ -1,8 +1,8 @@
 /*
 Theme Name: Black Swan
 Theme URI: http://underscores.me/
-Author: Crazy Polish Guy
-Author URI: http://www.crazypolishguy.com
+Author: Crazy Studio
+Author URI: http://www.crazystudio.se
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -15,16 +15,40 @@ Black Swan is based on Underscores http://underscores.me/, (C) 2012-2015 Automat
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Foundation
-# Header
-# Footer
-# Content Article
-# Media Queries
+Elements
+	# Foundation
+	# site
+
+Pages
+	# index
+	# single
+	# page
+	# page-sidebar
+	# content
+	# content-grid
+	# content-split
+
+Special pages
+	# 404
+	# archive
+	# category
+
+Theme parts
+	# Header
+	# Footer
+	# sidebar
+	# comments
+	# pagination
+	# related-posts
+	# searchform
+	# tag
+
+Misc
+	# Colors
+	# Media Queries
 
 --------------------------------------------------------------*/
-h1 {
-  font-size: 42px; }
-
+/* === Elements === */
 /*--------------------------------------------------------------
 # Foundation
 --------------------------------------------------------------*/
@@ -6182,12 +6206,57 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 /*--------------------------------------------------------------
-# Header
+# site
 --------------------------------------------------------------*/
 body {
   margin-top: 101px; }
 
-.header-fixed {
+a {
+  color: #cea525; }
+
+h1 {
+  font-size: 42px; }
+
+/* === Pages === */
+/*--------------------------------------------------------------
+# index
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# single
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# page-sidebar
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# content-grid
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# content-split
+--------------------------------------------------------------*/
+/* === Special pages === */
+/*--------------------------------------------------------------
+# 404
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# archive
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# archive
+--------------------------------------------------------------*/
+/* === Theme parts === */
+/*--------------------------------------------------------------
+# header
+--------------------------------------------------------------*/
+body {
+  margin-top: 101px; }
+
+.site-header-fixed {
   position: fixed;
   top: 0;
   z-index: 999;
@@ -6196,7 +6265,7 @@ body {
   overflow-x: hidden; }
 
 .site-header {
-  border-bottom: 1px solid #d6d6d6;
+  border-bottom: 1px solid #000;
   width: 100%;
   min-height: 59px;
   background: #fff; }
@@ -6212,36 +6281,30 @@ body {
 .site-description {
   display: inline-block;
   vertical-align: 3px;
-  color: #999999;
   font-size: 19px;
   font-weight: 200; }
 
 .site-social {
   margin-bottom: 14px;
   text-align: center; }
-  .site-social a {
-    color: #222; }
-  .site-social :hover {
-    color: #999999; }
   .site-social i {
     padding: 0 5px 0 5px; }
 
-.site-navigation-toggle button {
+.site-navigation-toggle .toggle-button {
   float: right;
   margin: 4px 0 4px 0;
   outline: none;
   padding: 14px;
   background: none;
-  color: #999999;
   font-weight: 200; }
-  .site-navigation-toggle button .js-css-toggle-animation {
+  .site-navigation-toggle .toggle-button .js-css-toggle-animation {
     transform: rotate(45deg);
     transition: all 0.7s ease; }
-.site-navigation-toggle .icon-grid {
+.site-navigation-toggle .toggle-icon {
   width: 16px;
   height: 16px;
   transition: all 0.5s ease; }
-.site-navigation-toggle span {
+.site-navigation-toggle .toggle-title {
   margin-right: 14px;
   vertical-align: 3px; }
 
@@ -6249,20 +6312,14 @@ body {
   max-height: 0px;
   overflow: hidden;
   transition: max-height 0.4s ease; }
-  .site-navigation ul {
+  .site-navigation .primary-menu,
+  .site-navigation .sub-menu {
     list-style: none; }
   .site-navigation ul > li {
     padding: 0;
     text-align: center; }
-    .site-navigation ul > li a {
-      color: #222; }
-    .site-navigation ul > li :hover {
-      color: #999999; }
   .site-navigation .sub-menu > li a {
-    color: #999999;
     font-weight: 200; }
-  .site-navigation .sub-menu > li :hover {
-    color: #222; }
   .site-navigation .sub-menu {
     margin: 0; }
 
@@ -6285,21 +6342,17 @@ body {
     width: 16px;
     height: 16px; }
   .site-search ::-webkit-input-placeholder {
-    color: #999999;
     font-weight: 200;
     transition: opacity 0.5s ease-out; }
   .site-search :-moz-placeholder {
     /* Firefox 18- */
-    color: #999999;
     font-weight: 200;
     transition: opacity 0.5s ease-out; }
   .site-search ::-moz-placeholder {
     /* Firefox 19+ */
-    color: #999999;
     font-weight: 200;
     transition: opacity 0.5s ease-out; }
   .site-search :-ms-input-placeholder {
-    color: #999999;
     font-weight: 200;
     transition: opacity 0.5s ease-out; }
   .site-search input:focus::-webkit-input-placeholder {
@@ -6316,25 +6369,147 @@ body {
     transition: opacity 0.5s ease-out; }
 
 /*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# sidebar
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# comments
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# pagination
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# related-posts
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# searchform
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# tag
+--------------------------------------------------------------*/
+/* === Misc === */
+/*--------------------------------------------------------------
+# media queries
+--------------------------------------------------------------*/
+.site-header {
+  border-bottom-color: #d6d6d6; }
+
+.site-description {
+  color: #999999; }
+
+.site-social a:hover {
+  color: #999999; }
+
+.toggle-button .toggle-title {
+  color: #999999; }
+
+.site-navigation ul > li a:hover {
+  color: #999999; }
+
+.site-navigation .sub-menu > li a {
+  color: #999999; }
+
+.site-search ::-webkit-input-placeholder {
+  color: #999999; }
+
+.site-search :-moz-placeholder {
+  color: #999999; }
+
+.site-search ::-moz-placeholder {
+  color: #999999; }
+
+.site-search :-ms-input-placeholder {
+  color: #999999; }
+
+.site-social a {
+  color: #222; }
+
+.site-navigation ul > li a {
+  color: #222; }
+
+.site-navigation .sub-menu > li a:hover {
+  color: #222; }
+
+/*--------------------------------------------------------------
+# media queries
+--------------------------------------------------------------*/
+@media only screen and (max-width: 40em) {
+  body {
+    margin-top: 96px; }
+
+  .site-navigation-toggle .toggle-button {
+    display: block;
+    float: none;
+    margin: 0 auto; }
+
+  .site-branding {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+
+  .site-description {
+    display: none; }
+
+  h1 {
+    font-size: 26px; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  body {
+    margin-top: 59px; } }
+@media only screen and (min-width: 40.063em) {
+  .menu-offset-3-item {
+    margin-left: 12.499999% !important; }
+
+  .menu-offset-2-item {
+    margin-left: 25% !important; }
+
+  .menu-offset-1-item {
+    margin-left: 37.4999999% !important; } }
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.site-footer,
+.footer-copy {
+  border-top: 1px solid #d6d6d6; }
+
+.footer-copy,
+.copy-extra-button {
+  color: #999999; }
+
 .site-footer {
-  border-top: 1px solid #d6d6d6;
   padding-top: 37px; }
+
+.footer-widgetarea {
+  padding-bottom: 37px; }
 
 .widget-title {
   font-size: 26px;
   margin-top: 0; }
 
-.footer-widgetarea {
-  padding-bottom: 37px; }
-
-.footer-copyarea {
-  border-top: 1px solid #d6d6d6;
-  min-height: 59px;
-  padding-top: 16px;
-  color: #999999;
+.footer-copy {
+  height: 59px;
+  padding-top: 23px;
   font-weight: 200; }
+
+.copy-extra-button {
+  float: right;
+  outline: none;
+  padding: 0;
+  margin-top: 3px;
+  background: none;
+  font-weight: 200; }
+
+.copy-extra-body {
+  margin-right: 14px;
+  vertical-align: 7px; }
+
+.CS-icon-arrow {
+  width: 16px;
+  height: 16px; }
 
 /*--------------------------------------------------------------
 # Content Article
@@ -6401,36 +6576,5 @@ body {
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
-@media only screen and (max-width: 40em) {
-  body {
-    margin-top: 96px; }
-
-  .site-navigation-toggle button {
-    display: block;
-    float: none;
-    margin: 0 auto; }
-
-  .site-branding {
-    display: block;
-    margin: 0 auto;
-    text-align: center; }
-
-  .site-description {
-    display: none; }
-
-  h1 {
-    font-size: 26px; } }
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  body {
-    margin-top: 59px; } }
-@media only screen and (min-width: 40.063em) {
-  .menu-offset-3-item {
-    margin-left: 12.499999% !important; }
-
-  .menu-offset-2-item {
-    margin-left: 25% !important; }
-
-  .menu-offset-1-item {
-    margin-left: 37.4999999% !important; } }
 a {
   color: #cea525; }

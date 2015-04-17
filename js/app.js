@@ -2,7 +2,7 @@
 jQuery(document).ready(function($) {
 	//$( document ).foundation();
 
-	var icon_grid = document.getElementById( "main-button" );
+	var icon_grid = document.getElementById( "toggle-icon" );
 	var animation_to_close = document.getElementById( "animation-to-close" );
 	var animation_to_explore = document.getElementById( "animation-to-explore" );
 	

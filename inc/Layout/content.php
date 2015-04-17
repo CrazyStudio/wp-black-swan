@@ -19,7 +19,7 @@
             <!-- Title -->
             
             <!-- Content -->
-            <?php the_content(__('Continue Reading...')); ?>
+            <?php the_content(__('Continue Reading')); ?>
             <!-- Content -->
             <div class="content-social">
                 <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
