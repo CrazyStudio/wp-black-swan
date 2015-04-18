@@ -60,7 +60,7 @@
 		</div>
 	</section> <!-- footer-copy -->
 
-</footer>
+</footer> <!-- site-footer -->
 
 <?php wp_footer(); ?>
 
