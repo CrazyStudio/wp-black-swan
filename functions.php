@@ -100,7 +100,10 @@ function black_swan_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'black_swan_scripts' );
 
-// Numbered Pagination
+
+/**
+ * Numbered Pagination
+ */
 if ( !function_exists( 'wpex_pagination' ) ) {
 	
 	function wpex_pagination() {

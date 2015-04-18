@@ -19,24 +19,20 @@
 .footer-copy {
 	height:  ms(6);
 	padding-top: ms(2);
+	margin-bottom: ms(-2);
 	font-weight: 200;
 }
-
-.copy-extra-button {
-	float: right;
-	outline: none;
-	padding: 0;
-	margin-top: ms(-7);
-	background: none;
-	font-weight: 200;
+.copy-extra {
+	text-align: right;
 }
 
-.copy-extra-body {
-	margin-right: ms(0);
-	vertical-align: 7px;
+
+.copy-extra-list {
+	list-style-type: none;
+	margin-left: 0;
 }
 
-.CS-icon-arrow {
-	width: ms(1);
-	height: ms(1);
+.copy-extra-item {
+	display: inline;
+	margin-left: ms(2);
 }

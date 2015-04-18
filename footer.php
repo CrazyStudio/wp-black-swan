@@ -45,18 +45,17 @@
 
 	<section class="footer-copy row">
 
-		<div class="copy-body small-10 columns">
+		<div class="copy-body small-6 columns">
 			<copy>Copyright © 2015 Black Swan. All rights reserved.</copy>
 		</div>
 
-		<div class="copy-extra small-2 columns">
-			<button class="copy-extra-button">
-			<span class="copy-extra-body">Top</span>
-				<svg id="CS-icon-arrow" class="CS-icon-arrow">
-					<use xlink:href="#icon-footer-arrow">
-					</use>
-				</svg>
-			</button>
+		<div class="copy-extra small-6 columns">
+			<ul class="copy-extra-list">
+				<li class="copy-extra-item">About</li>
+				<li class="copy-extra-item">Press Kit</li>
+				<li class="copy-extra-item">Contact</li>
+
+			</ul>
 		</div>
 	</section> <!-- footer-copy -->
 

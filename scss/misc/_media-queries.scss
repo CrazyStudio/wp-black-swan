@@ -1,4 +1,61 @@
-@media #{$small-only} { 
+// @media #{$small-only} { 
+
+// 	body {
+// 		margin-top: ms(8);
+// 	}
+
+// 	.site-navigation-toggle {
+// 		.toggle-button {
+// 			display: block;
+// 			float: none;
+// 			margin: 0 auto;
+// 		}
+// 	}
+
+// 	.site-branding {
+// 		display: block;
+// 		margin: 0 auto;
+// 		text-align: center;
+// 	}
+
+// 	.site-description {
+// 		display: none;
+// 	}
+	
+// 	h1 {
+// 		font-size: ms(3);
+// 	}
+// }
+
+// @media #{$medium-only} { 
+
+// 	body {
+// 		margin-top: ms(6);
+// 	}
+// }
+
+// //4,166666
+
+// @media #{$medium-up} {
+
+// 	.menu-offset-3-item {
+// 		margin-left: 12.499999% !important;
+// 	}
+
+// 	.menu-offset-2-item {
+// 		margin-left: 25% !important;
+// 	}
+
+// 	.menu-offset-1-item {
+// 		margin-left: 37.4999999% !important;
+// 	}
+// }
+
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { 
 
 	body {
 		margin-top: ms(8);
@@ -25,28 +82,59 @@
 	h1 {
 		font-size: ms(3);
 	}
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+
+.menu-offset-3-item {
+	margin-left: 12.499999% !important;
 }
 
-@media #{$medium-only} { 
-
-	body {
-		margin-top: ms(6);
-	}
+.menu-offset-2-item {
+	margin-left: 25% !important;
 }
 
-//4,166666
-
-@media #{$medium-up} {
-
-	.menu-offset-3-item {
-		margin-left: 12.499999% !important;
-	}
-
-	.menu-offset-2-item {
-		margin-left: 25% !important;
-	}
-
-	.menu-offset-1-item {
-		margin-left: 37.4999999% !important;
-	}
+.menu-offset-1-item {
+	margin-left: 37.4999999% !important;
 }
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+body {
+	margin-top: ms(6);
+}
+
+ } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

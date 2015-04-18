@@ -1,6 +1,10 @@
 a {
 	color: map-get($site_dynamic_color, main_color);
 }
+a:hover {
+	color: map-get($site_static_color, light_text);
+}
+
 
 .site-header {
 	border-bottom-color: map-get($site_static_color, border);	
