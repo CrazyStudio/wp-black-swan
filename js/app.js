@@ -32,10 +32,10 @@ jQuery(document).ready(function($) {
 	$( "#site-navigation-toggle" ).on( "click", function() {
 
 		// Open and close the navigation
-		if ($( "#site-navigation" ).hasClass( "toggle" )) {
-			$( "#site-navigation" ).removeClass( "toggle" );
+		if ($( "#site-navigation" ).hasClass( "js-css-toggle" )) {
+			$( "#site-navigation" ).removeClass( "js-css-toggle" );
 		} else {
-			$( "#site-navigation" ).addClass( "toggle" );
+			$( "#site-navigation" ).addClass( "js-css-toggle" );
 		}
 
 		//Change the text of the toggle title

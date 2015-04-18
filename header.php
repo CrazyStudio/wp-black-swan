@@ -32,10 +32,12 @@
 			<div id="site-branding" class="site-branding small-12 medium-9 small-centered medium-uncentered columns">
 				<h1 class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo bloginfo('template_directory') . '/images/logo.svg'; ?>" alt="<?php bloginfo( 'name' ); ?>">
+						<img class="site-logo" src="<?php echo bloginfo('template_directory') . '/images/logo.svg'; ?>" alt="<?php bloginfo( 'name' ); ?>">
 					</a>
 				</h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<h2 class="site-description">
+					<?php bloginfo( 'description' ); ?>
+				</h2>
 			</div> <!-- site-branding -->
 
 			<div id="site-navigation-toggle" class="site-navigation-toggle small-8 medium-3 small-centered medium-uncentered columns">
@@ -67,13 +69,13 @@
             </div> <!-- site-search -->
 
             <div id="site-social" class="site-social small-centered small-12 columns"> 
-                <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                <a href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
-                <a href="http://plus.google.com/"><i class="fa fa-google-plus"></i></a>
-                <a href="http://"><i class="fa fa-tumblr"></i></a>
-                <a href="http://youtube.com/"><i class="fa fa-youtube-play"></i></a>      
+                <a class="social-icon" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a class="social-icon" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="social-icon" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a class="social-icon" href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
+                <a class="social-icon" href="http://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+                <a class="social-icon" href="http://"><i class="fa fa-tumblr"></i></a>
+                <a class="social-icon" href="http://youtube.com/"><i class="fa fa-youtube-play"></i></a>      
             </div> <!-- site-social -->
 
         </nav> <!-- site-navigation -->

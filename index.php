@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<main id="content-standard" class="content-standard">
+<main id="site-content-main" class="site-content-main">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						
@@ -21,7 +21,7 @@ get_header(); ?>
 			
 	<?php endwhile; ?>
 	
-	<?php endif; ?>
+	<?php endif; ?>	
 
 </main>
 
