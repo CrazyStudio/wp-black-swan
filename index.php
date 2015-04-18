@@ -20,7 +20,9 @@ get_header(); ?>
 		<?php get_template_part('inc/layout/content', '' ); ?>
 			
 	<?php endwhile; ?>
-	
+	<div class="site-pagination small-8 medium-4 small-centered columns">
+		<?php wpex_pagination(); ?>
+	</div>
 	<?php endif; ?>	
 
 </main>
