@@ -11,7 +11,15 @@
             <animate id="animation-to-explore" begin="indefinite" fill="freeze" attributeName="opacity" dur="300ms" to="1"></animate>
         </g>
         <path d="M11,22 L13.1125388,22 L17,22 L17,28 L11,28 L11,22 Z" id="dow-2"></path>
-        <path fill="000" d="M22,11 L24.5763587,11 L28,11 L28,17 L22,17 L22,11 Z" id="mid-3"></path>
+        <path d="M22,11 L24.5763587,11 L28,11 L28,17 L22,17 L22,11 Z" id="mid-3"></path>
+        <path d="M11,11 L14.716974,11 L17,11 L17,17 L11,17 L11,11 Z" id="mid-2"></path>
+        <path d="M0,11 L3.20243595,11 L6,11 L6,17 L0,17 L0,11 Z" id="mid-1"></path>
+        <path d="M11,0 L14.017139,0 L17,0 L17,6 L11,6 L11,0 Z" id="top-2"></path>
+    </symbol>
+
+    <symbol id="icon-footer-arrow" viewBox="0 0 30 30">
+      <title>Basketball</title>
+        <path d="M22,11 L24.5763587,11 L28,11 L28,17 L22,17 L22,11 Z" id="mid-3"></path>
         <path d="M11,11 L14.716974,11 L17,11 L17,17 L11,17 L11,11 Z" id="mid-2"></path>
         <path d="M0,11 L3.20243595,11 L6,11 L6,17 L0,17 L0,11 Z" id="mid-1"></path>
         <path d="M11,0 L14.017139,0 L17,0 L17,6 L11,6 L11,0 Z" id="top-2"></path>

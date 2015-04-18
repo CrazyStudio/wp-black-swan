@@ -1,0 +1,157 @@
+body { 
+	margin-top: ms(6) + ms(5);
+}
+
+.site-header-fixed  {
+	position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.site-header {
+	border-bottom: 1px solid #000;
+	width: 100%;
+	min-height:  ms(6);
+	background: #fff;
+}
+
+.site-title {	
+	display: inline-block;
+	margin: ms(0) ms(-3) 0 0;
+	padding: 0;
+}
+
+.site-logo {
+	display: block;
+	height: ms(3);
+}
+
+.site-description {
+	display: inline-block;
+	vertical-align: 3px;
+	font-size: ms(2) - ms(-6);
+	font-weight: 200;
+} 
+
+.site-social {
+	margin-bottom: ms(0);
+	text-align: center;
+}
+
+.social-icon i {
+	padding: 0 ms(-5) 0 ms(-5);
+}
+
+.toggle-button {
+	float: right;
+	margin: ms(-6) 0 ms(-6) 0;
+	outline: none;
+	padding: ms(0);
+	background: none !important;
+	font-weight: 200;
+}
+
+.toggle-icon {
+	width: ms(1);
+	height: ms(1);
+	transition: all 0.5s ease;
+}
+
+.toggle-title {
+	margin-right: ms(0);
+	vertical-align: 3px;
+}
+
+.js-css-toggle {
+    max-height: 3000px !important;
+    transition: max-height 0.9s ease-in;
+}
+
+.js-css-toggle-animation {
+	transform: rotate(45deg);
+	transition: all 0.7s ease;
+}
+
+.site-navigation {
+	max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.site-navigation ul > li {
+	padding: 0;
+	text-align: center;
+	list-style-type: none;
+}
+
+.sub-menu {
+	margin: 0;
+}
+
+.sub-menu > li a {
+	font-weight: 200;
+}
+
+.site-search {
+	margin-top: ms(0);
+}
+.search-input {
+	position: relative;
+}
+
+.search-submit {
+	position: absolute;
+	top: 11px;
+	left: 87%;
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+
+.icon-search {
+	width: ms(1);
+	height: ms(1);
+}
+
+.site-search ::-webkit-input-placeholder {
+   font-weight: 200;
+   transition: opacity 0.5s ease-out;
+}
+
+.site-search :-moz-placeholder { /* Firefox 18- */
+   font-weight: 200;
+   transition: opacity 0.5s ease-out; 
+}
+
+.site-search ::-moz-placeholder {  /* Firefox 19+ */
+   font-weight: 200;
+   transition: opacity 0.5s ease-out; 
+}
+
+.site-search :-ms-input-placeholder {  
+   	font-weight: 200;
+	transition: opacity 0.5s ease-out; 
+}
+
+.site-search input:focus::-webkit-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+}
+
+.site-search input:focus:-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+}
+
+.site-search input:focus::-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+}
+
+.site-search input:focus:-ms-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+}
