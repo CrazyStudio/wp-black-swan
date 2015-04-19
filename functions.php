@@ -151,7 +151,37 @@ if ( !function_exists( 'wpex_pagination' ) ) {
 				'next_text'		=> $next_arrow,
 			 ) );
 		}
-	}
-	
+	}	
 }
+
+
+/**
+ * ReduxFramework 
+ */
+if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/ReduxFramework/ReduxCore/framework.php' ) ) {
+    require_once( dirname( __FILE__ ) . '/ReduxFramework/ReduxCore/framework.php' );
+}
+if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/ReduxFramework/sample/CS-config.php' ) ) {
+    require_once( dirname( __FILE__ ) . '/ReduxFramework/sample/CS-config.php' );
+}
+
+
+/**
+ * Add SVG upload support
+ */
+add_filter('upload_mimes', 'custom_upload_mimes');
+
+function custom_upload_mimes ( $existing_mimes=array() ) {
+	// add the file extension to the array
+	$existing_mimes['svg'] = 'mime/type';
+        // call the modified list of extensions
+	return $existing_mimes;
+}
+
+
+
+
+
+
+
 

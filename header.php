@@ -6,7 +6,13 @@
  *
  * @package Black Swan
  */
-?><!DOCTYPE html>
+global $CS_redux;
+$themelogo = $CS_redux['CS_opt_random_upload']['url'];
+?>
+
+
+
+<!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
 
@@ -16,10 +22,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+
+
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+
+
+
+<pre><?php print_r($CS_redux); ?></pre>
 
 <?php get_template_part( 'inc/parts/svg', 'system' ); ?> <!-- SVG System Ref: https://css-tricks.com/svg-sprites-use-better-icon-fonts/ -->
 	
@@ -32,7 +45,7 @@
 			<div id="site-branding" class="site-branding small-12 medium-9 small-centered medium-uncentered columns">
 				<h1 class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img class="site-logo" src="<?php echo bloginfo('template_directory') . '/images/logo.svg'; ?>" alt="<?php bloginfo( 'name' ); ?>">
+						<img class="site-logo" src="<?php echo $themelogo; ?>" alt="<?php bloginfo( 'name' ); ?>">
 					</a>
 				</h1>
 				<h2 class="site-description">

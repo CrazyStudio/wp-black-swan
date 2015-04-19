@@ -2,9 +2,25 @@
 	"folders":
 	[
 		{
-			"path": ".",
-   			"folder_exclude_patterns": [".codekit-cache", ".codekit", ".metadata", ".settings"],
-    		"file_exclude_patterns": ["*.codekit", "black-swan.sublime-project", "README.md", "screenshot.png", "gemfile","*.lock", "config.rb", "bower.json"]
+			"file_exclude_patterns":
+			[
+				"*.codekit",
+				"black-swan.sublime-project",
+				"README.md",
+				"screenshot.png",
+				"gemfile",
+				"*.lock",
+				"config.rb",
+				"bower.json"
+			],
+			"folder_exclude_patterns":
+			[
+				".codekit-cache",
+				".codekit",
+				".metadata",
+				".settings"
+			],
+			"path": "."
 		},
 		{
 			"path": "/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/twentyfifteen"
@@ -14,6 +30,9 @@
 		},
 		{
 			"path": "/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock"
+		},
+		{
+			"path": "/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/edition"
 		}
 	]
 }
