@@ -7,7 +7,8 @@
  * @package Black Swan
  */
 global $CS_redux;
-$themelogo = $CS_redux['CS_opt_random_upload']['url'];
+$favicon_iso = $CS_redux['CS-add-favicon-iso']['url'];
+$favicon_png; $CS_redux['CS-add-favicon-png']['url'];
 ?>
 
 
@@ -23,6 +24,15 @@ $themelogo = $CS_redux['CS_opt_random_upload']['url'];
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<!-- favicon -->
+<?php if(!empty($favicon_iso)) :?>
+<link rel="shortcut icon" href="<?php echo $favicon_iso; ?>" /> <!-- .ISO -->
+<?php endif; ?>
+<link rel="icon" type="image/png" href="" /> <!-- .PNG -->
+
+<?php if(get_theme_mod('sp_favicon')) : ?>
+	<link rel="shortcut icon" href="<?php echo get_theme_mod('sp_favicon'); ?>" />
+	<?php endif; ?>
 
 
 <?php wp_head(); ?>
@@ -30,7 +40,7 @@ $themelogo = $CS_redux['CS_opt_random_upload']['url'];
 
 <body <?php body_class(); ?>>
 
-
+<?php echo $favicon_iso; ?>
 
 <pre><?php print_r($CS_redux); ?></pre>
 
