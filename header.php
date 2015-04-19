@@ -7,11 +7,10 @@
  * @package Black Swan
  */
 global $CS_redux;
-$favicon_iso = $CS_redux['CS-add-favicon-iso']['url'];
-$favicon_png; $CS_redux['CS-add-favicon-png']['url'];
+$favicon_iso 	= $CS_redux['CS-add-favicon-iso']['url'];
+$favicon_png 	= $CS_redux['CS-add-favicon-png']['url'];
+$site_logo 		= $CS_redux['CS-add-logo-field']['url'];
 ?>
-
-
 
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
@@ -28,21 +27,15 @@ $favicon_png; $CS_redux['CS-add-favicon-png']['url'];
 <?php if(!empty($favicon_iso)) :?>
 <link rel="shortcut icon" href="<?php echo $favicon_iso; ?>" /> <!-- .ISO -->
 <?php endif; ?>
-<link rel="icon" type="image/png" href="" /> <!-- .PNG -->
 
-<?php if(get_theme_mod('sp_favicon')) : ?>
-	<link rel="shortcut icon" href="<?php echo get_theme_mod('sp_favicon'); ?>" />
-	<?php endif; ?>
-
+<?php if(!empty($favicon_png)) :?>
+<link rel="icon" type="image/png" href="<?php echo $favicon_png; ?>" /> <!-- .PNG -->
+<?php endif; ?>
 
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-
-<?php echo $favicon_iso; ?>
-
-<pre><?php print_r($CS_redux); ?></pre>
 
 <?php get_template_part( 'inc/parts/svg', 'system' ); ?> <!-- SVG System Ref: https://css-tricks.com/svg-sprites-use-better-icon-fonts/ -->
 	
@@ -53,11 +46,30 @@ $favicon_png; $CS_redux['CS-add-favicon-png']['url'];
 		<div class="top-header row">
 
 			<div id="site-branding" class="site-branding small-12 medium-9 small-centered medium-uncentered columns">
-				<h1 class="site-title">
+				<?php if(empty($site_logo)) : ?>
+					
+					<?php if(is_front_page()) : ?>
+						<h1 class="site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
+					<?php else : ?>
+						<h2 class="site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
+					<?php endif; ?>
+					
+				<?php else : ?>
+					
+					<?php if(is_front_page()) : ?>
+						<h1 class="site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo $site_logo; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
+					<?php else : ?>
+						<h2 class="site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo $site_logo; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
+					<?php endif; ?>
+					
+				<?php endif; ?>
+
+				<!-- <h1 class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<img class="site-logo" src="<?php echo $themelogo; ?>" alt="<?php bloginfo( 'name' ); ?>">
 					</a>
-				</h1>
+				</h1> -->
+
 				<h2 class="site-description">
 					<?php bloginfo( 'description' ); ?>
 				</h2>

@@ -6,6 +6,7 @@
  *
  * @package Black Swan
  */
+global $CS_redux;
 ?>
 </div> <!-- site-content: Found bottom of header.php -->
 
@@ -60,6 +61,8 @@
 	</section> <!-- footer-copy -->
 
 </footer> <!-- site-footer -->
+
+<pre><?php print_r($CS_redux); ?></pre>
 
 <?php wp_footer(); ?>
 
