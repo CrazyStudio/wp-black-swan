@@ -1909,6 +1909,9 @@ li {
 body {
   margin-top: 101px; }
 
+body.withsidebar {
+  margin-top: 101px; }
+
 .site-header-fixed {
   position: fixed;
   top: 0;
@@ -2269,3 +2272,34 @@ a:hover {
 /* min-width 1441px, xlarge screens */
 /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 /* min-width 1921px, xxlarge screens */
+#secondary {
+  font-size: 14px; }
+
+#secondary p {
+  font-size: 14px; }
+
+#secondary li {
+  font-size: 14px;
+  list-style: none;
+  margin-bottom: 6px; }
+
+#secondary ul {
+  margin-left: 0; }
+
+#secondary li a {
+  color: #222; }
+
+#secondary h1 {
+  font-size: 23px; }
+
+#secondary h1 {
+  font-size: 23px; }
+
+#secondary .widget {
+  margin-bottom: 23px; }
+
+#secondary .post-date {
+  display: inherit;
+  list-style: none;
+  color: #999999;
+  font-weight: 300; }

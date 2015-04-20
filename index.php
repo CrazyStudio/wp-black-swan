@@ -10,10 +10,11 @@
  *
  * @package Black Swan
  */
-
+global $CS_redux;
+$CS_homepage_sidebar	= $CS_redux['CS-homepage-sidebar'];
 get_header(); ?>
 
-<main id="site-content-main" class="site-content-main small-12 columns">
+<main id="site-content-main" class="site-content-main <?php if(!empty($CS_homepage_sidebar)) : ?>small-7 <?php else: ?>small-12 <?php endif; ?>  columns">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						
@@ -29,6 +30,6 @@ get_header(); ?>
 
 </main>
 
-	<?php //get_sidebar(); ?>
+	<?php if(!empty($CS_homepage_sidebar)) : ?><?php get_sidebar(); ?><?php endif; ?>
 
 <?php get_footer(); ?>

@@ -26,11 +26,11 @@ $CS_tracking_code 		= $CS_redux['CS-tracking-code'];
 
 <!-- favicon -->
 <?php if(!empty($CS_favicon_iso)) :?>
-<link rel="shortcut icon" href="<?php echo $CS_favicon_iso; ?>" />
+	<link rel="shortcut icon" href="<?php echo $CS_favicon_iso; ?>" />
 <?php endif; ?>
 
 <?php if(!empty($CS_favicon_png)) :?>
-<link rel="icon" type="image/png" href="<?php echo $CS_favicon_png; ?>" />
+	<link rel="icon" type="image/png" href="<?php echo $CS_favicon_png; ?>" />
 <?php endif; ?>
 
 <?php wp_head(); ?>

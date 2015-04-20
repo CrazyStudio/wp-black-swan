@@ -121,6 +121,9 @@ add_action( 'widgets_init', 'black_swan_widgets_init' );
 
 /**
  * Numbered Pagination
+ *
+ * @link http://www.wpexplorer.com/pagination-wordpress-theme/
+ *
  */
 if ( !function_exists( 'wpex_pagination' ) ) {
 	
@@ -156,7 +159,10 @@ if ( !function_exists( 'wpex_pagination' ) ) {
 
 
 /**
- * ReduxFramework 
+ * ReduxFramework
+ *
+ * @link http://docs.reduxframework.com/core/advanced/embed/
+ *
  */
 if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/ReduxFramework/ReduxCore/framework.php' ) ) {
     require_once( dirname( __FILE__ ) . '/ReduxFramework/ReduxCore/framework.php' );
@@ -168,6 +174,9 @@ if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/ReduxFramewor
 
 /**
  * Add SVG upload support
+ *
+ * @link https://wordpress.org/support/topic/svg-upload-not-allowed
+ *
  */
 add_filter('upload_mimes', 'custom_upload_mimes');
 
@@ -178,7 +187,36 @@ function custom_upload_mimes ( $existing_mimes=array() ) {
 	return $existing_mimes;
 }
 
-
+/**
+ * Add Sidebar Classes
+ *
+ * Here's a working example you can post in your themes functions.php file 
+ * to add a sidebar class to the output of body_class.
+ * 
+ * @link https://codex.wordpress.org/Function_Reference/body_class
+ * 
+ */
+add_action( 'wp_head', create_function( '', 'ob_start();' ) );
+add_action( 'get_sidebar', 'my_sidebar_class' );
+add_action( 'wp_footer', 'my_sidebar_class_replace' );
+ 
+function my_sidebar_class( $name = '' ) {
+	static $class = 'withsidebar';
+	if ( ! empty( $name ) ) {
+		$class .= ' sidebar-' . $name;
+	}
+	my_sidebar_class_replace( $class );
+}
+ 
+function my_sidebar_class_replace( $c = '' ) {
+	static $class = '';
+	if ( ! empty( $c ) ) {
+		$class = $c;
+	} else {
+		echo str_replace( '<body class="', '<body class="' . $class . ' ', ob_get_clean() );
+		ob_start();
+	}
+}
 
 
 

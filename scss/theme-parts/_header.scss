@@ -2,6 +2,10 @@ body {
 	margin-top: ms(6) + ms(5);
 }
 
+body.withsidebar {
+	margin-top: ms(6) + ms(5);
+}
+
 .site-header-fixed  {
 	position: fixed;
     top: 0;
