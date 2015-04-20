@@ -20,6 +20,10 @@
 	color: map-get($site_static_color, body_text);
 }
 
+#secondary li a:hover {
+	color: map-get($site_dynamic_color, main_color);
+}
+
 #secondary h1 {
 	font-size: ms(2);
 }
@@ -28,7 +32,7 @@
 }
 
 #secondary .widget {
-	margin-bottom: ms(2);
+	margin-bottom: ms(3);
 }
 #secondary .post-date {
 	display: inherit;

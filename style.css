@@ -2127,6 +2127,9 @@ body.withsidebar {
 #secondary li a {
   color: #222; }
 
+#secondary li a:hover {
+  color: #cea525; }
+
 #secondary h1 {
   font-size: 23px; }
 
@@ -2134,7 +2137,7 @@ body.withsidebar {
   font-size: 23px; }
 
 #secondary .widget {
-  margin-bottom: 23px; }
+  margin-bottom: 26px; }
 
 #secondary .post-date {
   display: inherit;
