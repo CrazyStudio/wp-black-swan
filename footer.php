@@ -7,10 +7,13 @@
  * @package Black Swan
  */
 global $CS_redux;
+$CS_footer_copy 	= $CS_redux['CS-footer-copy'];
 ?>
 </div> <!-- site-content: Found bottom of header.php -->
 
 <footer id="site-footer" class="site-footer">
+
+
 	
 	<section class="footer-widgetarea row">
 		
@@ -47,7 +50,7 @@ global $CS_redux;
 	<section class="mq-footer-copy footer-copy row">
 
 		<div class="copy-body small-12 small-centered medium-uncentered medium-7 columns">
-			<copy>Copyright © 2015 Black Swan. All rights reserved.</copy>
+			<copy><?php if(!empty($CS_footer_copy)) : ?><?php echo $CS_footer_copy;?><?php else: ?>Copyright © 2015 Black Swan. All rights reserved.<?php endif; ?></copy>
 		</div>
 
 		<div class="copy-extra small-12 medium-5 columns">
