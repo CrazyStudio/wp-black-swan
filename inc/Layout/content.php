@@ -4,6 +4,9 @@
  */
 global $CS_redux;
 $CS_homepage_sidebar    = $CS_redux['CS-homepage-sidebar'];
+$CS_content_share   = $CS_redux['CS-homepage-sidebar'];
+$layout = $CS_redux['CS-classic-share']['enabled'];
+$pin_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>    
 
@@ -26,9 +29,24 @@ $CS_homepage_sidebar    = $CS_redux['CS-homepage-sidebar'];
         </div> <!-- content-content -->
 
         <div class="content-share">
-            <a class="share-icon" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-            <a class="share-icon" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-            <a class="share-icon" href="http://pinterest.com/"><i class="fa fa-google-plus"></i></a>
+        <?php if ($layout): foreach ($layout as $key=>$value) {
+            switch($key) {
+                case 'facebook': get_template_part( 'inc/share/facebook' );
+                break;
+         
+                case 'twitter': get_template_part( 'inc/share/twitter' );
+                break;
+         
+                case 'google-plus': get_template_part( 'inc/share/google-plus' );
+                break;
+         
+                case 'pinterest': get_template_part( 'inc/share/pinterest' );    
+                break;
+
+                case 'comments': get_template_part( 'inc/share/comments' );    
+                break;    
+            }
+        } endif; ?>
         </div> <!-- content-share -->
         
         <time class="content-date" datetime="<?php the_time('Y-m-d H:i'); ?>">

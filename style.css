@@ -2061,6 +2061,10 @@ body.withsidebar {
 .site-footer {
   padding-top: 37px; }
 
+.php-site-footer-no-widget {
+  border-top: none;
+  padding-top: 0; }
+
 .footer-widgetarea {
   padding-bottom: 37px; }
 

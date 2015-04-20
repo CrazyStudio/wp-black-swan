@@ -11,57 +11,34 @@ $CS_footer_copy 	= $CS_redux['CS-footer-copy'];
 ?>
 </div> <!-- site-content: Found bottom of header.php -->
 
-<footer id="site-footer" class="site-footer">
 
-	<?php	if ( ! is_active_sidebar( 'footer-big-widget' ) ) { return; } ?>
-	<?php	if ( ! is_active_sidebar( 'footer-medium-widget' ) ) { return; } ?>
-	<?php	if ( ! is_active_sidebar( 'footer-small-widget' ) ) { return; } ?>
+
+<footer id="site-footer" class="site-footer <?php if( ! is_active_sidebar( 'footer-big-widget') && ! is_active_sidebar( 'footer-medium-widget') && ! is_active_sidebar( 'footer-small-widget') ) { echo "php-site-footer-no-widget"; } ?>">
 	
-	<section class="footer-widgetarea row">
-		
-		<div class="mq-footer-widget footer-widget small-10 medium-6  small-centered medium-uncentered columns">
+	<?php	if( is_active_sidebar( 'footer-big-widget') or is_active_sidebar( 'footer-medium-widget') or is_active_sidebar( 'footer-small-widget') ) : ?>
+	
+		<section class="footer-widgetarea row">
 			
-			<?php dynamic_sidebar( 'footer-big-widget' ); ?>
+			<div class="mq-footer-widget footer-widget small-10 medium-6  small-centered medium-uncentered columns">
+				
+				<?php dynamic_sidebar( 'footer-big-widget' ); ?>
 
+			</div>
 
+			<div class="mq-footer-widget footer-widget small-5 medium-3 small-offset-1 medium-offset-0 large-offset-1 columns">
+				
+				<?php dynamic_sidebar( 'footer-medium-widget' ); ?>
 
+			</div>
 
-			<!-- <h3 class="widget-title">About</h3>
-			<p>This attention to details requires discipline. There is no room for sloppiness, for carelessness, for procrastination. Every detail is important because the end result is the sum of all the details involved in the creative process no matter what we are doing. There are no hierarchies when it comes to quality. Quality is there or is not there, and if is not there we have lost our time.</p>
+			<div class="mq-footer-widget footer-widget small-4 medium-3 large-2 small-offset-1 medium-offset-0 end columns">
+				
+				<?php dynamic_sidebar( 'footer-small-widget' ); ?>
 
-			<a href="">Buy This Theme</a> -->
-		</div>
+			</div>
+		</section> <!-- Footer-widgetarea -->
 
-		<div class="mq-footer-widget footer-widget small-5 medium-3 small-offset-1 medium-offset-0 large-offset-1 columns">
-			
-			<?php dynamic_sidebar( 'footer-medium-widget' ); ?>
-
-
-			<!-- <h3 class="widget-title">Categories</h3>
-			<ul>
-				<li><a href="#">Happiness</a></li>
-				<li><a href="#">Lifestyle</a></li>
-				<li><a href="#">Travel</a></li>
-				<li><a href="#">Design</a></li>
-				<li><a href="#">Music</a></li>
-			</ul> -->
-		</div>
-
-		<div class="mq-footer-widget footer-widget small-4 medium-3 large-2 small-offset-1 medium-offset-0 end columns">
-			
-			<?php dynamic_sidebar( 'footer-small-widget' ); ?>
-
-
-			<!-- <h3 class="widget-title">Social</h3>
-			<ul>
-				<li><a href="#">Instagram</a></li>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Youtube</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Tumblr</a></li>
-			</ul> -->
-		</div>
-	</section> <!-- Footer-widgetarea -->
+	<?php endif; ?>	
 
 	<section class="mq-footer-copy footer-copy row">
 
