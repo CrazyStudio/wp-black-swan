@@ -8,6 +8,9 @@
 	body {
 		margin-top: ms(8);
 	}
+	body.withsidebar {
+		margin-top: ms(8);
+	}
 
 	.site-navigation-toggle {
 		.toggle-button {
@@ -27,9 +30,6 @@
 		display: none;
 	}
 	
-	h1 {
-		font-size: ms(3);
-	}
 	.footer-copy,
 	.copy-extra{
 		text-align: center;
@@ -45,32 +45,69 @@
 	.copy-extra-item {
 		margin: 0 ms(-3) 0 ms(-3);
 	}
+	.content-title {
+	font-size: ms(2);
+	margin-bottom: ms(-3);
+	margin-top: ms(-6);
+	}
+
+	.content-content p {
+		font-size: ms(0);
+	}
+
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
 
-.menu-offset-3-item {
-	margin-left: 12.499999% !important;
-}
+	.menu-offset-3-item {
+		margin-left: 12.499999% !important;
+	}
 
-.menu-offset-2-item {
-	margin-left: 25% !important;
-}
+	.menu-offset-2-item {
+		margin-left: 25% !important;
+	}
 
-.menu-offset-1-item {
-	margin-left: 37.4999999% !important;
-}
+	.menu-offset-1-item {
+		margin-left: 37.4999999% !important;
+	}
 
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
-body {
-	margin-top: ms(6);
-}
+	body {
+		margin-top: ms(6);
+	}
 
- } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+	.mq-content-title {
+		font-size: ms(3);
+	}
+
+	.mq-content-content p {
+		font-size: ms(0);
+	}
+
+	.mq-footer-widget .widget-title {
+		font-size: ms(2);
+	}
+	.mq-footer-widget p {
+		font-size: ms(0);
+	}
+	.mq-footer-widget li {
+		font-size: ms(0);
+	}
+	.mq-footer-widget a {
+		font-size: ms(0);
+	}
+	.mq-footer-copy .copy-body {
+		font-size: ms(0);
+	}
+	.mq-footer-copy .copy-extra-item {
+		font-size: ms(0);
+	}
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
 @media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */

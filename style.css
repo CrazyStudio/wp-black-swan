@@ -2105,6 +2105,39 @@ body.withsidebar {
 /*--------------------------------------------------------------
 # sidebar
 --------------------------------------------------------------*/
+#secondary {
+  font-size: 14px;
+  margin-bottom: 42px; }
+
+#secondary p {
+  font-size: 14px; }
+
+#secondary li {
+  font-size: 14px;
+  list-style: none;
+  margin-bottom: 6px; }
+
+#secondary ul {
+  margin-left: 0; }
+
+#secondary li a {
+  color: #222; }
+
+#secondary h1 {
+  font-size: 23px; }
+
+#secondary h1 {
+  font-size: 23px; }
+
+#secondary .widget {
+  margin-bottom: 23px; }
+
+#secondary .post-date {
+  display: inherit;
+  list-style: none;
+  color: #999999;
+  font-weight: 300; }
+
 /*--------------------------------------------------------------
 # comments
 --------------------------------------------------------------*/
@@ -2224,6 +2257,9 @@ a:hover {
   body {
     margin-top: 96px; }
 
+  body.withsidebar {
+    margin-top: 96px; }
+
   .site-navigation-toggle .toggle-button {
     display: block;
     float: none;
@@ -2237,9 +2273,6 @@ a:hover {
   .site-description {
     display: none; }
 
-  h1 {
-    font-size: 26px; }
-
   .footer-copy,
   .copy-extra {
     text-align: center; }
@@ -2251,7 +2284,15 @@ a:hover {
     margin-top: 14px; }
 
   .copy-extra-item {
-    margin: 0 9px 0 9px; } }
+    margin: 0 9px 0 9px; }
+
+  .content-title {
+    font-size: 23px;
+    margin-bottom: 9px;
+    margin-top: 4px; }
+
+  .content-content p {
+    font-size: 14px; } }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (min-width: 40.063em) {
   .menu-offset-3-item {
@@ -2265,41 +2306,34 @@ a:hover {
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   body {
-    margin-top: 59px; } }
+    margin-top: 59px; }
+
+  .mq-content-title {
+    font-size: 26px; }
+
+  .mq-content-content p {
+    font-size: 14px; }
+
+  .mq-footer-widget .widget-title {
+    font-size: 23px; }
+
+  .mq-footer-widget p {
+    font-size: 14px; }
+
+  .mq-footer-widget li {
+    font-size: 14px; }
+
+  .mq-footer-widget a {
+    font-size: 14px; }
+
+  .mq-footer-copy .copy-body {
+    font-size: 14px; }
+
+  .mq-footer-copy .copy-extra-item {
+    font-size: 14px; } }
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 /* min-width 1025px, large screens */
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 /* min-width 1441px, xlarge screens */
 /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 /* min-width 1921px, xxlarge screens */
-#secondary {
-  font-size: 14px; }
-
-#secondary p {
-  font-size: 14px; }
-
-#secondary li {
-  font-size: 14px;
-  list-style: none;
-  margin-bottom: 6px; }
-
-#secondary ul {
-  margin-left: 0; }
-
-#secondary li a {
-  color: #222; }
-
-#secondary h1 {
-  font-size: 23px; }
-
-#secondary h1 {
-  font-size: 23px; }
-
-#secondary .widget {
-  margin-bottom: 23px; }
-
-#secondary .post-date {
-  display: inherit;
-  list-style: none;
-  color: #999999;
-  font-weight: 300; }

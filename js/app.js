@@ -55,10 +55,10 @@ jQuery(document).ready(function($) {
 		}
 
 		// Fix a bugg in scroll function when the menu is to high (on weed...)
-		if ($( ".header-fixed" ).css( "bottom" ) === "auto" ) {
-			$( ".header-fixed" ).css( "bottom", "0px" );
+		if ($( ".site-header-fixed" ).css( "bottom" ) === "auto" ) {
+			$( ".site-header-fixed" ).css( "bottom", "0px" );
 		} else {
-			$( ".header-fixed" ).css( "bottom", "auto" );
+			$( ".site-header-fixed" ).css( "bottom", "auto" );
 		}
 	});	
 });

@@ -13,15 +13,15 @@ $CS_homepage_sidebar    = $CS_redux['CS-homepage-sidebar'];
         </div> <!-- content-thumbnail -->
     <?php endif; ?> 
     
-    <div class="content-header <?php if(!empty($CS_homepage_sidebar)) : ?>small-11 large-12<?php else: ?>small-11 large-8<?php endif; ?> small-centered columns">
+    <div class="content-header <?php if(!empty($CS_homepage_sidebar)) : ?>small-12 large-12<?php else: ?>small-11 medium-9 large-8<?php endif; ?> small-centered columns">
 
         <span class="content-category">
             <?php the_category( ', ' ); ?>
         </span> <!-- content-category -->
-
-        <?php the_title( sprintf( '<h1 class="content-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
         
-        <div class="content-content">
+        <h2 class="<?php if(!empty($CS_homepage_sidebar)) : ?>mq-content-title<?php endif; ?> content-title"><a rel="bookmark" href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+        <div class="<?php if(!empty($CS_homepage_sidebar)) : ?>mq-content-content<?php endif; ?> content-content">
             <?php the_content(__('Continue Reading')); ?>
         </div> <!-- content-content -->
 

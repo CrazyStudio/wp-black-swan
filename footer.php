@@ -14,14 +14,14 @@ global $CS_redux;
 	
 	<section class="footer-widgetarea row">
 		
-		<div class="footer-widget small-10 medium-6  small-centered medium-uncentered columns">
+		<div class="mq-footer-widget footer-widget small-10 medium-6  small-centered medium-uncentered columns">
 			<h3 class="widget-title">About</h3>
 			<p>This attention to details requires discipline. There is no room for sloppiness, for carelessness, for procrastination. Every detail is important because the end result is the sum of all the details involved in the creative process no matter what we are doing. There are no hierarchies when it comes to quality. Quality is there or is not there, and if is not there we have lost our time.</p>
 
 			<a href="">Buy This Theme</a>
 		</div>
 
-		<div class="footer-widget small-5 medium-3 small-offset-1 medium-offset-0 large-offset-1 columns">
+		<div class="mq-footer-widget footer-widget small-5 medium-3 small-offset-1 medium-offset-0 large-offset-1 columns">
 			<h3 class="widget-title">Categories</h3>
 			<ul>
 				<li><a href="#">Happiness</a></li>
@@ -32,7 +32,7 @@ global $CS_redux;
 			</ul>
 		</div>
 
-		<div class=" footer-widget small-5 medium-3 large-2 small-offset-1 medium-offset-0 end columns">
+		<div class="mq-footer-widget footer-widget small-4 medium-3 large-2 small-offset-1 medium-offset-0 end columns">
 			<h3 class="widget-title">Social</h3>
 			<ul>
 				<li><a href="#">Instagram</a></li>
@@ -44,13 +44,13 @@ global $CS_redux;
 		</div>
 	</section> <!-- Footer-widgetarea -->
 
-	<section class="footer-copy row">
+	<section class="mq-footer-copy footer-copy row">
 
-		<div class="copy-body small-12 medium-6 columns">
+		<div class="copy-body small-12 small-centered medium-uncentered medium-7 columns">
 			<copy>Copyright © 2015 Black Swan. All rights reserved.</copy>
 		</div>
 
-		<div class="copy-extra small-12 medium-6 columns">
+		<div class="copy-extra small-12 medium-5 columns">
 			<ul class="copy-extra-list">
 				<li class="copy-extra-item"><a href="">About</a></li>
 				<li class="copy-extra-item"><a href="">Press Kit</a></li>

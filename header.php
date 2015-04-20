@@ -11,6 +11,7 @@ $CS_favicon_iso 		= $CS_redux['CS-add-favicon-iso']['url'];
 $CS_favicon_png 		= $CS_redux['CS-add-favicon-png']['url'];
 $CS_site_logo 			= $CS_redux['CS-add-logo-field']['url'];
 $CS_tracking_code 		= $CS_redux['CS-tracking-code'];
+$CS_homepage_sidebar    = $CS_redux['CS-homepage-sidebar'];
 ?>
 
 <!DOCTYPE html>
@@ -149,4 +150,7 @@ $CS_tracking_code 		= $CS_redux['CS-tracking-code'];
 
 </div> <!-- header-fixed -->
 
-<div id="site-content" class="site-content row">
+<div id="site-content" class="site-content <?php if(!empty($CS_homepage_sidebar)) : ?>small-collapse medium-uncollapse<?php else: ?>small-collapse large-uncollapse<?php endif; ?> row">
+
+
+
