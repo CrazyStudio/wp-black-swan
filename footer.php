@@ -54,12 +54,23 @@ $CS_footer_copy 	= $CS_redux['CS-footer-copy'];
 		</div>
 
 		<div class="copy-extra small-12 medium-5 columns">
-			<ul class="copy-extra-list">
+			<?php $defaults = array(
+					'container' 		=> false,
+					'theme_location' 	=> 'footer',
+					'menu_class' 		=> 'copy-extra-list',
+					
+					);
+				wp_nav_menu( $defaults ); ?>
+
+
+
+
+			<!-- <ul class="copy-extra-list">
 				<li class="copy-extra-item"><a href="">About</a></li>
 				<li class="copy-extra-item"><a href="">Press Kit</a></li>
 				<li class="copy-extra-item"><a href="">Contact</a></li>
 
-			</ul>
+			</ul> -->
 		</div>
 	</section> <!-- footer-copy -->
 

@@ -28,7 +28,7 @@ a:hover {
 	color: darken(map-get($site_dynamic_color, main_color), 30%);
 }
 
-.copy-extra-item a,
+.copy-extra-list a,
 .content-category,
 .content-date,
 .footer-copy,
@@ -56,7 +56,7 @@ a:hover {
 	fill: map-get($site_dynamic_color, main_color);
 }
 
-.copy-extra-item a:hover,
+.copy-extra-list a:hover,
 .toggle-button:hover,
 .site-navigation .sub-menu > li a:hover {
 	color: map-get($site_dynamic_color, main_color);

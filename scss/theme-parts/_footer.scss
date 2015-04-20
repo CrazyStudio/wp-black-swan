@@ -37,7 +37,10 @@
 .copy-extra-list {
 	margin-left: 0;
 }
-
+.copy-extra-list li {
+	display: inline;
+	margin-left: ms(2);
+}
 .copy-extra-item {
 	display: inline;
 	margin-left: ms(2);

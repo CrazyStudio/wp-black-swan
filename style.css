@@ -2089,6 +2089,10 @@ body.withsidebar {
 .copy-extra-list {
   margin-left: 0; }
 
+.copy-extra-list li {
+  display: inline;
+  margin-left: 23px; }
+
 .copy-extra-item {
   display: inline;
   margin-left: 23px; }
@@ -2207,7 +2211,7 @@ a:hover {
 .content-share .share-icon:hover i {
   color: #4c3d0e; }
 
-.copy-extra-item a,
+.copy-extra-list a,
 .content-category,
 .content-date,
 .footer-copy,
@@ -2232,7 +2236,7 @@ a:hover {
 .icon-search:hover {
   fill: #cea525; }
 
-.copy-extra-item a:hover,
+.copy-extra-list a:hover,
 .toggle-button:hover,
 .site-navigation .sub-menu > li a:hover {
   color: #cea525; }
