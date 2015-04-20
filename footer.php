@@ -14,47 +14,47 @@ global $CS_redux;
 	
 	<section class="footer-widgetarea row">
 		
-		<div class="footer-widget large-6 columns">
+		<div class="footer-widget small-10 medium-6  small-centered medium-uncentered columns">
 			<h3 class="widget-title">About</h3>
 			<p>This attention to details requires discipline. There is no room for sloppiness, for carelessness, for procrastination. Every detail is important because the end result is the sum of all the details involved in the creative process no matter what we are doing. There are no hierarchies when it comes to quality. Quality is there or is not there, and if is not there we have lost our time.</p>
 
 			<a href="">Buy This Theme</a>
 		</div>
 
-		<div class="footer-widget large-3 large-offset-1 columns">
+		<div class="footer-widget small-5 medium-3 small-offset-1 medium-offset-0 large-offset-1 columns">
 			<h3 class="widget-title">Categories</h3>
 			<ul>
-				<li>Happiness</li>
-				<li>Lifestyle</li>
-				<li>Travel</li>
-				<li>Design</li>
-				<li>Music</li>
+				<li><a href="#">Happiness</a></li>
+				<li><a href="#">Lifestyle</a></li>
+				<li><a href="#">Travel</a></li>
+				<li><a href="#">Design</a></li>
+				<li><a href="#">Music</a></li>
 			</ul>
 		</div>
 
-		<div class=" footer-widget large-2 columns">
+		<div class=" footer-widget small-5 medium-3 large-2 small-offset-1 medium-offset-0 end columns">
 			<h3 class="widget-title">Social</h3>
 			<ul>
-				<li>Instagram</li>
-				<li>Facebook</li>
-				<li>Youtube</li>
-				<li>Twitter</li>
-				<li>Tumblr</li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Youtube</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Tumblr</a></li>
 			</ul>
 		</div>
 	</section> <!-- Footer-widgetarea -->
 
 	<section class="footer-copy row">
 
-		<div class="copy-body small-6 columns">
+		<div class="copy-body small-12 medium-6 columns">
 			<copy>Copyright © 2015 Black Swan. All rights reserved.</copy>
 		</div>
 
-		<div class="copy-extra small-6 columns">
+		<div class="copy-extra small-12 medium-6 columns">
 			<ul class="copy-extra-list">
-				<li class="copy-extra-item">About</li>
-				<li class="copy-extra-item">Press Kit</li>
-				<li class="copy-extra-item">Contact</li>
+				<li class="copy-extra-item"><a href="">About</a></li>
+				<li class="copy-extra-item"><a href="">Press Kit</a></li>
+				<li class="copy-extra-item"><a href="">Contact</a></li>
 
 			</ul>
 		</div>
@@ -62,7 +62,7 @@ global $CS_redux;
 
 </footer> <!-- site-footer -->
 
-<pre><?php print_r($CS_redux); ?></pre>
+<!-- <pre><?php print_r($CS_redux); ?></pre> -->
 
 <?php wp_footer(); ?>
 

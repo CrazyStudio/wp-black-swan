@@ -1815,6 +1815,16 @@ button {
 h1 {
   font-size: 42px; }
 
+a {
+  transition: color 0.3s ease; }
+
+a:hover {
+  transition: color 0.3s ease; }
+
+li {
+  list-style-type: square;
+  list-style-image: url(images/square.svg); }
+
 /* === Pages === */
 /*--------------------------------------------------------------
 # index
@@ -1932,8 +1942,10 @@ body {
   margin-bottom: 14px;
   text-align: center; }
 
-.social-icon i {
-  padding: 0 5px 0 5px; }
+.social-icon {
+  padding: 0 6px 0 6px;
+  margin-right: -2px;
+  margin-left: -2px; }
 
 .toggle-button {
   float: right;
@@ -1953,8 +1965,8 @@ body {
   vertical-align: 3px; }
 
 .js-css-toggle {
-  max-height: 3000px !important;
-  transition: max-height 0.9s ease-in; }
+  max-height: 700px !important;
+  transition: all 0.5s ease; }
 
 .js-css-toggle-animation {
   transform: rotate(45deg);
@@ -1963,12 +1975,13 @@ body {
 .site-navigation {
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.4s ease; }
+  transition: all 0.6s ease; }
 
 .site-navigation ul > li {
   padding: 0;
   text-align: center;
-  list-style-type: none; }
+  list-style-type: none;
+  list-style-image: none; }
 
 .sub-menu {
   margin: 0; }
@@ -1984,15 +1997,22 @@ body {
 
 .search-submit {
   position: absolute;
-  top: 11px;
-  left: 87%;
+  top: 0;
+  left: 84%;
   margin: 0;
   padding: 0;
-  background: none; }
+  background: none;
+  padding: 11px;
+  padding-bottom: 7px;
+  outline: none; }
 
 .icon-search {
   width: 16px;
-  height: 16px; }
+  height: 16px;
+  transition: color 0.5s ease; }
+
+.icon-search:hover {
+  transition: color 0.5s ease; }
 
 .site-search ::-webkit-input-placeholder {
   font-weight: 200;
@@ -2054,13 +2074,30 @@ body {
 .copy-extra {
   text-align: right; }
 
+.footer-widget ul {
+  margin-left: 16px; }
+
+.footer-widget li a {
+  color: #222; }
+
+.footer-widget li a:hover {
+  color: #cea525; }
+
 .copy-extra-list {
-  list-style-type: none;
   margin-left: 0; }
 
 .copy-extra-item {
   display: inline;
   margin-left: 23px; }
+
+.footer-center {
+  text-align: center; }
+
+.footer-center ul {
+  margin-left: 0; }
+
+.footer-center li {
+  list-style: none; }
 
 /*--------------------------------------------------------------
 # sidebar
@@ -2093,6 +2130,10 @@ body {
 ul.page-numbers {
   margin-left: 0;
   margin-bottom: 0; }
+
+.prev.page-numbers:hover,
+.next.page-numbers:hover {
+  color: #cea525; }
 
 /*--------------------------------------------------------------
 # related-posts
@@ -2130,10 +2171,12 @@ a:hover {
 .content-share .share-icon:hover i {
   color: #4c3d0e; }
 
+.copy-extra-item a,
 .content-category,
 .content-date,
 .footer-copy,
 .copy-extra-button,
+.search-button:hover,
 .site-description,
 .site-social a:hover,
 .toggle-button .toggle-title,
@@ -2147,10 +2190,15 @@ a:hover {
 .site-navigation .sub-menu > li a:hover {
   color: #222; }
 
-.more-link,
-.share-icon i,
-.content-category a,
-.content-content .more-link {
+.icon-search {
+  fill: #999999; }
+
+.icon-search:hover {
+  fill: #cea525; }
+
+.copy-extra-item a:hover,
+.toggle-button:hover,
+.site-navigation .sub-menu > li a:hover {
   color: #cea525; }
 
 .site-search ::-webkit-input-placeholder {
@@ -2187,7 +2235,20 @@ a:hover {
     display: none; }
 
   h1 {
-    font-size: 26px; } }
+    font-size: 26px; }
+
+  .footer-copy,
+  .copy-extra {
+    text-align: center; }
+
+  .footer-widget:first-child {
+    margin-bottom: 42px; }
+
+  .copy-extra {
+    margin-top: 14px; }
+
+  .copy-extra-item {
+    margin: 0 9px 0 9px; } }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (min-width: 40.063em) {
   .menu-offset-3-item {

@@ -6,3 +6,16 @@ button  {
 h1 {
 	font-size: ms(5);
 }
+
+a {
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	transition: color 0.3s ease;
+}
+
+li {
+	list-style-type: square;
+	list-style-image: url(images/square.svg);
+}

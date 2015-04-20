@@ -41,8 +41,13 @@ body {
 	text-align: center;
 }
 
+.social-icon {
+	padding: 0 ms(-4) 0 ms(-4);
+	margin-right: -2px;
+	margin-left: -2px;
+}
+
 .social-icon i {
-	padding: 0 ms(-5) 0 ms(-5);
 }
 
 .toggle-button {
@@ -66,8 +71,8 @@ body {
 }
 
 .js-css-toggle {
-    max-height: 3000px !important;
-    transition: max-height 0.9s ease-in;
+    max-height: 700px !important;
+    transition: all 0.5s ease;
 }
 
 .js-css-toggle-animation {
@@ -78,13 +83,14 @@ body {
 .site-navigation {
 	max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.4s ease;
+    transition: all 0.6s ease;
 }
 
 .site-navigation ul > li {
 	padding: 0;
 	text-align: center;
 	list-style-type: none;
+	list-style-image: none;
 }
 
 .sub-menu {
@@ -104,16 +110,24 @@ body {
 
 .search-submit {
 	position: absolute;
-	top: 11px;
-	left: 87%;
+	top: 0;
+	left: 84%;
 	margin: 0;
 	padding: 0;
 	background: none;
+	padding: 11px;
+  	padding-bottom: 7px;
+  	outline: none;
 }
 
 .icon-search {
 	width: ms(1);
 	height: ms(1);
+	transition: color 0.5s ease;
+}
+
+.icon-search:hover {
+	transition: color 0.5s ease;
 }
 
 .site-search ::-webkit-input-placeholder {
@@ -138,7 +152,7 @@ body {
 
 .site-search input:focus::-webkit-input-placeholder {
 	opacity: 0;
-	transition: opacity 0.5s ease-out;
+	transition: opacity 0.5s ease-out;	
 }
 
 .site-search input:focus:-moz-placeholder {

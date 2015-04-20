@@ -2,6 +2,7 @@
 // Small screens
 @media only screen { } /* Define mobile styles */
 
+// Small screens only
 @media only screen and (max-width: 40em) { 
 
 	body {
@@ -29,7 +30,21 @@
 	h1 {
 		font-size: ms(3);
 	}
+	.footer-copy,
+	.copy-extra{
+		text-align: center;
+	}
+	.footer-widget:first-child {
+		margin-bottom: ms(5);
+	} 
+	
+	.copy-extra {
+		margin-top: ms(-1);
+	}
 
+	.copy-extra-item {
+		margin: 0 ms(-3) 0 ms(-3);
+	}
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 // Medium screens

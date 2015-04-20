@@ -25,14 +25,30 @@
 .copy-extra {
 	text-align: right;
 }
-
-
+.footer-widget ul {
+	margin-left: ms(1);
+}
+.footer-widget li a {
+	color: #222;
+}
+.footer-widget li a:hover {
+	color: #cea525;
+}
 .copy-extra-list {
-	list-style-type: none;
 	margin-left: 0;
 }
 
 .copy-extra-item {
 	display: inline;
 	margin-left: ms(2);
+}
+.footer-center {
+	text-align: center;
+}
+
+.footer-center ul {
+	margin-left: 0;
+}
+.footer-center li {
+	list-style: none;
 }

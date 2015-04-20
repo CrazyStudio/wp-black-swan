@@ -27,3 +27,12 @@ ul.page-numbers {
     margin-left: 0;
     margin-bottom: 0;
 }
+
+.page-numbers .current {
+
+}
+
+.prev.page-numbers:hover,
+.next.page-numbers:hover {
+    color: map-get($site_dynamic_color, main_color);
+}
