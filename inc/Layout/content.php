@@ -4,9 +4,9 @@
  */
 global $CS_redux;
 $CS_homepage_sidebar    = $CS_redux['CS-homepage-sidebar'];
-$CS_content_share   = $CS_redux['CS-homepage-sidebar'];
-$layout = $CS_redux['CS-classic-share']['enabled'];
-$pin_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
+$CS_content_share       = $CS_redux['CS-homepage-sidebar'];
+$CS_classic_share       = $CS_redux['CS-classic-share']['enabled'];
+$pin_image              = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>    
 
@@ -29,7 +29,7 @@ $pin_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
         </div> <!-- content-content -->
 
         <div class="content-share">
-        <?php if ($layout): foreach ($layout as $key=>$value) {
+        <?php if ($CS_classic_share): foreach ($CS_classic_share as $key=>$value) {
             switch($key) {
                 case 'facebook': get_template_part( 'inc/share/facebook' );
                 break;

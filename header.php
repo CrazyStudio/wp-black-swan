@@ -10,8 +10,8 @@ global $CS_redux;
 $CS_favicon_iso 		= $CS_redux['CS-add-favicon-iso']['url'];
 $CS_favicon_png 		= $CS_redux['CS-add-favicon-png']['url'];
 $CS_site_logo 			= $CS_redux['CS-add-logo-field']['url'];
-$CS_tracking_code 		= $CS_redux['CS-tracking-code'];
 $CS_homepage_sidebar    = $CS_redux['CS-homepage-sidebar'];
+$CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 ?>
 
 <!DOCTYPE html>
@@ -104,44 +104,42 @@ $CS_homepage_sidebar    = $CS_redux['CS-homepage-sidebar'];
             </div> <!-- site-search -->
 
             <div id="site-social" class="site-social small-centered small-12 columns">
-                <a class="social-icon" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+				<?php if ($CS_header_social): foreach ($CS_header_social as $key=>$value) {
+		            switch($key) {
+		                case 'facebook': get_template_part( 'inc/social/facebook' );
+		                break;
+		         
+		                case 'twitter': get_template_part( 'inc/social/twitter' );
+		                break;
+		         
+		                case 'google-plus': get_template_part( 'inc/social/googleplus' );
+		                break;
+		         
+		                case 'pinterest': get_template_part( 'inc/social/pinterest' );    
+		                break;
+
+		                case 'instagram': get_template_part( 'inc/social/instagram' );    
+		                break;
+
+		                case 'tumblr': get_template_part( 'inc/social/tumblr' );    
+		                break; 
+
+		                case 'youtube': get_template_part( 'inc/social/youtube' );    
+		                break; 
+
+		                case 'rss': get_template_part( 'inc/social/rss' );    
+		                break;     
+		            }
+        		} endif; ?>
+
+
+                <!-- <a class="social-icon" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
                 <a class="social-icon" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
                 <a class="social-icon" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                 <a class="social-icon" href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
                 <a class="social-icon" href="http://plus.google.com/"><i class="fa fa-google-plus"></i></a>
                 <a class="social-icon" href="http://"><i class="fa fa-tumblr"></i></a>
-                <a class="social-icon" href="http://youtube.com/"><i class="fa fa-youtube-play"></i></a>   
-				<?php 
-				$layout = $CS_redux['opt-homepage-layout']['enabled'];
- 
-				if ($layout): foreach ($layout as $key=>$value) {
-				 
-				    switch($key) {
-				 
-				        case 'slider': echo('<a class="social-icon" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>');
-				        break;
-				 
-				        case 'highlights': get_template_part( 'templates/content', 'highlights' );
-				        break;
-				 
-				        case 'services': get_template_part( 'templates/content', 'services' );
-				        break;
-				 
-				        case 'staticpage': get_template_part( 'templates/content', 'staticpage' );    
-				        break;  
-				 
-				    }
-				 
-				}
-				 
-				endif; ?>
-
-
-
-
-
-
-
+                <a class="social-icon" href="http://youtube.com/"><i class="fa fa-youtube-play"></i></a>    -->
             </div> <!-- site-social -->
 
         </nav> <!-- site-navigation -->
