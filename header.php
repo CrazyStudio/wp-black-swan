@@ -131,15 +131,6 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 		                break;     
 		            }
         		} endif; ?>
-
-
-                <!-- <a class="social-icon" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                <a class="social-icon" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                <a class="social-icon" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                <a class="social-icon" href="http://pinterest.com/"><i class="fa fa-pinterest"></i></a>
-                <a class="social-icon" href="http://plus.google.com/"><i class="fa fa-google-plus"></i></a>
-                <a class="social-icon" href="http://"><i class="fa fa-tumblr"></i></a>
-                <a class="social-icon" href="http://youtube.com/"><i class="fa fa-youtube-play"></i></a>    -->
             </div> <!-- site-social -->
 
         </nav> <!-- site-navigation -->

@@ -53,6 +53,6 @@ $pin_image              = wp_get_attachment_url( get_post_thumbnail_id($post->ID
             <?php the_time('F j, Y'); ?>
         </time> <!-- content-date -->
 
-    </div>
+    </div>  
 
 </article>

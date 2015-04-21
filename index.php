@@ -30,6 +30,5 @@ get_header(); ?>
 
 </main>
 
-	<?php if(!empty($CS_homepage_sidebar)) : ?><?php get_sidebar(); ?><?php endif; ?>
-
+<?php if(!empty($CS_homepage_sidebar)) : ?><?php get_sidebar(); ?><?php endif; ?>
 <?php get_footer(); ?>

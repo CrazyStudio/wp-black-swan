@@ -1,4 +1,7 @@
-body,
+body {
+	color: map-get($site_static_color, body_text);
+}
+
 button  {
 	font-family: "lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
@@ -18,4 +21,52 @@ a:hover {
 li {
 	list-style-type: square;
 	list-style-image: url(images/square.svg);
+}
+
+p.lead {
+}
+
+table {
+	width: 100%;
+	margin-bottom: ms(4);
+}
+blockquote {
+}
+
+blockquote cite {
+	font-size: ms(0);
+	font-weight: 600;
+	margin-top: ms(-2);
+	margin-bottom: ms(-4);
+	a {
+		color: map-get($site_dynamic_color, main_color);
+	}
+	
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p.intro,
+strong,
+blockquote,
+blockquote p {
+	color: map-get($site_static_color, header_text);
+}
+
+pre {
+  border: 1px solid #b5b5b5;
+  margin-bottom: ms(4);
+  padding-bottom: 1.5em;
+  padding-left: 2.25em;
+  padding-right: 2.25em;
+  padding-top: 1.5em;
+  position: relative;
+  white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }

@@ -1,0 +1,152 @@
+.single-body {
+	margin-top: ms(2);
+}
+
+p {
+	margin-bottom: ms(4);
+}
+.single-category,
+.single-category a {
+	color: #999;
+	font-weight: 300;
+
+}
+.intro {
+	font-size: 1.125rem;
+  	font-weight: 600;
+  	-webkit-font-smoothing: antialiased;
+  	line-height: 1.75;
+}
+
+.single-by {
+	font-weight: 500;
+	font-style: italic;
+	font-size: ms(0);
+}
+
+.single-author {
+	font-weight: 300;
+}
+.single-title {
+	font-weight: 600;
+}
+
+.single-date {
+	font-weight: 300;
+	color: #999999;
+}
+//8.33333
+.CS-pull-left {
+	margin-top: - ms(-5);
+  float: left;		
+  margin-left: - ms(10);
+  //padding-left: 36px;
+  padding-right: ms(5);
+  text-align: right;
+  width: calc(50px + 50%);
+}
+
+.CS-pull-right {
+	margin-top: - ms(-5);
+  	float: right;		
+  	margin-right: - ms(10);
+  	//padding-left: 36px;
+  	padding-left: ms(5);
+  	text-align: left;
+  	width: calc(50px + 50%);
+}
+
+.CS-pull-left + .CS-pull-right  {
+  margin-right: -150px;
+  padding-left: 47px;
+  width: calc(253px + 50%);
+}
+
+.wp-caption-text {
+	font-size: ms(0);
+  	padding: ms(-1) 0 0 0;
+  	text-align: center;
+  	font-weight: 400;
+  	color: #999;
+}
+
+.aligncenter {
+	margin-left: -16.666666666%;
+	max-width: 133.333332%;
+	margin-bottom: ms(4);
+	margin-top: 0;
+}
+
+hr {
+	margin: ms(4) 0 ms(4) 0;
+}
+
+
+// .CS-pull-right {
+//   float: right;
+//   margin-right: -180px;
+//   padding-left: ms(5);
+//   padding-right: 36px;
+//   text-align: left;
+//   width: calc(200px + 50%);
+// }
+
+blockquote {
+ 
+  border: none;
+  font-weight: 900;
+  line-height: 1.4;
+  margin-bottom: ms(-2);
+  padding: 0;
+  //text-transform: uppercase;
+}
+
+blockquote p {
+	font-weight: 600;
+	font-size: ms(2);
+	margin-bottom: 0;
+}
+
+.alignright {
+	margin: 0;
+	margin-right: - ms(10);
+	float: right;
+	padding-left: ms(4);
+	padding-bottom: ms(4);
+	width: ms(14);
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+	.CS-pull-left {
+		float: none;		
+		margin-left: 0px;
+		//padding-left: 36px;
+		padding-right: ms(5);
+		padding-left: ms(5);
+		text-align: right;
+		width: 100%;
+	}
+	.single-thumbnail {
+		margin-left: -16px;
+		margin-right: -16px;
+	}
+
+	
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (max-width: 40em) { 
+
+	.CS-pull-left {
+		float: none;		
+		margin-left: 0px;
+		//padding-left: 36px;
+		padding-right: ms(2);
+		padding-left: ms(2);
+		text-align: right;
+		width: 100%;
+	}
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+
