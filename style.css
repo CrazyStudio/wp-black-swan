@@ -1985,21 +1985,36 @@ a {
 a:hover {
   transition: color 0.3s ease; }
 
-li {
+ul li {
   list-style-type: square;
   list-style-image: url(images/square.svg); }
+
+ol {
+  margin-bottom: 37px; }
 
 table {
   width: 100%;
   margin-bottom: 37px; }
 
+blockquote {
+  padding: 0 37px 0 37px 0; }
+
 blockquote cite {
   font-size: 14px;
-  font-weight: 600;
-  margin-top: 10px;
-  margin-bottom: 6px; }
+  font-weight: 500;
+  line-height: 1.4; }
+
+blockquote cite:before {
+  content: none; }
+
+blockquote cite {
+  font-size: 14px;
+  font-weight: 500; }
   blockquote cite a {
     color: #cea525; }
+
+.CS-pull-left blockquote {
+  padding: 0; }
 
 h1,
 h2,
@@ -2048,6 +2063,9 @@ p {
 .single-category a {
   color: #999;
   font-weight: 300; }
+
+.single-category a:hover {
+  color: #cea525; }
 
 .intro {
   font-size: 1.125rem;
@@ -2108,11 +2126,7 @@ hr {
   margin: 37px 0 37px 0; }
 
 blockquote {
-  border: none;
-  font-weight: 900;
-  line-height: 1.4;
-  margin-bottom: 10px;
-  padding: 0; }
+  border: none; }
 
 blockquote p {
   font-weight: 600;
@@ -2126,6 +2140,12 @@ blockquote p {
   padding-left: 37px;
   padding-bottom: 37px;
   width: 406px; }
+
+.text-center {
+  text-align: center; }
+
+ol {
+  list-style-image: none; }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .CS-pull-left {
@@ -2665,3 +2685,44 @@ a:hover {
 /* min-width 1441px, xlarge screens */
 /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 /* min-width 1921px, xxlarge screens */
+.gallery {
+  margin-bottom: 1.5em; }
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+.gallery-caption {
+  display: block; }
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%; }

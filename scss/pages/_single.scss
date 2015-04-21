@@ -1,7 +1,6 @@
 .single-body {
 	margin-top: ms(2);
 }
-
 p {
 	margin-bottom: ms(4);
 }
@@ -9,7 +8,9 @@ p {
 .single-category a {
 	color: #999;
 	font-weight: 300;
-
+}
+.single-category a:hover {
+	color: map-get($site_dynamic_color, main_color);
 }
 .intro {
 	font-size: 1.125rem;
@@ -27,6 +28,7 @@ p {
 .single-author {
 	font-weight: 300;
 }
+
 .single-title {
 	font-weight: 600;
 }
@@ -35,7 +37,7 @@ p {
 	font-weight: 300;
 	color: #999999;
 }
-//8.33333
+
 .CS-pull-left {
 	margin-top: - ms(-5);
   float: left;		
@@ -81,23 +83,8 @@ hr {
 	margin: ms(4) 0 ms(4) 0;
 }
 
-
-// .CS-pull-right {
-//   float: right;
-//   margin-right: -180px;
-//   padding-left: ms(5);
-//   padding-right: 36px;
-//   text-align: left;
-//   width: calc(200px + 50%);
-// }
-
 blockquote {
- 
   border: none;
-  font-weight: 900;
-  line-height: 1.4;
-  margin-bottom: ms(-2);
-  padding: 0;
   //text-transform: uppercase;
 }
 
@@ -115,6 +102,19 @@ blockquote p {
 	padding-bottom: ms(4);
 	width: ms(14);
 }
+
+.text-center {
+	text-align: center;
+}
+
+
+ol {
+	list-style-image: none;
+}
+
+
+
+
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 

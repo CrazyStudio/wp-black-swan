@@ -18,9 +18,13 @@ a:hover {
 	transition: color 0.3s ease;
 }
 
-li {
+
+ul li {
 	list-style-type: square;
 	list-style-image: url(images/square.svg);
+}
+ol {
+	margin-bottom: ms(4);
 }
 
 p.lead {
@@ -31,17 +35,26 @@ table {
 	margin-bottom: ms(4);
 }
 blockquote {
+	padding: 0 ms(4) 0 ms(4) 0; 
 }
-
+blockquote cite {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+blockquote cite:before {
+  content: none;
+}
 blockquote cite {
 	font-size: ms(0);
-	font-weight: 600;
-	margin-top: ms(-2);
-	margin-bottom: ms(-4);
+	font-weight: 500;
 	a {
 		color: map-get($site_dynamic_color, main_color);
 	}
-	
+}
+.CS-pull-left blockquote {
+	padding: 0;
+
 }
 
 h1,
