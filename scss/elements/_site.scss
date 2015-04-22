@@ -72,10 +72,7 @@ blockquote p {
 pre {
   border: 1px solid #b5b5b5;
   margin-bottom: ms(4);
-  padding-bottom: 1.5em;
-  padding-left: 2.25em;
-  padding-right: 2.25em;
-  padding-top: 1.5em;
+  padding: ms(2) ms(3) ms(2) ms(3);
   position: relative;
   white-space: pre-wrap;       /* CSS 3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */

@@ -247,7 +247,7 @@ function my_sidebar_class_replace( $c = '' ) {
 }
 
 
-function solopine_comments($comment, $args, $depth) {
+function black_swan_comments($comment, $args, $depth) {
 		$GLOBALS['comment'] = $comment;
 		
 		?>
@@ -255,15 +255,16 @@ function solopine_comments($comment, $args, $depth) {
 			
 			<div class="thecomment">
 						
-				<div class="author-img">
+				<!-- <div class="author-img">
 					<?php echo get_avatar($comment,$args['avatar_size']); ?>
-				</div>
+				</div> -->
+				<span class="reply">
+						<?php comment_reply_link(array_merge( $args, array('reply_text' => __('<span class="comment-replay">R</span>', 'solopine'), 'depth' => $depth, 'max_depth' => $args['max_depth'])), $comment->comment_ID); ?>
+						<?php edit_comment_link(__('Edit', 'solopine')); ?>
+				</span>
 				
 				<div class="comment-text">
-					<span class="reply">
-						<?php comment_reply_link(array_merge( $args, array('reply_text' => __('Reply', 'solopine'), 'depth' => $depth, 'max_depth' => $args['max_depth'])), $comment->comment_ID); ?>
-						<?php edit_comment_link(__('Edit', 'solopine')); ?>
-					</span>
+					
 					<span class="author"><?php echo get_comment_author_link(); ?></span>
 					<span class="date"><?php printf(__('%1$s at %2$s', 'solopine'), get_comment_date(),  get_comment_time()) ?></span>
 					<?php if ($comment->comment_approved == '0') : ?>
@@ -277,7 +278,7 @@ function solopine_comments($comment, $args, $depth) {
 			
 			
 		</li>
-
+		
 		<?php 
 	}
 

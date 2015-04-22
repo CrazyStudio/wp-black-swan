@@ -1,0 +1,131 @@
+#comments_wrapper {
+	margin-top: ms(10);
+}
+
+.comment-header {
+	margin-bottom: ms(4);
+	clear: both;
+}
+
+.comment {
+	list-style: none;
+}
+.replay {
+
+}
+
+.comment-number {
+	margin-right: 10px;
+  	border: solid 1px;
+  	padding-top: 1px;
+  	width: ms(4);
+  	height: ms(4);
+  	display: block;
+  	float: left;
+  	text-align: center;
+}
+
+.comment-header {
+	vertical-align: -2px;
+}
+
+.comment-text {
+	margin-left: ms(6);
+}
+
+.comment-replay {
+	float: left;
+	display: block;
+	border: solid 1px map-get($site_static_color, border);
+	width: ms(4);
+  	height: ms(4);
+  	text-align: center;
+  	padding-top: 3px;
+  	font-size: ms(2) - ms(-6);
+
+	&:hover {
+		border: solid 1px map-get($site_dynamic_color, main_color);
+		background-color: #d6d6d6;
+		color: #4c3d0e;
+	}
+
+}
+.comment-toggle {
+	vertical-align: -10px;
+	text-align: right;
+	font-weight: 200;
+	font-size: ms(2);
+	color: map-get($site_dynamic_color, main_color);
+	transition: all 0.3s ease;
+
+	
+}
+.comment-toggle-icon {
+	width: ms(1);
+	height: ms(1);
+	fill: map-get($site_dynamic_color, main_color);
+}
+
+
+.comment-toggle-border {
+	margin-left: ms(-1);
+	width: ms(4);
+	height: ms(4);
+	float: right;
+	border: solid 1px map-get($site_static_color, border);
+	text-align: center;
+	&:hover {
+		.comment-toggle-icon {
+			fill: #4c3d0e;
+			transition: all 0.3s ease;
+		}
+		cursor: pointer;
+		transition: all 0.3s ease;
+		background-color: #d6d6d6;
+		border: solid 1px map-get($site_dynamic_color, main_color);
+	}
+
+}
+
+.comment-edit-link {
+	display: none;
+}
+
+.author {
+	font-weight: 700;
+	color: #111;
+}
+.date {
+	color: map-get($site_static_color, light_text);
+	font-size: ms(0);
+	padding-left: ms(-4);
+}
+
+.children {
+	margin-left: ms(6);
+}
+
+.submit {
+  border: none;
+  border: 1px solid map-get($site_dynamic_color, main_color);
+  background: none;
+  padding: ms(0) ms(1) ms(0) ms(1);
+  font-size: ms(0);
+  color: #111;
+
+  &:hover {
+  	background: map-get($site_dynamic_color, main_color);
+  	color: #fff;
+  }
+
+}
+
+.comment-form-comment {
+	margin-bottom: ms(0);
+}
+
+#comment {
+  padding: ms(2) ms(3) ms(2) ms(3);
+  box-shadow: none;
+  border-color: map-get($site_static_color, border);
+}
