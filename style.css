@@ -1970,9 +1970,6 @@ blockquote p {
 /*--------------------------------------------------------------
 # site
 --------------------------------------------------------------*/
-body {
-  color: #333; }
-
 button {
   font-family: "lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
 
@@ -1992,6 +1989,22 @@ ul li {
 ol {
   margin-bottom: 37px; }
 
+pre {
+  border: 1px solid #000;
+  margin-bottom: 37px;
+  padding: 23px 26px 23px 26px;
+  position: relative;
+  white-space: pre-wrap;
+  /* CSS 3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */ }
+
 table {
   width: 100%;
   margin-bottom: 37px; }
@@ -2010,38 +2023,9 @@ blockquote cite:before {
 blockquote cite {
   font-size: 14px;
   font-weight: 500; }
-  blockquote cite a {
-    color: #cea525; }
 
 .CS-pull-left blockquote {
   padding: 0; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p.intro,
-strong,
-blockquote,
-blockquote p {
-  color: #111; }
-
-pre {
-  border: 1px solid #b5b5b5;
-  margin-bottom: 37px;
-  padding: 23px 26px 23px 26px;
-  position: relative;
-  white-space: pre-wrap;
-  /* CSS 3 */
-  white-space: -moz-pre-wrap;
-  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;
-  /* Opera 4-6 */
-  white-space: -o-pre-wrap;
-  /* Opera 7 */
-  word-wrap: break-word;
-  /* Internet Explorer 5.5+ */ }
 
 /* === Pages === */
 /*--------------------------------------------------------------
@@ -2058,11 +2042,7 @@ p {
 
 .single-category,
 .single-category a {
-  color: #999;
   font-weight: 300; }
-
-.single-category a:hover {
-  color: #cea525; }
 
 .intro {
   font-size: 1.125rem;
@@ -2110,8 +2090,7 @@ p {
   font-size: 14px;
   padding: 14px 0 0 0;
   text-align: center;
-  font-weight: 400;
-  color: #999; }
+  font-weight: 400; }
 
 .aligncenter {
   margin-left: -16.666666666%;
@@ -2159,28 +2138,6 @@ ol {
 .single-content {
   margin-bottom: 59px; }
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .CS-pull-left {
-    float: none;
-    margin-left: 0px;
-    padding-right: 42px;
-    padding-left: 42px;
-    text-align: right;
-    width: 100%; }
-
-  .single-thumbnail {
-    margin-left: -16px;
-    margin-right: -16px; } }
-/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-@media only screen and (max-width: 40em) {
-  .CS-pull-left {
-    float: none;
-    margin-left: 0px;
-    padding-right: 23px;
-    padding-left: 23px;
-    text-align: right;
-    width: 100%; } }
-/* max-width 640px, mobile-only styles, use when QAing mobile issues */
 /*--------------------------------------------------------------
 # page
 --------------------------------------------------------------*/
@@ -2531,16 +2488,14 @@ body.withsidebar {
 .comment-replay {
   float: left;
   display: block;
-  border: solid 1px #d6d6d6;
+  border: solid 1px #000;
   width: 37px;
   height: 37px;
   text-align: center;
   padding-top: 3px;
   font-size: 19px; }
   .comment-replay:hover {
-    border: solid 1px #cea525;
-    background-color: #d6d6d6;
-    color: #4c3d0e;
+    border: solid 1px #000;
     transition: all 0.3s ease; }
 
 .comment-toggle {
@@ -2548,28 +2503,25 @@ body.withsidebar {
   text-align: right;
   font-weight: 200;
   font-size: 23px;
-  color: #cea525;
   transition: all 0.3s ease; }
 
 .comment-toggle-icon {
   width: 16px;
-  height: 16px;
-  fill: #cea525; }
+  height: 16px; }
 
 .comment-toggle-border {
   margin-left: 14px;
   width: 37px;
   height: 37px;
   float: right;
-  border: solid 1px #d6d6d6;
+  border: solid 1px #000;
   text-align: center; }
   .comment-toggle-border:hover {
     cursor: pointer;
     transition: all 0.3s ease;
     background-color: #d6d6d6;
-    border: solid 1px #cea525; }
+    border: solid 1px #000; }
     .comment-toggle-border:hover .comment-toggle-icon {
-      fill: #4c3d0e;
       transition: all 0.3s ease; }
 
 .comment-edit-link {
@@ -2580,7 +2532,6 @@ body.withsidebar {
   color: #111; }
 
 .date {
-  color: #999999;
   font-size: 14px;
   padding-left: 6px; }
 
@@ -2589,7 +2540,7 @@ body.withsidebar {
 
 .submit {
   border: none;
-  border: 1px solid #d6d6d6;
+  border: 1px solid #000;
   background: none;
   padding: 14px 16px 14px 16px;
   font-size: 14px;
@@ -2597,8 +2548,6 @@ body.withsidebar {
   transition: all 0.3s ease;
   margin-bottom: 37px; }
   .submit:hover {
-    border-color: #cea525;
-    color: #cea525;
     transition: all 0.3s ease; }
 
 .comment-form-comment {
@@ -2607,8 +2556,7 @@ body.withsidebar {
 #comment {
   padding: 23px 26px 23px 26px;
   box-shadow: none;
-  margin-top: 26px;
-  border-color: #d6d6d6; }
+  margin-top: 26px; }
 
 .comments #respond {
   display: block !important; }
@@ -2622,7 +2570,6 @@ body.withsidebar {
 
 .comment-form input {
   box-shadow: none;
-  border-color: #d6d6d6;
   padding-left: 23px;
   padding-right: 23px; }
 
@@ -2672,11 +2619,26 @@ ul.page-numbers {
 /*--------------------------------------------------------------
 # Colors
 --------------------------------------------------------------*/
-a {
-  color: #cea525; }
+.comment-replay {
+  border-color: #d6d6d6; }
 
-a:hover {
-  color: #999999; }
+.comment-replay:hover {
+  background-color: #d6d6d6; }
+
+.comment-toggle-border {
+  border-color: #d6d6d6; }
+
+.submit {
+  border-color: #d6d6d6; }
+
+#comment {
+  border-color: #d6d6d6; }
+
+.comment-form input {
+  border-color: #d6d6d6; }
+
+pre {
+  color: #d6d6d6; }
 
 .site-header {
   border-bottom-color: #d6d6d6; }
@@ -2689,11 +2651,19 @@ a:hover {
   border-color: #d6d6d6; }
 
 .content-share .share-icon:hover {
-  background-color: #d6d6d6;
-  border-color: #cea525; }
+  background-color: #d6d6d6; }
 
-.content-share .share-icon:hover i {
-  color: #4c3d0e; }
+.wp-caption-text,
+.single-date,
+.single-category,
+.single-category a {
+  color: #999999; }
+
+.date {
+  color: #999999; }
+
+a:hover {
+  color: #999999; }
 
 .copy-extra-list a,
 .content-category,
@@ -2708,22 +2678,8 @@ a:hover {
 .site-navigation .sub-menu > li a {
   color: #999999; }
 
-.content-title a,
-.site-social a,
-.site-navigation ul > li a,
-.site-navigation .sub-menu > li a:hover {
-  color: #333; }
-
 .icon-search {
   fill: #999999; }
-
-.icon-search:hover {
-  fill: #cea525; }
-
-.copy-extra-list a:hover,
-.toggle-button:hover,
-.site-navigation .sub-menu > li a:hover {
-  color: #cea525; }
 
 .site-search ::-webkit-input-placeholder {
   color: #999999; }
@@ -2737,6 +2693,71 @@ a:hover {
 .site-search :-ms-input-placeholder {
   color: #999999; }
 
+body {
+  color: #333; }
+
+.content-title a,
+.site-social a,
+.site-navigation ul > li a,
+.site-navigation .sub-menu > li a:hover {
+  color: #333; }
+
+.comment-replay:hover {
+  color: #4c3d0e; }
+
+.comment-toggle-border:hover .comment-toggle-icon {
+  fill: #4c3d0e; }
+
+.content-share .share-icon:hover i {
+  color: #4c3d0e; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p.intro,
+strong,
+blockquote,
+blockquote p {
+  color: #111; }
+
+.single-category a:hover {
+  color: #cea525; }
+
+.comment-replay:hover {
+  border-color: #cea525; }
+
+.comment-toggle {
+  color: #cea525; }
+
+.comment-toggle-icon {
+  fill: #cea525; }
+
+.comment-toggle-border:hover {
+  border-color: #cea525; }
+
+.submit:hover {
+  border-color: #cea525;
+  color: #cea525; }
+
+a {
+  color: #cea525; }
+
+blockquote cite a {
+  color: #cea525; }
+
+.content-share .share-icon:hover {
+  border-color: #cea525; }
+
+.icon-search:hover {
+  fill: #cea525; }
+
+.copy-extra-list a:hover,
+.toggle-button:hover,
+.site-navigation .sub-menu > li a:hover {
+  color: #cea525; }
+
 /*--------------------------------------------------------------
 # media queries
 --------------------------------------------------------------*/
@@ -2747,6 +2768,14 @@ a:hover {
 
   body.withsidebar {
     margin-top: 96px; }
+
+  .CS-pull-left {
+    float: none;
+    margin-left: 0px;
+    padding-right: 23px;
+    padding-left: 23px;
+    text-align: right;
+    width: 100%; }
 
   .site-navigation-toggle .toggle-button {
     display: block;
@@ -2795,6 +2824,18 @@ a:hover {
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   body {
     margin-top: 59px; }
+
+  .CS-pull-left {
+    float: none;
+    margin-left: 0px;
+    padding-right: 42px;
+    padding-left: 42px;
+    text-align: right;
+    width: 100%; }
+
+  .CS-single-thumbnail {
+    margin-left: -16px;
+    margin-right: -16px; }
 
   .mq-content-title {
     font-size: 26px; }

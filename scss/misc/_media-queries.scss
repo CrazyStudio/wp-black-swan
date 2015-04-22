@@ -12,6 +12,15 @@
 		margin-top: ms(8);
 	}
 
+	.CS-pull-left {
+		float: none;		
+		margin-left: 0px;
+		padding-right: ms(2);
+		padding-left: ms(2);
+		text-align: right;
+		width: 100%;
+	}
+
 	.site-navigation-toggle {
 		.toggle-button {
 			display: block;
@@ -78,6 +87,19 @@
 
 	body {
 		margin-top: ms(6);
+	}
+
+	.CS-pull-left {
+		float: none;		
+		margin-left: 0px;
+		padding-right: ms(5);
+		padding-left: ms(5);
+		text-align: right;
+		width: 100%;
+	}
+	.CS-single-thumbnail {
+		margin-left: -16px;
+		margin-right: -16px;
 	}
 
 	.mq-content-title {

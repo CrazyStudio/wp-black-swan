@@ -1,10 +1,32 @@
-a {
-	color: map-get($site_dynamic_color, main_color);
-}
-a:hover {
-	color: map-get($site_static_color, light_text);
+//broder
+
+.comment-replay {
+	border-color: map-get($site_static_color, border);
 }
 
+.comment-replay:hover {
+	background-color: map-get($site_static_color, border);
+}
+
+.comment-toggle-border {
+	border-color: map-get($site_static_color, border);
+}
+
+.submit {
+	border-color: map-get($site_static_color, border);
+}
+
+#comment {
+	border-color: map-get($site_static_color, border);
+}
+
+.comment-form input {
+	border-color: map-get($site_static_color, border);
+}
+
+pre {
+	color: map-get($site_static_color, border);
+}
 
 .site-header {
 	border-bottom-color: map-get($site_static_color, border);	
@@ -20,12 +42,24 @@ a:hover {
 }
 
 .content-share .share-icon:hover {
-	background-color: map-get($site_static_color, border);		
-	border-color: map-get($site_dynamic_color, main_color);
+	background-color: map-get($site_static_color, border);	
 }
 
-.content-share .share-icon:hover i {
-	color: darken(map-get($site_dynamic_color, main_color), 30%);
+//Light_text
+
+.wp-caption-text,
+.single-date,
+.single-category,
+.single-category a {
+	color: map-get($site_static_color, light_text);
+}
+
+.date {
+	color: map-get($site_static_color, light_text);
+}
+
+a:hover {
+	color: map-get($site_static_color, light_text);
 }
 
 .copy-extra-list a,
@@ -41,6 +75,30 @@ a:hover {
 .site-navigation .sub-menu > li a {
 	color: map-get($site_static_color, light_text);
 }
+
+.icon-search {
+	fill: map-get($site_static_color, light_text);
+}
+
+.site-search ::-webkit-input-placeholder {
+	color: map-get($site_static_color, light_text);
+}
+.site-search :-moz-placeholder {
+	color: map-get($site_static_color, light_text);
+}
+.site-search ::-moz-placeholder {
+	color: map-get($site_static_color, light_text);
+}
+.site-search :-ms-input-placeholder {
+	color: map-get($site_static_color, light_text);
+}
+
+//body_text
+
+body {
+	color: map-get($site_static_color, body_text);
+}
+
 .content-title a,
 .site-social a,
 .site-navigation ul > li a,
@@ -48,8 +106,74 @@ a:hover {
 	color: map-get($site_static_color, body_text);
 }
 
-.icon-search {
-	fill: map-get($site_static_color, light_text);
+
+//Social_dark
+
+.comment-replay:hover {
+	color: map-get($site_static_color, social-dark);
+}
+
+.comment-toggle-border:hover .comment-toggle-icon {
+	fill: map-get($site_static_color, social-dark);
+}
+
+.content-share .share-icon:hover i {
+	color: darken(map-get($site_dynamic_color, main_color), 30%);
+}
+
+//header_text
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p.intro,
+strong,
+blockquote,
+blockquote p {
+	color: map-get($site_static_color, header_text);
+}
+
+//##dynamic
+
+//main_color
+
+.single-category a:hover {
+	color: map-get($site_dynamic_color, main_color);
+}
+
+.comment-replay:hover {
+	border-color: map-get($site_dynamic_color, main_color);
+}
+
+.comment-toggle {
+	color: map-get($site_dynamic_color, main_color);
+}
+
+.comment-toggle-icon {
+	fill: map-get($site_dynamic_color, main_color);
+}
+
+.comment-toggle-border:hover {
+	border-color: map-get($site_dynamic_color, main_color);
+}
+
+.submit:hover {
+	border-color: map-get($site_dynamic_color, main_color);
+  	color: map-get($site_dynamic_color, main_color);
+}
+
+a {
+	color: map-get($site_dynamic_color, main_color);
+}
+
+blockquote cite a {
+	color: map-get($site_dynamic_color, main_color);
+}
+
+.content-share .share-icon:hover {		
+	border-color: map-get($site_dynamic_color, main_color);
 }
 
 .icon-search:hover {
@@ -64,16 +188,41 @@ a:hover {
 
 
 
-.site-search ::-webkit-input-placeholder {
-	color: map-get($site_static_color, light_text);
-}
-.site-search :-moz-placeholder {
-	color: map-get($site_static_color, light_text);
-}
-.site-search ::-moz-placeholder {
-	color: map-get($site_static_color, light_text);
-}
-.site-search :-ms-input-placeholder {
-	color: map-get($site_static_color, light_text);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

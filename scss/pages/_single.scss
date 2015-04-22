@@ -6,12 +6,9 @@ p {
 }
 .single-category,
 .single-category a {
-	color: #999;
 	font-weight: 300;
 }
-.single-category a:hover {
-	color: map-get($site_dynamic_color, main_color);
-}
+
 .intro {
 	font-size: 1.125rem;
   	font-weight: 600;
@@ -69,7 +66,6 @@ p {
   	padding: ms(-1) 0 0 0;
   	text-align: center;
   	font-weight: 400;
-  	color: #999;
 }
 
 .aligncenter {
@@ -129,37 +125,3 @@ ol {
  .single-content {
  	margin-bottom: ms(6);
  }
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-
-	.CS-pull-left {
-		float: none;		
-		margin-left: 0px;
-		//padding-left: 36px;
-		padding-right: ms(5);
-		padding-left: ms(5);
-		text-align: right;
-		width: 100%;
-	}
-	.single-thumbnail {
-		margin-left: -16px;
-		margin-right: -16px;
-	}
-
-	
-} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
-@media only screen and (max-width: 40em) { 
-
-	.CS-pull-left {
-		float: none;		
-		margin-left: 0px;
-		//padding-left: 36px;
-		padding-right: ms(2);
-		padding-left: ms(2);
-		text-align: right;
-		width: 100%;
-	}
-
-} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-
-

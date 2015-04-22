@@ -55,19 +55,12 @@ $CS_footer_copy 	= $CS_redux['CS-footer-copy'];
 					);
 				wp_nav_menu( $defaults ); ?>
 
-
-
-
-			<!-- <ul class="copy-extra-list">
-				<li class="copy-extra-item"><a href="">About</a></li>
-				<li class="copy-extra-item"><a href="">Press Kit</a></li>
-				<li class="copy-extra-item"><a href="">Contact</a></li>
-
-			</ul> -->
 		</div>
 	</section> <!-- footer-copy -->
 
 </footer> <!-- site-footer -->
+
+</div> <!-- site -->
 
 <!-- <pre><?php print_r($CS_redux); ?></pre> -->
 

@@ -1,5 +1,7 @@
 <?php
 /**
+ * Content: Single post page.
+ *
  * @package Black Swan
  */
 global $CS_redux;
@@ -9,8 +11,8 @@ $CS_single_post_share       = $CS_redux['CS-single-post-share']['enabled'];
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php if(has_post_thumbnail()) : ?>
-        <div class="single-thumbnail">
-            <a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+        <div class="CS-single-thumbnail">
+            <a href="<?php echo esc_url(get_permalink()); ?>"><?php the_post_thumbnail(); ?></a>
         </div> <!-- single-thumbnail -->
     <?php endif; ?>
 
@@ -22,7 +24,7 @@ $CS_single_post_share       = $CS_redux['CS-single-post-share']['enabled'];
 			<span class="single-category">/ <?php the_category( ', ' ); ?></span>
     	</div>
 
-        <div class="content-share single-share">
+        <div class="single-share content-share">
         <?php if ($CS_single_post_share): foreach ($CS_single_post_share as $key=>$value) {
             switch($key) {
                 case 'facebook': get_template_part( 'inc/share/facebook' );

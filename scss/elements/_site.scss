@@ -1,7 +1,3 @@
-body {
-	color: map-get($site_static_color, body_text);
-}
-
 button  {
 	font-family: "lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
@@ -18,11 +14,11 @@ a:hover {
 	transition: color 0.3s ease;
 }
 
-
 ul li {
 	list-style-type: square;
 	list-style-image: url(images/square.svg);
 }
+
 ol {
 	margin-bottom: ms(4);
 }
@@ -30,53 +26,43 @@ ol {
 p.lead {
 }
 
-table {
-	width: 100%;
-	margin-bottom: ms(4);
-}
-blockquote {
-	padding: 0 ms(4) 0 ms(4) 0; 
-}
-blockquote cite {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.4;
-}
-blockquote cite:before {
-  content: none;
-}
-blockquote cite {
-	font-size: ms(0);
-	font-weight: 500;
-	a {
-		color: map-get($site_dynamic_color, main_color);
-	}
-}
-.CS-pull-left blockquote {
-	padding: 0;
-
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p.intro,
-strong,
-blockquote,
-blockquote p {
-	color: map-get($site_static_color, header_text);
-}
-
 pre {
-  border: 1px solid #b5b5b5;
+  border: 1px solid #000;
   margin-bottom: ms(4);
   padding: ms(2) ms(3) ms(2) ms(3);
   position: relative;
   white-space: pre-wrap;       /* CSS 3 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+table {
+	width: 100%;
+	margin-bottom: ms(4);
+}
+
+blockquote {
+	padding: 0 ms(4) 0 ms(4) 0; 
+}
+
+blockquote cite {
+  font-size: ms(0);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+blockquote cite:before {
+  content: none;
+}
+
+blockquote cite {
+	font-size: ms(0);
+	font-weight: 500;
+}
+
+.CS-pull-left blockquote {
+	padding: 0;
+
 }
