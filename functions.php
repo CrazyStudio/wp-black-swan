@@ -247,7 +247,39 @@ function my_sidebar_class_replace( $c = '' ) {
 }
 
 
+function solopine_comments($comment, $args, $depth) {
+		$GLOBALS['comment'] = $comment;
+		
+		?>
+		<li <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
+			
+			<div class="thecomment">
+						
+				<div class="author-img">
+					<?php echo get_avatar($comment,$args['avatar_size']); ?>
+				</div>
+				
+				<div class="comment-text">
+					<span class="reply">
+						<?php comment_reply_link(array_merge( $args, array('reply_text' => __('Reply', 'solopine'), 'depth' => $depth, 'max_depth' => $args['max_depth'])), $comment->comment_ID); ?>
+						<?php edit_comment_link(__('Edit', 'solopine')); ?>
+					</span>
+					<span class="author"><?php echo get_comment_author_link(); ?></span>
+					<span class="date"><?php printf(__('%1$s at %2$s', 'solopine'), get_comment_date(),  get_comment_time()) ?></span>
+					<?php if ($comment->comment_approved == '0') : ?>
+						<em><i class="icon-info-sign"></i> <?php _e('Comment awaiting approval', 'solopine'); ?></em>
+						<br />
+					<?php endif; ?>
+					<?php comment_text(); ?>
+				</div>
+						
+			</div>
+			
+			
+		</li>
 
+		<?php 
+	}
 
 
 

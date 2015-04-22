@@ -2147,6 +2147,15 @@ blockquote p {
 ol {
   list-style-image: none; }
 
+.single-share {
+  float: left;
+  margin-left: -99px;
+  margin-top: 15px !important; }
+
+.single-share .share-icon {
+  display: block;
+  margin-bottom: 14px; }
+
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .CS-pull-left {
     float: none;
@@ -2212,6 +2221,7 @@ ol {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  text-align: center;
   padding-top: 5px;
   margin: 0 14px 0 14px;
   transition: all 0.3s ease; }
