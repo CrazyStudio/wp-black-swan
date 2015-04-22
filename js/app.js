@@ -61,4 +61,41 @@ jQuery(document).ready(function($) {
 			$( ".site-header-fixed" ).css( "bottom", "auto" );
 		}
 	});	
+
+	$( "#respond" ).addClass( "js-css-comments" );
+
+	$( ".comment-toggle-border" ).on( "click", function() {
+
+		if ($( "#respond" ).hasClass( "js-css-comments" )) {
+			$( "#respond" ).removeClass( "js-css-comments" );
+			document.getElementById('#comment-header').scrollIntoView(true);
+		} else {
+			$( "#respond" ).addClass( "js-css-comments" );
+			document.getElementById('#comment-header').scrollIntoView(true);
+		}
+
+	});	
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
+
+
+
+
+
+
+
+
+
+

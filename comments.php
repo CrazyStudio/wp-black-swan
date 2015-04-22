@@ -6,7 +6,7 @@
 
 
 		if ( comments_open() ) :
-		echo '<div class="comment-header clearfix">';
+		echo '<div id="comment-header" class="comment-header clearfix">';
 		echo '<h4 class="block-heading small-6 columns">';
 		comments_number(__('<span class="comment-number">0</span> <span class="comment-header">Comments</span>','solopine'), __('<span class="comment-number">1</span> <span class="comment-header">Comment</span>','solopine'), '<span class="comment-number">%</span>' . __('<span class="comment-header">Comments</span>','solopine') );
 		echo '</h4>';

@@ -1,5 +1,5 @@
 #comments_wrapper {
-	margin-top: ms(10);
+	margin-top: ms(7);
 }
 
 .comment-header {
@@ -47,6 +47,7 @@
 		border: solid 1px map-get($site_dynamic_color, main_color);
 		background-color: #d6d6d6;
 		color: #4c3d0e;
+		transition: all 0.3s ease;
 	}
 
 }
@@ -107,15 +108,18 @@
 
 .submit {
   border: none;
-  border: 1px solid map-get($site_dynamic_color, main_color);
+  border: 1px solid map-get($site_static_color, border);
   background: none;
   padding: ms(0) ms(1) ms(0) ms(1);
   font-size: ms(0);
   color: #111;
+  transition: all 0.3s ease;
+  margin-bottom: ms(4);
 
   &:hover {
-  	background: map-get($site_dynamic_color, main_color);
-  	color: #fff;
+  	border-color: map-get($site_dynamic_color, main_color);
+  	color: map-get($site_dynamic_color, main_color);
+  	transition: all 0.3s ease;
   }
 
 }
@@ -127,5 +131,29 @@
 #comment {
   padding: ms(2) ms(3) ms(2) ms(3);
   box-shadow: none;
+  margin-top: ms(3);
   border-color: map-get($site_static_color, border);
+}
+
+.comments #respond {
+	display: block !important;
+}
+
+.js-css-comments {
+	display: none;
+}
+
+.comment-form label {
+	font-size: ms(0);
+	margin-bottom: ms(-4);
+}
+
+.comment-form input {
+	box-shadow: none;
+  	border-color: #d6d6d6;
+  	padding-left: ms(2);
+  	padding-right: ms(2);
+}
+.comment-form p {
+	margin-bottom: ms(1);
 }

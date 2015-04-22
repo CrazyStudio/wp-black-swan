@@ -2153,6 +2153,12 @@ ol {
   display: block;
   margin-bottom: 14px; }
 
+.single-content > p:last-child {
+  margin-bottom: 0; }
+
+.single-content {
+  margin-bottom: 59px; }
+
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .CS-pull-left {
     float: none;
@@ -2497,7 +2503,7 @@ body.withsidebar {
 # comments
 --------------------------------------------------------------*/
 #comments_wrapper {
-  margin-top: 155px; }
+  margin-top: 68px; }
 
 .comment-header {
   margin-bottom: 37px;
@@ -2534,7 +2540,8 @@ body.withsidebar {
   .comment-replay:hover {
     border: solid 1px #cea525;
     background-color: #d6d6d6;
-    color: #4c3d0e; }
+    color: #4c3d0e;
+    transition: all 0.3s ease; }
 
 .comment-toggle {
   vertical-align: -10px;
@@ -2582,14 +2589,17 @@ body.withsidebar {
 
 .submit {
   border: none;
-  border: 1px solid #cea525;
+  border: 1px solid #d6d6d6;
   background: none;
   padding: 14px 16px 14px 16px;
   font-size: 14px;
-  color: #111; }
+  color: #111;
+  transition: all 0.3s ease;
+  margin-bottom: 37px; }
   .submit:hover {
-    background: #cea525;
-    color: #fff; }
+    border-color: #cea525;
+    color: #cea525;
+    transition: all 0.3s ease; }
 
 .comment-form-comment {
   margin-bottom: 14px; }
@@ -2597,7 +2607,27 @@ body.withsidebar {
 #comment {
   padding: 23px 26px 23px 26px;
   box-shadow: none;
+  margin-top: 26px;
   border-color: #d6d6d6; }
+
+.comments #respond {
+  display: block !important; }
+
+.js-css-comments {
+  display: none; }
+
+.comment-form label {
+  font-size: 14px;
+  margin-bottom: 6px; }
+
+.comment-form input {
+  box-shadow: none;
+  border-color: #d6d6d6;
+  padding-left: 23px;
+  padding-right: 23px; }
+
+.comment-form p {
+  margin-bottom: 16px; }
 
 /*--------------------------------------------------------------
 # pagination
@@ -2836,3 +2866,26 @@ embed,
 iframe,
 object {
   max-width: 100%; }
+
+.post-pagination .next-post {
+  text-align: right; }
+
+.post-pagination .arrow {
+  font-size: 42px;
+  margin-top: -7px; }
+
+.post-pagination .next-post .arrow {
+  float: right;
+  margin-left: 23px; }
+
+.post-pagination .prev-post .arrow {
+  float: left;
+  margin-right: 23px; }
+
+.single-bottom-share {
+  margin-top: 9px;
+  text-align: center; }
+
+.post-pagination {
+  border-top: 1px solid #d6d6d6;
+  padding-top: 59px; }

@@ -62,3 +62,49 @@ object {
 	max-width: 100%;
 }
 
+.post-pagination .next-post {
+	text-align: right;
+}
+
+.post-pagination .arrow {
+	font-size: ms(5);
+	margin-top: -7px;
+}
+.post-pagination .next-post .arrow {
+	float: right;
+	margin-left: ms(2);
+}
+
+.post-pagination .prev-post .arrow {
+	float: left;
+	margin-right: ms(2);
+}
+
+.single-bottom-share {
+	margin-top: ms(-3);
+	text-align: center;
+}
+
+.post-pagination {
+	border-top: 1px solid map-get($site_static_color, border);	
+	padding-top: ms(6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

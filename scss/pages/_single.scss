@@ -123,8 +123,12 @@ ol {
 	margin-bottom: ms(0);
 }
 
-
-
+ .single-content > p:last-child {
+ 	margin-bottom: 0;
+ }
+ .single-content {
+ 	margin-bottom: ms(6);
+ }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
 	.CS-pull-left {
