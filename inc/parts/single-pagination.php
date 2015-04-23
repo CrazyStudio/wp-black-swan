@@ -33,7 +33,7 @@ $next_post = get_next_post();
 
 	<div class="CS-pagination-section-middle small-4 columns">
 		
-		<div class="CS-pagination-share content-share">
+		<div class="CS-pagination-share CS-content-share">
 	        <?php if ($CS_single_post_share): foreach ($CS_single_post_share as $key=>$value) {
 	            switch($key) {
 	                case 'facebook': get_template_part( 'inc/share/facebook' );
@@ -49,7 +49,7 @@ $next_post = get_next_post();
 	                break; 
 	            }
 	        } endif; ?>
-	    </div> <!-- content-share -->
+	    </div> <!-- CS-content-share -->
 
 	</div> <!-- CS-pagination-section-middle -->
 

@@ -1,0 +1,38 @@
+.CS-single-body {
+	margin-top: ms(2);
+}
+.CS-single-date,
+.CS-single-author,
+.CS-single-category,
+.CS-single-category a {
+	font-weight: 300;
+}
+.CS-intro,
+.CS-single-title {
+	font-weight: 600;
+}
+
+.CS-intro {
+	font-size: 1.125rem;
+  	-webkit-font-smoothing: antialiased;
+  	line-height: 1.75;
+}
+
+.CS-single-share {
+	float: left;
+	margin-left: - (3+ ms(8));
+	margin-top: 15px !important;
+
+}
+
+.CS-single-share .CS-share-icon {
+	display: block;
+	margin-bottom: ms(0);
+}
+
+ .CS-single-content > p:last-child {
+ 	margin-bottom: 0;
+ }
+ .CS-single-content {
+ 	margin-bottom: ms(6);
+ }

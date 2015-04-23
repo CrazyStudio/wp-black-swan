@@ -64,14 +64,14 @@ jQuery(document).ready(function($) {
 
 	$( "#respond" ).addClass( "js-css-comments" );
 
-	$( ".comment-toggle-border" ).on( "click", function() {
+	$( ".CS-comment-toggle-border" ).on( "click", function() {
 
 		if ($( "#respond" ).hasClass( "js-css-comments" )) {
 			$( "#respond" ).removeClass( "js-css-comments" );
-			document.getElementById('#comment-header').scrollIntoView(true);
+			document.getElementById('#CS-comments-header').scrollIntoView(true);
 		} else {
 			$( "#respond" ).addClass( "js-css-comments" );
-			document.getElementById('#comment-header').scrollIntoView(true);
+			document.getElementById('#CS-comments-header').scrollIntoView(true);
 		}
 
 	});	

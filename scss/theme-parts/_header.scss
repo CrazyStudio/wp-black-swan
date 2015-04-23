@@ -47,7 +47,7 @@ body.withsidebar {
 	padding: 0;
 }
 
-.site-logo {
+.CS-site-logo {
 	display: block;
 	height: ms(3);
 }
@@ -116,11 +116,8 @@ body.withsidebar {
 .CS-site-search {
 	margin-top: ms(0);
 }
-.search-input {
-	position: relative;
-}
 
-.search-submit {
+.CS-search-submit {
 	position: absolute;
 	top: 0;
 	left: 84%;

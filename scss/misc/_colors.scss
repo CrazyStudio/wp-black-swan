@@ -1,15 +1,16 @@
 //broder
-.submit,
-#comment,
+.form-submit .submit,
+.CS-comment,
 .comment-form input,
 .comment-replay,
-.comment-toggle-border,
-.content-share .CS-share-icon {
+.CS-comment-toggle-border,
+.CS-content-share .CS-share-icon {
 	border-color: $border;
 }
 
 .comment-replay:hover,
-.content-share .CS-share-icon:hover {
+.CS-content-share .CS-share-icon:hover,
+.CS-comment-toggle-border:hover {
 	background-color: $border;
 }
 
@@ -18,7 +19,8 @@
 }
 
 .site-footer,
-.site-pagination,
+.CS-single-pagination,
+.CS-site-pagination,
 .post-pagination,
 .footer-copy {
 	border-top-color: $border;
@@ -28,24 +30,27 @@
 //Light_text
 a:hover,
 .date,
+.CS-single-date,
 .wp-caption-text,
-.single-date,
-.single-category,
-.single-category a,
+.CS-single-category,
+.CS-single-category a,
 .copy-extra-list a,
 .content-category,
 .content-date,
 .footer-copy,
 .copy-extra-button,
-.search-button:hover,
 .CS-site-description,
 .page-numbers .prev,
 .page-numbers .next,
 .CS-site-social a:hover,
 .CS-toggle-button .CS-toggle-title,
 .CS-site-navigation ul > li a:hover,
-.CS-site-navigation .sub-menu > li a {
+.CS-site-navigation .sub-menu > li a,
+.CS-site-sidebar .post-date {
 	color: $light_text;
+}
+pre {
+	border-color: $light_text;
 }
 
 .icon-search {
@@ -70,19 +75,19 @@ body,
 pre,
 .content-title a,
 .CS-site-social a,
-#secondary li a,
-#secondary li a:hover,
+.CS-site-sidebar li a,
+.CS-site-sidebar li a:hover,
 .CS-site-navigation ul > li a,
 .CS-site-navigation .sub-menu > li a:hover {
 	color: $body_text;
 }
 
 //Social_dark
-.comment-toggle-border:hover .comment-toggle-icon {
+.CS-comment-toggle-border:hover .CS-comment-toggle-icon {
 	fill: $social_dark;
 }
 .comment-replay:hover,
-.content-share .CS-share-icon:hover i {
+.CS-content-share .CS-share-icon:hover i {
 	color: $social_dark;
 }
 
@@ -96,7 +101,9 @@ p.intro,
 strong,
 blockquote,
 blockquote p,
-.footer-widget li a {
+.footer-widget li a,
+.author,
+.submit {
 	color: $header_text;
 }
 
@@ -105,7 +112,7 @@ blockquote p,
 //main_color
 a,
 blockquote cite a,
-.comment-toggle,
+.CS-comment-toggle,
 .submit:hover,
 .single-category a:hover,
 .copy-extra-list a:hover,
@@ -116,14 +123,14 @@ blockquote cite a,
 .CS-site-navigation .sub-menu > li a:hover {
 	color: $main_color;
 }
-.content-share .CS-share-icon:hover,
+.CS-content-share .CS-share-icon:hover,
 .comment-replay:hover,
 .submit:hover,
-.comment-toggle-border:hover {
+.CS-comment-toggle-border:hover {
 	border-color: $main_color;
 }
 
-.comment-toggle-icon,
+.CS-comment-toggle-icon,
 .icon-search:hover {
 	fill: $main_color;
 }

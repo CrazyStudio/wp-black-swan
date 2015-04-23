@@ -1,10 +1,11 @@
+// Single Page Pagination
 .CS-single-pagination {
 	border-top: 1px solid #000;	
 	padding-top: ms(6);
 }
 .CS-pagination-arrow {
-	font-size: ms(5);
 	margin-top: -7px;
+	font-size: ms(5);
 }
 
 .CS-pagination-next {
@@ -24,4 +25,34 @@
 .CS-pagination-share {
 	margin-top: ms(-3);
 	text-align: center;
+}
+
+// Site Paginition
+.page-numbers .prev,
+.page-numbers .next {
+	font-weight: 200;
+}
+.CS-site-pagination {
+	margin: ms(3) 0 ms(6) 0;
+    border-top: solid #000 1px;
+    padding: ms(3) 0 0 0;
+}
+
+.page-numbers {
+    list-style-type: none;
+    text-align: center;
+}
+.page-numbers li {
+	display: inline-block;
+}
+.page-numbers .prev {
+	margin-right: ms(3);
+}
+.page-numbers .next {
+	margin-left: ms(3);
+}
+
+ul.page-numbers {
+	margin-bottom: 0;
+    margin-left: 0;
 }

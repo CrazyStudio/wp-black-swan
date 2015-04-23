@@ -2,11 +2,19 @@
 .content-content .more-link {
 	text-align: center;
 }
+.content-content,
+.content-content p {
+	font-weight: 400;
+  	line-height: 1.75;
+  	-webkit-font-smoothing: subpixel-antialiased;
+
+}
 
 .content-date,
 .content-content .more-link {
 	display: block;
-
+	width: 40%;
+	margin: 0 auto;
 }
 .content {
 	margin-bottom: ms(4);
@@ -30,7 +38,10 @@
 
 .content-content .more-link {
 	margin-top: ms(0);
-	
 }
 
+.content-content .CS-intro {
+	font-size: ms(1);
+
+}
 

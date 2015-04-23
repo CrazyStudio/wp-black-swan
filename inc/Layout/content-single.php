@@ -16,15 +16,15 @@ $CS_single_post_share       = $CS_redux['CS-single-post-share']['enabled'];
         </div> <!-- single-thumbnail -->
     <?php endif; ?>
 
-    <div class="single-body <?php if(!empty($CS_single_sidebar)) : ?>small-12 large-12<?php else: ?>small-11 medium-8 large-8<?php endif; ?> small-centered columns">
+    <div class="CS-single-body <?php if(!empty($CS_single_sidebar)) : ?>small-12 large-12<?php else: ?>small-11 medium-8 large-8<?php endif; ?> small-centered columns">
 
     	<div class="single-header">
-    		<span class="single-author"><a href="#"><?php the_author(); ?></a></span>
-    		<time class="single-date" datetime="<?php the_time('Y-m-d H:i'); ?>">/ <?php the_time('F j, Y'); ?></time> <!-- content-date -->
-			<span class="single-category">/ <?php the_category( ', ' ); ?></span>
+    		<span class="CS-single-author"><a href="#"><?php the_author(); ?></a></span>
+    		<time class="CS-single-date" datetime="<?php the_time('Y-m-d H:i'); ?>">/ <?php the_time('F j, Y'); ?></time> <!-- content-date -->
+			<span class="CS-single-category">/ <?php the_category( ', ' ); ?></span>
     	</div>
 
-        <div class="single-share content-share">
+        <div class="CS-single-share CS-content-share">
         <?php if ($CS_single_post_share): foreach ($CS_single_post_share as $key=>$value) {
             switch($key) {
                 case 'facebook': get_template_part( 'inc/share/facebook' );
@@ -43,12 +43,12 @@ $CS_single_post_share       = $CS_redux['CS-single-post-share']['enabled'];
                 break;    
             }
         } endif; ?>
-        </div> <!-- content-share -->
+        </div> <!-- CS-content-share -->
 
-		<h2 class="<?php if(!empty($CS_single_sidebar)) : ?>mq-single-title<?php endif; ?> single-title"><?php the_title(); ?></h2>
+		<h2 class="CS-single-title <?php if(!empty($CS_single_sidebar)) : ?>mq-single-title<?php endif; ?> "><?php the_title(); ?></h2>
 
 
-		<div class="<?php if(!empty($CS_single_sidebar)) : ?>mq-single-content<?php endif; ?> single-content">
+		<div class="CS-single-content <?php if(!empty($CS_single_sidebar)) : ?>mq-single-content<?php endif; ?>">
             <?php the_content(); ?>
         </div> <!-- single-content -->
         

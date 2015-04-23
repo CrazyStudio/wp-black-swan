@@ -54,17 +54,17 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 					<?php if(empty($CS_site_logo)) : ?>
 						
 						<?php if(is_front_page()) : ?>
-							<h1 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
+							<h1 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="CS-site-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
 						<?php else : ?>
-							<h2 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
+							<h2 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="CS-site-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
 						<?php endif; ?>
 						
 					<?php else : ?>
 						
 						<?php if(is_front_page()) : ?>
-							<h1 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo $CS_site_logo; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
+							<h1 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="CS-site-logo" src="<?php echo $CS_site_logo; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
 						<?php else : ?>
-							<h2 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo $CS_site_logo; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
+							<h2 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="CS-site-logo" src="<?php echo $CS_site_logo; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
 						<?php endif; ?>
 						
 					<?php endif; ?>

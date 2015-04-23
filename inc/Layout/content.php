@@ -28,7 +28,7 @@ $pin_image              = wp_get_attachment_url( get_post_thumbnail_id($post->ID
             <?php the_content(__('Continue Reading')); ?>
         </div> <!-- content-content -->
 
-        <div class="content-share">
+        <div class="CS-content-share">
         <?php if ($CS_classic_share): foreach ($CS_classic_share as $key=>$value) {
             switch($key) {
                 case 'facebook': get_template_part( 'inc/share/facebook' );
@@ -47,7 +47,7 @@ $pin_image              = wp_get_attachment_url( get_post_thumbnail_id($post->ID
                 break;    
             }
         } endif; ?>
-        </div> <!-- content-share -->
+        </div> <!-- CS-content-share -->
         
         <time class="content-date" datetime="<?php the_time('Y-m-d H:i'); ?>">
             <?php the_time('F j, Y'); ?>

@@ -1,0 +1,143 @@
+.comment-replay,
+.CS-comments-number,
+.CS-comment-toggle-border {
+	width: ms(4);
+  	height: ms(4);
+}
+
+.comment-replay,
+.comment-replay:hover,
+.CS-comments-number,
+.CS-comment-toggle-border,
+.CS-comment-toggle-border:hover,
+.form-submit .submit {
+	border: solid 1px #000;
+}
+
+.CS-comments-number,
+.comment-replay {
+	display: block;
+}
+
+.comment-replay:hover, 
+.CS-comment-toggle,
+.CS-comment-toggle-border:hover,
+.CS-comment-toggle-border:hover .CS-comment-toggle-icon,
+.submit,
+.submit:hover {
+	transition: all 0.3s ease;
+}
+
+.CS-comments-number,
+.comment-replay,
+.CS-comment-toggle-border {
+	text-align: center;
+}
+
+.CS-comments {
+	margin-top: ms(7);
+}
+
+.CS-comments-header-title,
+.CS-comments-header {
+	margin-bottom: ms(4);
+	clear: both;
+	vertical-align: -2px;
+}
+
+.comment {
+	list-style: none;
+}
+
+.CS-comments-number {
+	margin-right: 10px;
+  	padding-top: 1px;
+  	float: left;
+}
+
+.comment-text {
+	margin-left: ms(6);
+}
+
+.comment-replay {
+	float: left;
+  	padding-top: 3px;
+  	font-size: ms(2) - ms(-6);
+}
+.CS-comment-toggle {
+	vertical-align: -10px;
+	text-align: right;
+	font-weight: 200;
+	font-size: ms(2);
+}
+
+.CS-comment-toggle-icon {
+	width: ms(1);
+	height: ms(1);
+}
+
+
+.CS-comment-toggle-border {
+	margin-left: ms(-1);
+	float: right;
+}
+.CS-comment-toggle-border:hover {
+	cursor: pointer;
+}
+
+.comment-edit-link {
+	display: none;
+}
+
+.author {
+	font-weight: 700;
+}
+.date {
+	font-size: ms(0);
+	padding-left: ms(-4);
+}
+
+.children {
+	margin-left: ms(6);
+}
+
+.submit {
+  border: none;
+  background: none;
+  padding: ms(0) ms(1) ms(0) ms(1);
+  font-size: ms(0);
+  margin-bottom: ms(4);
+}
+
+.comment-form-comment {
+	margin-bottom: ms(0);
+}
+
+#comment {
+  padding: ms(2) ms(3) ms(2) ms(3);
+  box-shadow: none;
+  margin-top: ms(3);
+}
+
+.comments #respond {
+	display: block !important;
+}
+
+.js-css-comments {
+	display: none;
+}
+
+.comment-form label {
+	font-size: ms(0);
+	margin-bottom: ms(-4);
+}
+
+.comment-form input {
+	box-shadow: none;
+  	padding-left: ms(2);
+  	padding-right: ms(2);
+}
+.comment-form p {
+	margin-bottom: ms(1);
+}
+

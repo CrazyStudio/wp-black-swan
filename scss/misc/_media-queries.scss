@@ -49,9 +49,6 @@
 		margin-top: ms(-1);
 	}
 
-	.copy-extra-item {
-		margin: 0 ms(-3) 0 ms(-3);
-	}
 	.content-title {
 		margin-bottom: ms(-3);
 		margin-top: ms(-6);
@@ -124,7 +121,8 @@
 	.mq-footer-copy .copy-body {
 		font-size: ms(0);
 	}
-	.mq-footer-copy .copy-extra-item {
+
+	.copy-extra-list li {
 		font-size: ms(0);
 	}
 

@@ -10,6 +10,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<div id="secondary" class="widget-area small-8 small-centered medium-uncentered medium-5 large-4 large-offset-1 columns" role="complementary">
+<div class="CS-site-sidebar widget-area small-8 small-centered medium-uncentered medium-5 large-4 large-offset-1 columns" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </div><!-- #secondary -->
