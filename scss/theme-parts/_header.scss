@@ -3,8 +3,8 @@
 	width: 100%;
 }
 
-.site-title,
-.site-description {
+.CS-site-title,
+.CS-site-description {
 	display: inline-block;
 }
 
@@ -13,12 +13,12 @@
 	transition: color 0.5s ease;
 }
 
-.toggle-icon,
+.CS-toggle-icon,
 .js-css-toggle {
 	transition: all 0.5s ease;
 }
 
-.toggle-icon,
+.CS-toggle-icon,
 .icon-search {
 	width: ms(1);
 	height: ms(1);
@@ -42,7 +42,7 @@ body.withsidebar {
 	min-height:  ms(6);
 }
 
-.site-title {	
+.CS-site-title {	
 	margin: ms(0) ms(-3) 0 0;
 	padding: 0;
 }
@@ -52,13 +52,13 @@ body.withsidebar {
 	height: ms(3);
 }
 
-.site-description {
+.CS-site-description {
 	vertical-align: 3px;
 	font-size: ms(2) - ms(-6);
 	font-weight: 200;
 } 
 
-.site-social {
+.CS-site-social {
 	margin-bottom: ms(0);
 	text-align: center;
 }
@@ -69,7 +69,7 @@ body.withsidebar {
 	padding: 0 ms(-4) 0 ms(-4);
 }
 
-.toggle-button {
+.CS-toggle-button {
 	float: right;
 	margin: ms(-6) 0 ms(-6) 0;
 	outline: none;
@@ -78,7 +78,7 @@ body.withsidebar {
 	font-weight: 200;
 }
 
-.toggle-title {
+.CS-toggle-title {
 	margin-right: ms(0);
 	vertical-align: 3px;
 }
@@ -92,13 +92,13 @@ body.withsidebar {
 	transition: all 0.7s ease;
 }
 
-.site-navigation {
+.CS-site-navigation {
 	max-height: 0px;
     overflow: hidden;
     transition: all 0.6s ease;
 }
 
-.site-navigation ul > li {
+.CS-site-navigation ul > li {
 	padding: 0;
 	text-align: center;
 	list-style-type: none;
@@ -113,7 +113,7 @@ body.withsidebar {
 	font-weight: 200;
 }
 
-.site-search {
+.CS-site-search {
 	margin-top: ms(0);
 }
 .search-input {
@@ -131,42 +131,42 @@ body.withsidebar {
   	padding-bottom: 7px;
 }
 
-.site-search ::-webkit-input-placeholder {
+.CS-site-search ::-webkit-input-placeholder {
    font-weight: 200;
    transition: opacity 0.5s ease-out;
 }
 
-.site-search :-moz-placeholder { /* Firefox 18- */
+.CS-site-search :-moz-placeholder { /* Firefox 18- */
    font-weight: 200;
    transition: opacity 0.5s ease-out; 
 }
 
-.site-search ::-moz-placeholder {  /* Firefox 19+ */
+.CS-site-search ::-moz-placeholder {  /* Firefox 19+ */
    font-weight: 200;
    transition: opacity 0.5s ease-out; 
 }
 
-.site-search :-ms-input-placeholder {  
+.CS-site-search :-ms-input-placeholder {  
    	font-weight: 200;
 	transition: opacity 0.5s ease-out; 
 }
 
-.site-search input:focus::-webkit-input-placeholder {
+.CS-site-search input:focus::-webkit-input-placeholder {
 	opacity: 0;
 	transition: opacity 0.5s ease-out;	
 }
 
-.site-search input:focus:-moz-placeholder {
+.CS-site-search input:focus:-moz-placeholder {
 	opacity: 0;
 	transition: opacity 0.5s ease-out;
 }
 
-.site-search input:focus::-moz-placeholder {
+.CS-site-search input:focus::-moz-placeholder {
 	opacity: 0;
 	transition: opacity 0.5s ease-out;
 }
 
-.site-search input:focus:-ms-input-placeholder {
+.CS-site-search input:focus:-ms-input-placeholder {
 	opacity: 0;
 	transition: opacity 0.5s ease-out;
 }

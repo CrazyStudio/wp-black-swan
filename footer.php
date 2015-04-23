@@ -2,14 +2,14 @@
 /**
  * The template for displaying the footer.
  *
- * Contains the closing of the #site-content div and all content after
+ * Contains the closing of the #CS-site-content div and all content after
  *
  * @package Black Swan
  */
 global $CS_redux;
 $CS_footer_copy 	= $CS_redux['CS-footer-copy'];
 ?>
-</div> <!-- site-content: Found bottom of header.php -->
+</div> <!-- CS-site-content: Found bottom of header.php -->
 
 
 

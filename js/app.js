@@ -2,7 +2,7 @@
 jQuery(document).ready(function($) {
 	//$( document ).foundation();
 
-	var icon_grid = document.getElementById( "toggle-icon" );
+	var icon_grid = document.getElementById( "CS-toggle-icon" );
 	var animation_to_close = document.getElementById( "animation-to-close" );
 	var animation_to_explore = document.getElementById( "animation-to-explore" );
 	
@@ -29,20 +29,20 @@ jQuery(document).ready(function($) {
 	}
 
 	// Make the navigation toggle button work
-	$( "#site-navigation-toggle" ).on( "click", function() {
+	$( "#CS-site-navigation-toggle" ).on( "click", function() {
 
 		// Open and close the navigation
-		if ($( "#site-navigation" ).hasClass( "js-css-toggle" )) {
-			$( "#site-navigation" ).removeClass( "js-css-toggle" );
+		if ($( "#CS-site-navigation" ).hasClass( "js-css-toggle" )) {
+			$( "#CS-site-navigation" ).removeClass( "js-css-toggle" );
 		} else {
-			$( "#site-navigation" ).addClass( "js-css-toggle" );
+			$( "#CS-site-navigation" ).addClass( "js-css-toggle" );
 		}
 
 		//Change the text of the toggle title
-		if ($( "#toggle-title" ).text() === "Explore" ) {
-			$( "#toggle-title" ).text($( "#toggle-title" ).data( "close" ));
+		if ($( "#CS-toggle-title" ).text() === "Explore" ) {
+			$( "#CS-toggle-title" ).text($( "#CS-toggle-title" ).data( "close" ));
 		} else {
-			$( "#toggle-title" ).text($( "#toggle-title" ).data( "open" ));
+			$( "#CS-toggle-title" ).text($( "#CS-toggle-title" ).data( "open" ));
 		}
 
 		// Animate the menu button

@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * Displays all of the <head> section and everything up till <div id="site-content">
+ * Displays all of the <head> section and everything up till <div id="CS-site-content">
  *
  * @package Black Swan
  */
@@ -47,51 +47,51 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 	
 		<header class="CS-site-header" role="banner">
 
-			<div class="top-header row">
+			<div class="CS-top-header row">
 
-				<div id="site-branding" class="site-branding small-12 medium-9 small-centered medium-uncentered columns">
+				<div class="CS-site-branding small-12 medium-9 small-centered medium-uncentered columns">
 					
 					<?php if(empty($CS_site_logo)) : ?>
 						
 						<?php if(is_front_page()) : ?>
-							<h1 class="site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
+							<h1 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
 						<?php else : ?>
-							<h2 class="site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
+							<h2 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
 						<?php endif; ?>
 						
 					<?php else : ?>
 						
 						<?php if(is_front_page()) : ?>
-							<h1 class="site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo $CS_site_logo; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
+							<h1 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo $CS_site_logo; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
 						<?php else : ?>
-							<h2 class="site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo $CS_site_logo; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
+							<h2 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="site-logo" src="<?php echo $CS_site_logo; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
 						<?php endif; ?>
 						
 					<?php endif; ?>
 
-					<h2 class="site-description">
+					<h2 class="CS-site-description">
 						<?php bloginfo( 'description' ); ?>
 					</h2>
 
-				</div> <!-- site-branding -->
+				</div> <!-- CS-site-branding -->
 
-				<div id="site-navigation-toggle" class="site-navigation-toggle small-8 medium-3 small-centered medium-uncentered columns">
+				<div id="CS-site-navigation-toggle" class="CS-site-navigation-toggle small-8 medium-3 small-centered medium-uncentered columns">
 					
-					<button class="toggle-button">
-						<span id="toggle-title" class="toggle-title" data-open="Explore" data-close="Close">Explore</span>
-						<svg id="toggle-icon" class="toggle-icon">
+					<button class="CS-toggle-button">
+						<span id="CS-toggle-title" class="CS-toggle-title" data-open="Explore" data-close="Close">Explore</span>
+						<svg id="CS-toggle-icon" class="CS-toggle-icon">
 							<use xlink:href="#icon-grid">
 							</use>
 						</svg>
 					</button> 
 				
-				</div> <!-- site-navigation-toggle -->
+				</div> <!-- CS-site-navigation-toggle -->
 
-			</div> <!-- top-header -->
+			</div> <!-- CS-top-header -->
 
-			<nav id="site-navigation" class="site-navigation" role="navigation">
+			<nav id="CS-site-navigation" class="CS-site-navigation" role="navigation">
 
-				<div id="site-primary-menu" class="site-primary-menu">
+				<div class="CS-site-primary-menu">
 				<?php $defaults = array(
 						'container' 		=> false,
 						'theme_location' 	=> 'primary',
@@ -99,13 +99,13 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 						'menu_id'			=> 'primary-menu'
 						);
 					wp_nav_menu( $defaults ); ?>
-				</div> <!-- site-primary-menu -->
+				</div> <!-- CS-site-primary-menu -->
 				
-				<div id="site-search" class="site-search row">
+				<div class="CS-site-search row">
 	                <?php get_search_form(); ?>
-	            </div> <!-- site-search -->
+	            </div> <!-- CS-site-search -->
 
-	            <div id="site-social" class="site-social small-centered small-12 columns">
+	            <div class="CS-site-social small-centered small-12 columns">
 					<?php if ($CS_header_social): foreach ($CS_header_social as $key=>$value) {
 			            switch($key) {
 			                case 'facebook': get_template_part( 'inc/social/facebook' );
@@ -133,15 +133,12 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 			                break;     
 			            }
 	        		} endif; ?>
-	            </div> <!-- site-social -->
+	            </div> <!-- CS-site-social -->
 
-	        </nav> <!-- site-navigation -->
+	        </nav> <!-- CS-site-navigation -->
 
 	    </header> <!-- CS-site-header -->
 
-	</div> <!-- header-fixed -->
+	</div> <!-- CS-site-header-fixed -->
 
-<div id="site-content" class="site-content <?php if(!empty($CS_homepage_sidebar)) : ?>small-collapse medium-uncollapse<?php else: ?>small-collapse large-uncollapse<?php endif; ?> row">
-
-
-
+<div class="CS-site-content <?php if(!empty($CS_homepage_sidebar)) : ?>small-collapse medium-uncollapse<?php else: ?>small-collapse large-uncollapse<?php endif; ?> row">

@@ -38,13 +38,13 @@ a:hover,
 .footer-copy,
 .copy-extra-button,
 .search-button:hover,
-.site-description,
+.CS-site-description,
 .page-numbers .prev,
 .page-numbers .next,
-.site-social a:hover,
-.toggle-button .toggle-title,
-.site-navigation ul > li a:hover,
-.site-navigation .sub-menu > li a {
+.CS-site-social a:hover,
+.CS-toggle-button .CS-toggle-title,
+.CS-site-navigation ul > li a:hover,
+.CS-site-navigation .sub-menu > li a {
 	color: $light_text;
 }
 
@@ -52,16 +52,16 @@ a:hover,
 	fill: $light_text;
 }
 
-.site-search ::-webkit-input-placeholder {
+.CS-site-search ::-webkit-input-placeholder {
 	color: $light_text;
 }
-.site-search :-moz-placeholder {
+.CS-site-search :-moz-placeholder {
 	color: $light_text;
 }
-.site-search ::-moz-placeholder {
+.CS-site-search ::-moz-placeholder {
 	color: $light_text;
 }
-.site-search :-ms-input-placeholder {
+.CS-site-search :-ms-input-placeholder {
 	color: $light_text;
 }
 
@@ -69,11 +69,11 @@ a:hover,
 body,
 pre,
 .content-title a,
-.site-social a,
+.CS-site-social a,
 #secondary li a,
 #secondary li a:hover,
-.site-navigation ul > li a,
-.site-navigation .sub-menu > li a:hover {
+.CS-site-navigation ul > li a,
+.CS-site-navigation .sub-menu > li a:hover {
 	color: $body_text;
 }
 
@@ -109,11 +109,11 @@ blockquote cite a,
 .submit:hover,
 .single-category a:hover,
 .copy-extra-list a:hover,
-.toggle-button:hover,
+.CS-toggle-button:hover,
 .footer-widget li a:hover,
 .prev.page-numbers:hover,
 .next.page-numbers:hover,
-.site-navigation .sub-menu > li a:hover {
+.CS-site-navigation .sub-menu > li a:hover {
 	color: $main_color;
 }
 .content-share .CS-share-icon:hover,
