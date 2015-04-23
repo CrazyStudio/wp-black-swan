@@ -4,16 +4,16 @@
 .comment-form input,
 .comment-replay,
 .comment-toggle-border,
-.content-share .share-icon {
+.content-share .CS-share-icon {
 	border-color: $border;
 }
 
 .comment-replay:hover,
-.content-share .share-icon:hover {
+.content-share .CS-share-icon:hover {
 	background-color: $border;
 }
 
-.site-header {
+.CS-site-header {
 	border-bottom-color: $border;
 }
 
@@ -82,7 +82,7 @@ pre,
 	fill: $social_dark;
 }
 .comment-replay:hover,
-.content-share .share-icon:hover i {
+.content-share .CS-share-icon:hover i {
 	color: $social_dark;
 }
 
@@ -116,7 +116,7 @@ blockquote cite a,
 .site-navigation .sub-menu > li a:hover {
 	color: $main_color;
 }
-.content-share .share-icon:hover,
+.content-share .CS-share-icon:hover,
 .comment-replay:hover,
 .submit:hover,
 .comment-toggle-border:hover {

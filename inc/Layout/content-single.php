@@ -61,7 +61,7 @@ $CS_single_post_share       = $CS_redux['CS-single-post-share']['enabled'];
     <?php endif; ?>
 
 <?php if(is_single()) : ?>
-        <?php get_template_part('inc/parts/post_pagination'); ?>
+        <?php get_template_part('inc/parts/single-pagination'); ?>
     <?php endif; ?>
 
 <?php comments_template( '', true );  ?>

@@ -34,7 +34,7 @@ site
 		archive-share
 
 		content-share
-			share-icon
+			CS-share-icon
 
 		content-share-grid
 			share-grid-icon

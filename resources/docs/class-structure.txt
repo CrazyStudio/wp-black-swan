@@ -40,6 +40,22 @@ post-pagination
 			arrow
 			pagi-text
 
+# single-pagination.php
+single-pagination
+	pagination-section-left
+		pagination-prev
+			pagination-arrow
+			pagination-text
+
+	pagination-section-middle
+		pagination-share
+
+	pagination-section-right
+		pagination-next
+			pagination-arrow
+			pagination-text
+
+
 
 
 # related_posts.php

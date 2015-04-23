@@ -1,18 +1,6 @@
 .content-header,
-.content-content .more-link,
-.share-icon {
+.content-content .more-link {
 	text-align: center;
-}
-
-.share-icon,
-.share-icon:hover {
-	border: 1px #000 solid;
-}
-
-.share-icon:hover,
-.share-icon:hover i,
-.share-icon {
-	transition: all 0.3s ease;
 }
 
 .content-date,
@@ -45,15 +33,4 @@
 	
 }
 
-.content-share {
-	margin-top: ms(3);
-}
 
-.share-icon {
-	display: inline-block;
-	border-radius: 50%;
-	margin: 0 ms(-1) 0 ms(-1);
-	padding-top: 5px;
-	width: ms(4);
-	height: ms(4);	
-}

@@ -1,5 +1,5 @@
-.site-header,
-.site-header-fixed {
+.CS-site-header,
+.CS-site-header-fixed {
 	width: 100%;
 }
 
@@ -28,7 +28,7 @@ body.withsidebar {
 	margin-top: ms(6) + ms(5);
 }
 
-.site-header-fixed  {
+.CS-site-header-fixed {
 	position: fixed;
     top: 0;
     z-index: 999;
@@ -36,7 +36,7 @@ body.withsidebar {
     overflow-x: hidden;
 }
 
-.site-header {
+.CS-site-header {
 	border-bottom: 1px solid #000;
 	background: #fff;
 	min-height:  ms(6);

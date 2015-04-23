@@ -41,11 +41,11 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 
 <?php get_template_part( 'inc/parts/svg', 'system' ); ?> <!-- SVG System Ref: https://css-tricks.com/svg-sprites-use-better-icon-fonts/ -->
 	
-<div id="site" class="hfeed site">
+<div class="CS-site">
 
-	<div class="site-header-fixed">
+	<div class="CS-site-header-fixed">
 	
-		<header id="site-header" class="site-header" role="banner">
+		<header class="CS-site-header" role="banner">
 
 			<div class="top-header row">
 
@@ -137,7 +137,7 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 
 	        </nav> <!-- site-navigation -->
 
-	    </header> <!-- site-header -->
+	    </header> <!-- CS-site-header -->
 
 	</div> <!-- header-fixed -->
 

@@ -2103,6 +2103,30 @@ object {
   padding-left: 47px;
   width: calc(253px + 50%); }
 
+.CS-share-icon {
+  text-align: center; }
+
+.CS-share-icon,
+.CS-share-icon:hover {
+  border: 1px #000 solid; }
+
+.CS-share-icon:hover,
+.CS-share-icon:hover i,
+.CS-share-icon {
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+
+.CS-share-icon {
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 14px 0 14px;
+  padding-top: 5px;
+  width: 37px;
+  height: 37px; }
+
+.content-share {
+  margin-top: 26px; }
+
 /* === Pages === */
 /*--------------------------------------------------------------
 # index
@@ -2120,19 +2144,8 @@ object {
 # content
 --------------------------------------------------------------*/
 .content-header,
-.content-content .more-link,
-.share-icon {
+.content-content .more-link {
   text-align: center; }
-
-.share-icon,
-.share-icon:hover {
-  border: 1px #000 solid; }
-
-.share-icon:hover,
-.share-icon:hover i,
-.share-icon {
-  -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease; }
 
 .content-date,
 .content-content .more-link {
@@ -2157,17 +2170,6 @@ object {
 .content-content .more-link {
   margin-top: 14px; }
 
-.content-share {
-  margin-top: 26px; }
-
-.share-icon {
-  display: inline-block;
-  border-radius: 50%;
-  margin: 0 14px 0 14px;
-  padding-top: 5px;
-  width: 37px;
-  height: 37px; }
-
 /*--------------------------------------------------------------
 # content-grid
 --------------------------------------------------------------*/
@@ -2188,8 +2190,8 @@ object {
 /*--------------------------------------------------------------
 # header
 --------------------------------------------------------------*/
-.site-header,
-.site-header-fixed {
+.CS-site-header,
+.CS-site-header-fixed {
   width: 100%; }
 
 .site-title,
@@ -2215,14 +2217,14 @@ body,
 body.withsidebar {
   margin-top: 101px; }
 
-.site-header-fixed {
+.CS-site-header-fixed {
   position: fixed;
   top: 0;
   z-index: 999;
   overflow-y: scroll;
   overflow-x: hidden; }
 
-.site-header {
+.CS-site-header {
   border-bottom: 1px solid #000;
   background: #fff;
   min-height: 59px; }
@@ -2406,24 +2408,28 @@ body.withsidebar {
 /*--------------------------------------------------------------
 # pagination
 --------------------------------------------------------------*/
-.post-pagination .next-post {
-  text-align: right; }
+.CS-single-pagination {
+  border-top: 1px solid #000;
+  padding-top: 59px; }
 
-.post-pagination .arrow {
+.CS-pagination-arrow {
   font-size: 42px;
   margin-top: -7px; }
 
-.post-pagination .next-post .arrow {
+.CS-pagination-next {
+  text-align: right; }
+
+.CS-pagination-next .CS-pagination-arrow {
   float: right;
   margin-left: 23px; }
 
-.post-pagination .prev-post .arrow {
+.CS-pagination-prev .CS-pagination-arrow {
   float: left;
   margin-right: 23px; }
 
-.post-pagination {
-  border-top: 1px solid #000;
-  padding-top: 59px; }
+.CS-pagination-share {
+  margin-top: 9px;
+  text-align: center; }
 
 /*--------------------------------------------------------------
 # related-posts
@@ -2443,14 +2449,14 @@ body.withsidebar {
 .comment-form input,
 .comment-replay,
 .comment-toggle-border,
-.content-share .share-icon {
+.content-share .CS-share-icon {
   border-color: #d6d6d6; }
 
 .comment-replay:hover,
-.content-share .share-icon:hover {
+.content-share .CS-share-icon:hover {
   background-color: #d6d6d6; }
 
-.site-header {
+.CS-site-header {
   border-bottom-color: #d6d6d6; }
 
 .site-footer,
@@ -2509,7 +2515,7 @@ pre,
   fill: #4c3d0e; }
 
 .comment-replay:hover,
-.content-share .share-icon:hover i {
+.content-share .CS-share-icon:hover i {
   color: #4c3d0e; }
 
 h1,
@@ -2537,7 +2543,7 @@ blockquote cite a,
 .site-navigation .sub-menu > li a:hover {
   color: #cea525; }
 
-.content-share .share-icon:hover,
+.content-share .CS-share-icon:hover,
 .comment-replay:hover,
 .submit:hover,
 .comment-toggle-border:hover {
@@ -2658,10 +2664,6 @@ blockquote cite a,
 .single-body {
   margin-top: 23px; }
 
-.single-bottom-share {
-  margin-top: 9px;
-  text-align: center; }
-
 p {
   margin-bottom: 37px; }
 
@@ -2732,7 +2734,7 @@ ol {
   margin-left: -99px;
   margin-top: 15px !important; }
 
-.single-share .share-icon {
+.single-share .CS-share-icon {
   display: block;
   margin-bottom: 14px; }
 

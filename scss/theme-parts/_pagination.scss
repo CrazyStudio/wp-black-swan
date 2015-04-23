@@ -1,22 +1,27 @@
-.post-pagination .next-post {
-	text-align: right;
+.CS-single-pagination {
+	border-top: 1px solid #000;	
+	padding-top: ms(6);
 }
-
-.post-pagination .arrow {
+.CS-pagination-arrow {
 	font-size: ms(5);
 	margin-top: -7px;
 }
-.post-pagination .next-post .arrow {
+
+.CS-pagination-next {
+	text-align: right;
+}
+
+.CS-pagination-next .CS-pagination-arrow {
 	float: right;
 	margin-left: ms(2);
 }
 
-.post-pagination .prev-post .arrow {
+.CS-pagination-prev .CS-pagination-arrow {
 	float: left;
 	margin-right: ms(2);
 }
 
-.post-pagination {
-	border-top: 1px solid #000;	
-	padding-top: ms(6);
+.CS-pagination-share {
+	margin-top: ms(-3);
+	text-align: center;
 }
