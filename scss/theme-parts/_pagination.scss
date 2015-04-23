@@ -1,38 +1,22 @@
-.site-pagination {
-    border-top: solid map-get($site_static_color, border) 1px;
-    margin: ms(3) 0 ms(6) 0;
-    padding: ms(3) 0 0 0;
+.post-pagination .next-post {
+	text-align: right;
 }
 
-.page-numbers {
-    list-style-type: none;
-    text-align: center;
-    
-    li {
-        display: inline-block;
-    }
-    .prev {
-        margin-right: ms(3);
-        font-weight: 200;
-        color: map-get($site_static_color, light_text);
-    }
-    .next {
-        margin-left: ms(3);
-        font-weight: 200;
-        color: map-get($site_static_color, light_text);
-    }
+.post-pagination .arrow {
+	font-size: ms(5);
+	margin-top: -7px;
+}
+.post-pagination .next-post .arrow {
+	float: right;
+	margin-left: ms(2);
 }
 
-ul.page-numbers {
-    margin-left: 0;
-    margin-bottom: 0;
+.post-pagination .prev-post .arrow {
+	float: left;
+	margin-right: ms(2);
 }
 
-.page-numbers .current {
-
-}
-
-.prev.page-numbers:hover,
-.next.page-numbers:hover {
-    color: map-get($site_dynamic_color, main_color);
+.post-pagination {
+	border-top: 1px solid #000;	
+	padding-top: ms(6);
 }

@@ -1,67 +1,37 @@
 //broder
-
-.comment-replay {
-	border-color: map-get($site_static_color, border);
+.submit,
+#comment,
+.comment-form input,
+.comment-replay,
+.comment-toggle-border,
+.content-share .share-icon {
+	border-color: $border;
 }
 
-.comment-replay:hover {
-	background-color: map-get($site_static_color, border);
-}
-
-.comment-toggle-border {
-	border-color: map-get($site_static_color, border);
-}
-
-.submit {
-	border-color: map-get($site_static_color, border);
-}
-
-#comment {
-	border-color: map-get($site_static_color, border);
-}
-
-.comment-form input {
-	border-color: map-get($site_static_color, border);
-}
-
-pre {
-	color: map-get($site_static_color, border);
+.comment-replay:hover,
+.content-share .share-icon:hover {
+	background-color: $border;
 }
 
 .site-header {
-	border-bottom-color: map-get($site_static_color, border);	
+	border-bottom-color: $border;
 }
 
 .site-footer,
+.site-pagination,
+.post-pagination,
 .footer-copy {
-	border-top-color: map-get($site_static_color, border);
+	border-top-color: $border;
 }
 
-.content-share .share-icon {
-	border-color: map-get($site_static_color, border);
-}
-
-.content-share .share-icon:hover {
-	background-color: map-get($site_static_color, border);	
-}
 
 //Light_text
-
+a:hover,
+.date,
 .wp-caption-text,
 .single-date,
 .single-category,
-.single-category a {
-	color: map-get($site_static_color, light_text);
-}
-
-.date {
-	color: map-get($site_static_color, light_text);
-}
-
-a:hover {
-	color: map-get($site_static_color, light_text);
-}
-
+.single-category a,
 .copy-extra-list a,
 .content-category,
 .content-date,
@@ -69,60 +39,54 @@ a:hover {
 .copy-extra-button,
 .search-button:hover,
 .site-description,
+.page-numbers .prev,
+.page-numbers .next,
 .site-social a:hover,
 .toggle-button .toggle-title,
 .site-navigation ul > li a:hover,
 .site-navigation .sub-menu > li a {
-	color: map-get($site_static_color, light_text);
+	color: $light_text;
 }
 
 .icon-search {
-	fill: map-get($site_static_color, light_text);
+	fill: $light_text;
 }
 
 .site-search ::-webkit-input-placeholder {
-	color: map-get($site_static_color, light_text);
+	color: $light_text;
 }
 .site-search :-moz-placeholder {
-	color: map-get($site_static_color, light_text);
+	color: $light_text;
 }
 .site-search ::-moz-placeholder {
-	color: map-get($site_static_color, light_text);
+	color: $light_text;
 }
 .site-search :-ms-input-placeholder {
-	color: map-get($site_static_color, light_text);
+	color: $light_text;
 }
 
 //body_text
-
-body {
-	color: map-get($site_static_color, body_text);
-}
-
+body,
+pre,
 .content-title a,
 .site-social a,
+#secondary li a,
+#secondary li a:hover,
 .site-navigation ul > li a,
 .site-navigation .sub-menu > li a:hover {
-	color: map-get($site_static_color, body_text);
+	color: $body_text;
 }
-
 
 //Social_dark
-
-.comment-replay:hover {
-	color: map-get($site_static_color, social-dark);
-}
-
 .comment-toggle-border:hover .comment-toggle-icon {
-	fill: map-get($site_static_color, social-dark);
+	fill: $social_dark;
 }
-
+.comment-replay:hover,
 .content-share .share-icon:hover i {
-	color: darken(map-get($site_dynamic_color, main_color), 30%);
+	color: $social_dark;
 }
 
 //header_text
-
 h1,
 h2,
 h3,
@@ -131,69 +95,38 @@ h5,
 p.intro,
 strong,
 blockquote,
-blockquote p {
-	color: map-get($site_static_color, header_text);
+blockquote p,
+.footer-widget li a {
+	color: $header_text;
 }
 
-//##dynamic
+// #dynamic
 
 //main_color
-
-.single-category a:hover {
-	color: map-get($site_dynamic_color, main_color);
-}
-
-.comment-replay:hover {
-	border-color: map-get($site_dynamic_color, main_color);
-}
-
-.comment-toggle {
-	color: map-get($site_dynamic_color, main_color);
-}
-
-.comment-toggle-icon {
-	fill: map-get($site_dynamic_color, main_color);
-}
-
-.comment-toggle-border:hover {
-	border-color: map-get($site_dynamic_color, main_color);
-}
-
-.submit:hover {
-	border-color: map-get($site_dynamic_color, main_color);
-  	color: map-get($site_dynamic_color, main_color);
-}
-
-a {
-	color: map-get($site_dynamic_color, main_color);
-}
-
-blockquote cite a {
-	color: map-get($site_dynamic_color, main_color);
-}
-
-.content-share .share-icon:hover {		
-	border-color: map-get($site_dynamic_color, main_color);
-}
-
-.icon-search:hover {
-	fill: map-get($site_dynamic_color, main_color);
-}
-
+a,
+blockquote cite a,
+.comment-toggle,
+.submit:hover,
+.single-category a:hover,
 .copy-extra-list a:hover,
 .toggle-button:hover,
+.footer-widget li a:hover,
+.prev.page-numbers:hover,
+.next.page-numbers:hover,
 .site-navigation .sub-menu > li a:hover {
-	color: map-get($site_dynamic_color, main_color);
+	color: $main_color;
+}
+.content-share .share-icon:hover,
+.comment-replay:hover,
+.submit:hover,
+.comment-toggle-border:hover {
+	border-color: $main_color;
 }
 
-
-
-
-
-
-
-
-
+.comment-toggle-icon,
+.icon-search:hover {
+	fill: $main_color;
+}
 
 
 

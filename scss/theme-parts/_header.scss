@@ -1,8 +1,30 @@
-body { 
-	margin-top: ms(6) + ms(5);
+.site-header,
+.site-header-fixed {
+	width: 100%;
 }
 
-body.withsidebar {
+.site-title,
+.site-description {
+	display: inline-block;
+}
+
+.icon-search,
+.icon-search:hover {
+	transition: color 0.5s ease;
+}
+
+.toggle-icon,
+.js-css-toggle {
+	transition: all 0.5s ease;
+}
+
+.toggle-icon,
+.icon-search {
+	width: ms(1);
+	height: ms(1);
+}
+body,
+body.withsidebar { 
 	margin-top: ms(6) + ms(5);
 }
 
@@ -10,20 +32,17 @@ body.withsidebar {
 	position: fixed;
     top: 0;
     z-index: 999;
-    width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .site-header {
 	border-bottom: 1px solid #000;
-	width: 100%;
-	min-height:  ms(6);
 	background: #fff;
+	min-height:  ms(6);
 }
 
 .site-title {	
-	display: inline-block;
 	margin: ms(0) ms(-3) 0 0;
 	padding: 0;
 }
@@ -34,7 +53,6 @@ body.withsidebar {
 }
 
 .site-description {
-	display: inline-block;
 	vertical-align: 3px;
 	font-size: ms(2) - ms(-6);
 	font-weight: 200;
@@ -46,27 +64,18 @@ body.withsidebar {
 }
 
 .social-icon {
-	padding: 0 ms(-4) 0 ms(-4);
 	margin-right: -2px;
 	margin-left: -2px;
-}
-
-.social-icon i {
+	padding: 0 ms(-4) 0 ms(-4);
 }
 
 .toggle-button {
 	float: right;
 	margin: ms(-6) 0 ms(-6) 0;
 	outline: none;
+	background: none;
 	padding: ms(0);
-	background: none !important;
 	font-weight: 200;
-}
-
-.toggle-icon {
-	width: ms(1);
-	height: ms(1);
-	transition: all 0.5s ease;
 }
 
 .toggle-title {
@@ -75,8 +84,7 @@ body.withsidebar {
 }
 
 .js-css-toggle {
-    max-height: 700px !important;
-    transition: all 0.5s ease;
+    max-height: 700px !important; /* Important because this is an essential function, just to insure that it will not be overwritten */
 }
 
 .js-css-toggle-animation {
@@ -117,21 +125,10 @@ body.withsidebar {
 	top: 0;
 	left: 84%;
 	margin: 0;
-	padding: 0;
+	outline: none;
 	background: none;
 	padding: 11px;
   	padding-bottom: 7px;
-  	outline: none;
-}
-
-.icon-search {
-	width: ms(1);
-	height: ms(1);
-	transition: color 0.5s ease;
-}
-
-.icon-search:hover {
-	transition: color 0.5s ease;
 }
 
 .site-search ::-webkit-input-placeholder {

@@ -1,17 +1,20 @@
-button  {
-	font-family: "lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+a,
+a:hover {
+	transition: color 0.3s ease;
+}
+
+ol,
+pre,
+table {
+	margin-bottom: ms(4);
 }
 
 h1 {
 	font-size: ms(5);
 }
 
-a {
-	transition: color 0.3s ease;
-}
-
-a:hover {
-	transition: color 0.3s ease;
+button  {
+	font-family: "lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
 ul li {
@@ -19,28 +22,19 @@ ul li {
 	list-style-image: url(images/square.svg);
 }
 
-ol {
-	margin-bottom: ms(4);
-}
-
-p.lead {
-}
-
 pre {
-  border: 1px solid #000;
-  margin-bottom: ms(4);
-  padding: ms(2) ms(3) ms(2) ms(3);
-  position: relative;
-  white-space: pre-wrap;       /* CSS 3 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	border: 1px solid #000;
+	padding: ms(2) ms(3) ms(2) ms(3);
+	position: relative;
+	white-space: pre-wrap;       /* CSS 3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 table {
 	width: 100%;
-	margin-bottom: ms(4);
 }
 
 blockquote {
@@ -48,21 +42,12 @@ blockquote {
 }
 
 blockquote cite {
-  font-size: ms(0);
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-blockquote cite:before {
-  content: none;
+	font-size: ms(0);
+	font-weight: 500;
+	line-height: 1.4;
 }
 
 blockquote cite {
 	font-size: ms(0);
 	font-weight: 500;
-}
-
-.CS-pull-left blockquote {
-	padding: 0;
-
 }

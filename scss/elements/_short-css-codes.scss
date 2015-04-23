@@ -1,0 +1,35 @@
+.CS-pull-right blockquote,
+.CS-pull-left blockquote {
+	padding: 0;
+}
+
+.CS-pull-left {
+	margin-top: - ms(-5);
+  	float: left;		
+  	margin-left: - ms(10);
+  	padding-right: ms(5);
+  	text-align: right;
+  	width: calc(50px + 50%);
+}
+
+.CS-pull-right {
+	margin-top: - ms(-5);
+  	float: right;		
+  	margin-right: - ms(10);
+  	//padding-left: 36px;
+  	padding-left: ms(5);
+  	text-align: left;
+  	width: calc(50px + 50%);
+}
+
+/* If those two classes are after each other, this code
+ * will make them behave differently
+ *
+ * @link: https://css-tricks.com/almanac/selectors/a/adjacent-sibling/
+ *
+ */ 
+.CS-pull-left + .CS-pull-right  {
+  margin-right: -150px;
+  padding-left: 47px;
+  width: calc(253px + 50%);
+}
