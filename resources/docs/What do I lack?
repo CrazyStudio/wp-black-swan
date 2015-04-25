@@ -1,11 +1,11 @@
 What do I lack?
 
-Acrhive.php
-author.php
-category.php
-page-fullwidth
-tag.php
-search.php
+Acrhive.php 1/2
+author.php 1/2 don't need 
+category.php don't need
+page-fullwidth 
+tag.php 
+search.php 
 
 
 inc/parts/post-author.php

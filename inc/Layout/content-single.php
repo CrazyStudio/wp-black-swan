@@ -20,7 +20,7 @@ $CS_single_post_share       = $CS_redux['CS-single-post-share']['enabled'];
 
 		<?php if ( ! is_page() ) : ?>
 		<div class="single-header">
-			<span class="CS-single-author"><a href="#"><?php the_author(); ?></a></span>
+			<span class="CS-single-author"><a href="#"><?php the_author_posts_link(); ?></a></span>
 			<time class="CS-single-date" datetime="<?php the_time('Y-m-d H:i'); ?>">/ <?php the_time('F j, Y'); ?></time> <!-- content-date -->
 			<span class="CS-single-category">/ <?php the_category( ', ' ); ?></span>
 		</div>
