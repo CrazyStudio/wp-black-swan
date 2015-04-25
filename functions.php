@@ -254,10 +254,7 @@ function black_swan_comments($comment, $args, $depth) {
 		<li <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
 			
 			<div class="thecomment">
-						
-				<!-- <div class="author-img">
-					<?php echo get_avatar($comment,$args['avatar_size']); ?>
-				</div> -->
+
 				<span class="reply">
 						<?php comment_reply_link(array_merge( $args, array('reply_text' => __('<span class="comment-replay">R</span>', 'solopine'), 'depth' => $depth, 'max_depth' => $args['max_depth'])), $comment->comment_ID); ?>
 						<?php edit_comment_link(__('Edit', 'solopine')); ?>
@@ -281,6 +278,24 @@ function black_swan_comments($comment, $args, $depth) {
 		
 		<?php 
 	}
+/**
+ * Removes more link jump
+ * 
+ * @link http://www.techiecorner.com/1131/how-to-remove-more-tag-in-wordpress/
+ * 
+ */
+function remove_more_jump_link($link) { 
+	$offset = strpos($link, '#more-');
+	if ($offset) {
+		$end = strpos($link, '"',$offset);
+	}
+	if ($end) {
+		$link = substr_replace($link, '', $offset, $end-$offset);
+	}
+	return $link;
+}
+
+add_filter('the_content_more_link', 'remove_more_jump_link');
 
 
 

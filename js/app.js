@@ -28,6 +28,15 @@ jQuery(document).ready(function($) {
 	} else {
 	}
 
+	if($ (".CS-related-item").length === 1 ) {
+		$( ".CS-related-item" ).addClass( "menu-offset-1-item" );
+	} else if ($( ".CS-related-item" ).length === 2 ) {
+		$( ".CS-related-item:first-child" ).addClass( "medium-offset-2" );
+	} else {
+		
+	}
+
+
 	// Make the navigation toggle button work
 	$( "#CS-site-navigation-toggle" ).on( "click", function() {
 

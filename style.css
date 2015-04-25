@@ -1969,6 +1969,9 @@ blockquote p {
 /*--------------------------------------------------------------
 # site
 --------------------------------------------------------------*/
+.CS-site {
+  overflow: hidden; }
+
 p {
   margin-bottom: 37px; }
 
@@ -2010,11 +2013,15 @@ pre {
 ol {
   list-style-image: none; }
 
+.CS-site-content-main ul,
+.CS-site-content-main ol {
+  padding-left: 37px; }
+
 table {
   width: 100%; }
 
 blockquote {
-  padding: 0 37px 0 37px 0; }
+  padding: 0 5% 23px 5%; }
 
 hr {
   margin: 37px 0 37px 0; }
@@ -2145,7 +2152,8 @@ object {
   height: 37px; }
 
 .CS-content-share {
-  margin-top: 26px; }
+  margin-top: 23px;
+  margin-bottom: 16px; }
 
 .wp-caption-text {
   font-size: 14px;
@@ -2159,13 +2167,23 @@ object {
   margin-bottom: 37px;
   margin-top: 0; }
 
-.alignright {
+.alignright,
+.wp-caption.alignright {
   margin: 0;
   margin-right: -155px;
   float: right;
   padding-left: 37px;
   padding-bottom: 37px;
-  width: 406px; }
+  max-width: 406px; }
+
+.alignleft,
+.wp-caption.alignleft {
+  margin: 0;
+  margin-left: -155px;
+  float: left;
+  padding-right: 37px;
+  padding-bottom: 37px;
+  max-width: 406px; }
 
 /* === Pages === */
 /*--------------------------------------------------------------
@@ -2189,13 +2207,13 @@ object {
 
 .CS-intro {
   font-size: 1.125rem;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.75; }
 
 .CS-single-share {
   float: left;
   margin-left: -99px;
-  margin-top: 15px !important; }
+  margin-top: 15px; }
 
 .CS-single-share .CS-share-icon {
   display: block;
@@ -2223,14 +2241,14 @@ object {
 .content-content,
 .content-content p {
   font-weight: 400;
-  line-height: 1.75;
-  -webkit-font-smoothing: subpixel-antialiased; }
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.75; }
 
 .content-date,
 .content-content .more-link {
   display: block;
-  width: 40%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 50%; }
 
 .content {
   margin-bottom: 37px; }
@@ -2239,20 +2257,24 @@ object {
   padding: 16px; }
 
 .content-title {
-  margin: 0;
+  line-height: 1.3;
   margin-bottom: 9px;
-  text-transform: capitalize;
-  line-height: 1.3; }
+  margin: 0;
+  text-transform: capitalize; }
 
 .content-date {
-  margin-top: 23px;
-  font-weight: 200; }
+  font-weight: 200;
+  margin-top: 23px; }
 
 .content-content .more-link {
-  margin-top: 14px; }
+  margin-top: 23px; }
 
 .content-content .CS-intro {
-  font-size: 16px; }
+  font-size: 16px;
+  margin-bottom: 0; }
+
+.content-content p {
+  margin-bottom: 0; }
 
 /*--------------------------------------------------------------
 # content-grid
@@ -2264,6 +2286,12 @@ object {
 /*--------------------------------------------------------------
 # 404
 --------------------------------------------------------------*/
+.CS-404-title {
+  text-align: center; }
+
+.CS-404-section {
+  margin-bottom: 59px; }
+
 /*--------------------------------------------------------------
 # archive
 --------------------------------------------------------------*/
@@ -2348,7 +2376,7 @@ body.withsidebar {
   vertical-align: 3px; }
 
 .js-css-toggle {
-  max-height: 700px !important;
+  max-height: 2000px !important;
   /* Important because this is an essential function, just to insure that it will not be overwritten */ }
 
 .js-css-toggle-animation {
@@ -2465,7 +2493,7 @@ body.withsidebar {
   margin-left: 0; }
 
 .copy-extra-list li {
-  margin-left: 23px; }
+  margin: 0 14px 0 14px; }
 
 .footer-center {
   text-align: center; }
@@ -2599,7 +2627,8 @@ body.withsidebar {
   padding-left: 6px; }
 
 .children {
-  margin-left: 59px; }
+  margin-left: 59px;
+  padding-left: 0 !important; }
 
 .submit {
   border: none;
@@ -2689,6 +2718,25 @@ ul.page-numbers {
 /*--------------------------------------------------------------
 # related-posts
 --------------------------------------------------------------*/
+.CS-related {
+  padding: 37px 0 37px; }
+
+.CS-related-title {
+  margin-top: 5px;
+  font-size: 18px;
+  text-align: center; }
+
+.CS-related-date {
+  text-align: center;
+  display: block;
+  margin-top: 16px;
+  font-size: 16px;
+  color: #999999;
+  font-weight: 300; }
+
+.CS-related-item {
+  padding: 0 23px 0 23px; }
+
 /*--------------------------------------------------------------
 # searchform
 --------------------------------------------------------------*/
@@ -2826,14 +2874,6 @@ blockquote cite a,
   body.withsidebar {
     margin-top: 96px; }
 
-  .CS-pull-left {
-    float: none;
-    margin-left: 0px;
-    padding-right: 23px;
-    padding-left: 23px;
-    width: 100%;
-    text-align: right; }
-
   .CS-site-navigation-toggle .CS-toggle-button {
     display: block;
     float: none;
@@ -2863,11 +2903,32 @@ blockquote cite a,
     font-size: 23px; }
 
   .content-content p {
+    font-size: 16px; }
+
+  .CS-404-title {
+    font-size: 23px;
+    margin-top: 42px; }
+
+  .CS-404-text {
+    font-size: 14px; }
+
+  .CS-intro {
+    font-size: 16px;
+    line-height: 1.4; }
+
+  .mq-footer-widget p,
+  .mq-footer-widget li,
+  .mq-footer-widget a,
+  .mq-footer-copy .copy-body,
+  .copy-extra-list li {
     font-size: 14px; } }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (min-width: 40.063em) {
   .menu-offset-3-item {
     margin-left: 12.499999% !important; }
+
+  .menu-offset-2-related-posts {
+    margin-left: 25% !important; }
 
   .menu-offset-2-item {
     margin-left: 25% !important; }
@@ -2879,41 +2940,180 @@ blockquote cite a,
   body {
     margin-top: 59px; }
 
+  .mq-content-title {
+    font-size: 26px; }
+
+  .mq-content-content p {
+    font-size: 16px; }
+
+  .mq-footer-widget .widget-title {
+    font-size: 23px; }
+
+  .mq-footer-widget p,
+  .mq-footer-widget li,
+  .mq-footer-widget a,
+  .mq-footer-copy .copy-body,
+  .copy-extra-list li {
+    font-size: 14px; }
+
+  .CS-404-title {
+    font-size: 37px;
+    margin-top: 42px; } }
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 1025px, large screens */
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xxlarge screens */
+/* Define mobile styles */
+@media only screen and (max-width: 40em) {
+  .CS-single-share {
+    float: none;
+    margin-bottom: 14px;
+    margin-left: 0;
+    margin-top: 14px; }
+
+  .CS-single-share .CS-share-icon {
+    display: inline-block;
+    margin-bottom: 0; }
+
+  .CS-single-share .CS-share-icon:first-child {
+    margin-left: 0; }
+
+  .alignleft,
+  .wp-caption.alignleft,
+  .alignright,
+  .wp-caption.alignright {
+    float: none;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 0; }
+
+  blockquote {
+    margin-bottom: 37px;
+    padding: 0; }
+
+  blockquote p {
+    font-size: 18px; }
+
+  .aligncenter {
+    margin-left: -10%;
+    max-width: 120%; }
+
+  .CS-pull-left + .CS-pull-right {
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
+    padding-left: 0;
+    width: 100%; }
+
+  .CS-pull-right {
+    float: none;
+    margin: 0;
+    width: 100%; }
+
+  .CS-pull-right,
+  .CS-pull-left {
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-bottom: 37px; }
+
   .CS-pull-left {
     float: none;
     margin-left: 0px;
-    padding-right: 42px;
-    padding-left: 42px;
     width: 100%;
     text-align: right; }
+
+  table thead tr th,
+  table tfoot tr th,
+  table tfoot tr td,
+  table tbody tr th,
+  table tbody tr td,
+  table tr td {
+    font-size: 11px; }
+
+  .CS-related {
+    border-top: solid 1px #cea525;
+    padding-top: 0; }
+
+  .CS-related-item:first-child {
+    margin-top: 0;
+    padding-top: 68px; }
+
+  .CS-related-item {
+    margin-top: 37px; }
+
+  .CS-related-title {
+    font-size: 16px; }
+
+  .CS-pagination-section-middle {
+    margin: 16px 0 16px; }
+
+  .CS-comments-header-title {
+    vertical-align: 0px;
+    font-size: 16px; }
+
+  .CS-comment-toggle-text {
+    font-size: 16px;
+    vertical-align: -4px; }
+
+  .CS-comments-number {
+    height: 26px;
+    width: 26px;
+    font-size: 14px;
+    padding-top: 2px; }
+
+  .CS-comment-toggle-border {
+    height: 26px;
+    width: 26px;
+    font-size: 14px;
+    padding-top: 2px; }
+
+  .CS-comment-toggle-icon {
+    width: 10px;
+    height: 10px; }
+
+  .CS-comment-toggle {
+    font-size: 14px; }
+
+  .CS-comments {
+    margin-bottom: 16px; }
+
+  .comment-replay {
+    float: left;
+    font-size: 14px;
+    height: 26px;
+    padding-top: 2px;
+    width: 26px; }
+
+  .comment-text {
+    margin-left: 37px; }
+
+  .comment-text .date {
+    display: block;
+    padding-left: 0; }
+
+  .comment-text p {
+    font-size: 14px; }
+
+  .children {
+    margin-left: 37px; } }
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .CS-pull-left {
+    margin-left: -102px;
+    padding-bottom: 16px; }
 
   .CS-single-thumbnail {
     margin-left: -16px;
     margin-right: -16px; }
 
-  .mq-content-title {
-    font-size: 26px; }
+  .alignright {
+    margin-right: -102px; }
 
-  .mq-content-content p {
-    font-size: 14px; }
-
-  .mq-footer-widget .widget-title {
-    font-size: 23px; }
-
-  .mq-footer-widget p {
-    font-size: 14px; }
-
-  .mq-footer-widget li {
-    font-size: 14px; }
-
-  .mq-footer-widget a {
-    font-size: 14px; }
-
-  .mq-footer-copy .copy-body {
-    font-size: 14px; }
-
-  .copy-extra-list li {
-    font-size: 14px; } }
+  .wp-caption-text {
+    padding: 0 16px 0 16px; } }
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 /* min-width 1025px, large screens */
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */

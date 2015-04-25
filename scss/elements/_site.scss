@@ -1,3 +1,7 @@
+.CS-site {
+	overflow: hidden;
+}
+
 p {
 	margin-bottom: ms(4);
 }
@@ -41,12 +45,17 @@ ol {
 	list-style-image: none;
 }
 
+.CS-site-content-main ul,
+.CS-site-content-main ol {
+	padding-left: ms(4);
+}
+
 table {
 	width: 100%;
 }
 
 blockquote {
-	padding: 0 ms(4) 0 ms(4) 0; 
+	padding: 0 5% ms(2) 5%;
 }
 
 hr {

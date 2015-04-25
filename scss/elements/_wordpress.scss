@@ -12,11 +12,22 @@
 	margin-top: 0;
 }
 
-.alignright {
+.alignright,
+.wp-caption.alignright {
 	margin: 0;
 	margin-right: - ms(10);
 	float: right;
 	padding-left: ms(4);
 	padding-bottom: ms(4);
-	width: ms(14);
+	max-width: ms(14);
+}
+
+.alignleft,
+.wp-caption.alignleft {
+	margin: 0;
+	margin-left: - ms(10);
+	float: left;
+	padding-right: ms(4);
+	padding-bottom: ms(4);
+	max-width: ms(14);
 }

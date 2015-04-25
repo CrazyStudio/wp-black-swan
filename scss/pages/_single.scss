@@ -14,14 +14,14 @@
 
 .CS-intro {
 	font-size: 1.125rem;
-  	-webkit-font-smoothing: antialiased;
+  	-webkit-font-smoothing: subpixel-antialiased;
   	line-height: 1.75;
 }
 
 .CS-single-share {
 	float: left;
 	margin-left: - (3+ ms(8));
-	margin-top: 15px !important;
+	margin-top: 15px;
 
 }
 

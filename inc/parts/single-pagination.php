@@ -11,7 +11,7 @@ $next_post = get_next_post();
 
 <div class="CS-single-pagination row">
 			
-	<div class="CS-pagination-section-left small-4 columns">
+	<div class="CS-pagination-section-left small-12 medium-4 columns">
 		
 		<?php if (!empty( $prev_post )) : ?>
 		<div class="CS-pagination-prev">
@@ -31,7 +31,7 @@ $next_post = get_next_post();
 
 	</div> <!-- CS-pagination-section-left -->
 
-	<div class="CS-pagination-section-middle small-4 columns">
+	<div class="CS-pagination-section-middle small-12 medium-4 columns">
 		
 		<div class="CS-pagination-share CS-content-share">
 	        <?php if ($CS_single_post_share): foreach ($CS_single_post_share as $key=>$value) {
@@ -53,7 +53,7 @@ $next_post = get_next_post();
 
 	</div> <!-- CS-pagination-section-middle -->
 
-	<div class="CS-pagination-section-right small-4 columns">
+	<div class="CS-pagination-section-right small-12 medium-4 columns">
 	
 	<?php if (!empty( $next_post )) : ?>
 	<div class="CS-pagination-next">

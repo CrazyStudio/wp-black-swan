@@ -31,7 +31,7 @@ $CS_footer_copy 	= $CS_redux['CS-footer-copy'];
 
 			</div>
 
-			<div class="mq-footer-widget footer-widget small-4 medium-3 large-2 small-offset-1 medium-offset-0 end columns">
+			<div class="mq-footer-widget footer-widget small-5 medium-3 large-2 small-offset-0 medium-offset-0 end columns">
 				
 				<?php dynamic_sidebar( 'footer-small-widget' ); ?>
 

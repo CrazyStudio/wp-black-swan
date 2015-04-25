@@ -21,20 +21,21 @@ if ($categories) {
 
 	$my_query = new wp_query( $args );
 	if( $my_query->have_posts() ) { ?>
-		<div class="CS-related">
-			<div class="CS-related-section">
-			<h4 class="CS-related-section-title"><?php _e('You Might Also Like', 'black-swan'); ?></h4>
-		</div>
+		<div class="CS-related row">
+			<!-- <div class="CS-related-section">
+				<h4 class="CS-related-section-title"><?php _e('You Might Also Like', 'black-swan'); ?></h4>
+			</div> -->
 		<?php while( $my_query->have_posts() ) {
 			$my_query->the_post();?>
-				<div class="CS-related-item">
+				<div class="CS-related-item small-10 small-centered medium-uncentered medium-4 columns">
 					
 					<?php if ( (function_exists('has_post_thumbnail')) && (has_post_thumbnail()) ) : ?>
-					<a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail('thumb'); ?></a>
+					<a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail(); ?></a>
 					<?php endif; ?>
 					
-					<h3 class="CS-related-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 					<span class="CS-related-date"><?php the_time( get_option('date_format') ); ?></span>
+					<h3 class="CS-related-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
+					
 					
 				</div>
 		<?php
