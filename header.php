@@ -26,13 +26,15 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <!-- favicon -->
-<?php if(!empty($CS_favicon_iso)) :?>
-	<link rel="shortcut icon" href="<?php echo $CS_favicon_iso; ?>" />
-<?php endif; ?>
 
 <?php if(!empty($CS_favicon_png)) :?>
 	<link rel="icon" type="image/png" href="<?php echo $CS_favicon_png; ?>" />
 <?php endif; ?>
+
+<?php if(!empty($CS_favicon_iso)) :?>
+	<link rel="shortcut icon" href="<?php echo $CS_favicon_iso; ?>" />
+<?php endif; ?>
+
 
 <?php wp_head(); ?>
 </head>
@@ -44,29 +46,29 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 <div class="CS-site">
 
 	<div class="CS-site-header-fixed">
-	
+
 		<header class="CS-site-header" role="banner">
 
 			<div class="CS-top-header row">
 
 				<div class="CS-site-branding small-12 medium-9 small-centered medium-uncentered columns">
-					
+
 					<?php if(empty($CS_site_logo)) : ?>
-						
+
 						<?php if(is_front_page()) : ?>
 							<h1 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="CS-site-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
 						<?php else : ?>
 							<h2 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="CS-site-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
 						<?php endif; ?>
-						
+
 					<?php else : ?>
-						
+
 						<?php if(is_front_page()) : ?>
 							<h1 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="CS-site-logo" src="<?php echo $CS_site_logo; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h1>
 						<?php else : ?>
 							<h2 class="CS-site-title"><a href="<?php echo home_url(); ?>"><img class="CS-site-logo" src="<?php echo $CS_site_logo; ?>" alt="<?php bloginfo( 'name' ); ?>" /></a></h2>
 						<?php endif; ?>
-						
+
 					<?php endif; ?>
 
 					<h2 class="CS-site-description">
@@ -76,7 +78,7 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 				</div> <!-- CS-site-branding -->
 
 				<div id="CS-site-navigation-toggle" class="CS-site-navigation-toggle small-8 medium-3 small-centered medium-uncentered columns">
-					
+
 					<button class="CS-toggle-button">
 						<span id="CS-toggle-title" class="CS-toggle-title" data-open="Explore" data-close="Close">Explore</span>
 						<svg id="CS-toggle-icon" class="CS-toggle-icon">
@@ -84,7 +86,7 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 							</use>
 						</svg>
 					</button> 
-				
+
 				</div> <!-- CS-site-navigation-toggle -->
 
 			</div> <!-- CS-top-header -->
@@ -100,44 +102,44 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 						);
 					wp_nav_menu( $defaults ); ?>
 				</div> <!-- CS-site-primary-menu -->
-				
+
 				<div class="CS-site-search row">
-	                <?php get_search_form(); ?>
-	            </div> <!-- CS-site-search -->
+					<?php get_search_form(); ?>
+				</div> <!-- CS-site-search -->
 
-	            <div class="CS-site-social small-centered small-12 columns">
+				<div class="CS-site-social small-centered small-12 columns">
 					<?php if ($CS_header_social): foreach ($CS_header_social as $key=>$value) {
-			            switch($key) {
-			                case 'facebook': get_template_part( 'inc/social/facebook' );
-			                break;
-			         
-			                case 'twitter': get_template_part( 'inc/social/twitter' );
-			                break;
-			         
-			                case 'google-plus': get_template_part( 'inc/social/googleplus' );
-			                break;
-			         
-			                case 'pinterest': get_template_part( 'inc/social/pinterest' );    
-			                break;
+						switch($key) {
+							case 'facebook': get_template_part( 'inc/social/facebook' );
+							break;
 
-			                case 'instagram': get_template_part( 'inc/social/instagram' );    
-			                break;
+							case 'twitter': get_template_part( 'inc/social/twitter' );
+							break;
 
-			                case 'tumblr': get_template_part( 'inc/social/tumblr' );    
-			                break; 
+							case 'google-plus': get_template_part( 'inc/social/googleplus' );
+							break;
 
-			                case 'youtube': get_template_part( 'inc/social/youtube' );    
-			                break; 
+							case 'pinterest': get_template_part( 'inc/social/pinterest' );    
+							break;
 
-			                case 'rss': get_template_part( 'inc/social/rss' );    
-			                break;     
-			            }
-	        		} endif; ?>
-	            </div> <!-- CS-site-social -->
+							case 'instagram': get_template_part( 'inc/social/instagram' );    
+							break;
 
-	        </nav> <!-- CS-site-navigation -->
+							case 'tumblr': get_template_part( 'inc/social/tumblr' );    
+							break; 
 
-	    </header> <!-- CS-site-header -->
+							case 'youtube': get_template_part( 'inc/social/youtube' );    
+							break; 
+
+							case 'rss': get_template_part( 'inc/social/rss' );    
+							break;     
+						}
+					} endif; ?>
+				</div> <!-- CS-site-social -->
+
+			</nav> <!-- CS-site-navigation -->
+
+		</header> <!-- CS-site-header -->
 
 	</div> <!-- CS-site-header-fixed -->
 

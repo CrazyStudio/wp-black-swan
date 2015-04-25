@@ -8,6 +8,7 @@ $CS_content_share       = $CS_redux['CS-homepage-sidebar'];
 $CS_classic_share       = $CS_redux['CS-classic-share']['enabled'];
 $pin_image              = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
 ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class('content'); ?>>    
 
     <?php if(has_post_thumbnail()) : ?>

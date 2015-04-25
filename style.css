@@ -1973,7 +1973,7 @@ blockquote p {
   overflow: hidden; }
 
 p {
-  margin-bottom: 37px; }
+  margin-bottom: 26px; }
 
 a,
 a:hover {
@@ -2404,55 +2404,6 @@ body.withsidebar {
 .sub-menu > li a {
   font-weight: 200; }
 
-.CS-site-search {
-  margin-top: 14px; }
-
-.CS-search-submit {
-  position: absolute;
-  top: 0;
-  left: 84%;
-  margin: 0;
-  outline: none;
-  background: none;
-  padding: 11px;
-  padding-bottom: 7px; }
-
-.CS-site-search ::-webkit-input-placeholder {
-  font-weight: 200;
-  -webkit-transition: opacity 0.5s ease-out;
-          transition: opacity 0.5s ease-out; }
-
-.CS-site-search :-moz-placeholder {
-  /* Firefox 18- */
-  font-weight: 200;
-  transition: opacity 0.5s ease-out; }
-
-.CS-site-search ::-moz-placeholder {
-  /* Firefox 19+ */
-  font-weight: 200;
-  transition: opacity 0.5s ease-out; }
-
-.CS-site-search :-ms-input-placeholder {
-  font-weight: 200;
-  transition: opacity 0.5s ease-out; }
-
-.CS-site-search input:focus::-webkit-input-placeholder {
-  opacity: 0;
-  -webkit-transition: opacity 0.5s ease-out;
-          transition: opacity 0.5s ease-out; }
-
-.CS-site-search input:focus:-moz-placeholder {
-  opacity: 0;
-  transition: opacity 0.5s ease-out; }
-
-.CS-site-search input:focus::-moz-placeholder {
-  opacity: 0;
-  transition: opacity 0.5s ease-out; }
-
-.CS-site-search input:focus:-ms-input-placeholder {
-  opacity: 0;
-  transition: opacity 0.5s ease-out; }
-
 /*--------------------------------------------------------------
 # footer
 --------------------------------------------------------------*/
@@ -2622,7 +2573,7 @@ body.withsidebar {
 .author {
   font-weight: 700; }
 
-.date {
+.CS-comments .date {
   font-size: 14px;
   padding-left: 6px; }
 
@@ -2740,6 +2691,75 @@ ul.page-numbers {
 /*--------------------------------------------------------------
 # searchform
 --------------------------------------------------------------*/
+.CS-site-search {
+  margin-top: 14px; }
+
+.CS-search-submit {
+  position: relative;
+  margin: 0;
+  outline: none;
+  background: none;
+  width: 37px;
+  height: 37px;
+  padding: 0;
+  float: right;
+  border: 1px solid #d6d6d6;
+  font-size: 16px;
+  color: #cea525;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+
+.CS-search-submit:hover {
+  border: 1px solid #cea525;
+  background: #d6d6d6;
+  color: #4c3d0e;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  cursor: pointer; }
+
+.CS-search-form-input {
+  width: calc(100% - 53px) !important;
+  position: relative;
+  float: left;
+  box-shadow: none !important;
+  border: 1px solid #d6d6d6 !important; }
+
+::-webkit-input-placeholder {
+  font-weight: 200;
+  -webkit-transition: opacity 0.5s ease-out;
+          transition: opacity 0.5s ease-out; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-weight: 200;
+  transition: opacity 0.5s ease-out; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-weight: 200;
+  transition: opacity 0.5s ease-out; }
+
+:-ms-input-placeholder {
+  font-weight: 200;
+  transition: opacity 0.5s ease-out; }
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-out;
+          transition: opacity 0.5s ease-out; }
+
+input:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease-out; }
+
+input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease-out; }
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease-out; }
+
 /*--------------------------------------------------------------
 # tag
 --------------------------------------------------------------*/
@@ -2771,7 +2791,7 @@ ul.page-numbers {
   border-top-color: #d6d6d6; }
 
 a:hover,
-.date,
+.CS-comments .date,
 .CS-single-date,
 .wp-caption-text,
 .CS-single-category,
@@ -3120,3 +3140,8 @@ blockquote cite a,
 /* min-width 1441px, xlarge screens */
 /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 /* min-width 1921px, xxlarge screens */
+.CS-archive-header {
+  text-align: center; }
+
+.CS-archive-title {
+  margin-bottom: 37px; }

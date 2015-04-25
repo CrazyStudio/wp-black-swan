@@ -8,20 +8,17 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class('CS-content-search'); ?>>
+	<header class="CS-content-search-header">
+		<?php the_title( sprintf( '<h1 class="CS-content-search-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-		</div><!-- .entry-meta -->
+
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</header>
 
-	<div class="entry-summary">
+	<div class="CS-content-search-excerpt">
 		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+	</div>
 
-	<footer class="entry-footer">
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+</article> <!-- CS-content-search -->

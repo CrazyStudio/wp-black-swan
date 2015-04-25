@@ -3,11 +3,10 @@
 
 	<?php 
 		if ( comments_open() ) :
-		
 		echo '<div id="CS-comments-header" class="CS-comments-header clearfix">';
 		echo "<div class='row large-uncollapse small-collapse'>";
 		echo '<h4 class="small-6 columns">';
-		comments_number(__('<span class="CS-comments-number">0</span> <span class="CS-comments-header-title">Comments</span>','solopine'), __('<span class="CS-comments-number">1</span> <span class="CS-comments-header-title">Comment</span>','solopine'), '<span class="CS-comments-number">%</span>' . __('<span class="CS-comments-header-title">Comments</span>','solopine') );
+		comments_number(__('<span class="CS-comments-number">0</span> <span class="CS-comments-header-title">Comments</span>','black-swan'), __('<span class="CS-comments-number">1</span> <span class="CS-comments-header-title">Comment</span>','black-swan'), '<span class="CS-comments-number">%</span>' . __('<span class="CS-comments-header-title">Comments</span>','black-swan') );
 		echo '</h4>';
 		echo '<h4 class="CS-comment-toggle small-6 columns">';
 		echo '<span class="CS-comment-toggle-text">Add Your Own</span>';
@@ -23,7 +22,7 @@
 
 		$custom_comment_field = '<p class="CS-comment-form-comment"><textarea class="CS-comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>';  //label removed for cleaner layout
 
-		
+
 		echo "<div class='row large-uncollapse small-collapse'>";
 		echo "<div class='comments small-12 small-centered columns'>";
 		
@@ -53,9 +52,9 @@
 
 
 
-		
-	 ?>
+
+	?>
 
 
-</div> <!-- end comments div -->
+</div> <!-- CS-comments -->
 <?php endif; ?>
