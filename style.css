@@ -2238,46 +2238,46 @@ object {
 /*--------------------------------------------------------------
 # content
 --------------------------------------------------------------*/
-.content-header,
-.content-content .more-link {
+.CS-content-header,
+.CS-content-content .more-link {
   text-align: center; }
 
-.content-content,
-.content-content p {
+.CS-content-content,
+.CS-content-content p {
   font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: 1.75; }
 
-.content-date,
-.content-content .more-link {
+.CS-content-date,
+.CS-content-content .more-link {
   display: block;
   margin: 0 auto;
   width: 50%; }
 
-.content {
+.CS-content {
   margin-bottom: 37px; }
 
-.content-header {
+.CS-content-header {
   padding: 16px; }
 
-.content-title {
+.CS-content-title {
   line-height: 1.3;
   margin-bottom: 9px;
   margin: 0;
   text-transform: capitalize; }
 
-.content-date {
+.CS-content-date {
   font-weight: 200;
   margin-top: 23px; }
 
-.content-content .more-link {
+.CS-content-content .more-link {
   margin-top: 23px; }
 
-.content-content .CS-intro {
+.CS-content-content .CS-intro {
   font-size: 16px;
   margin-bottom: 0; }
 
-.content-content p {
+.CS-content-content p {
   margin-bottom: 0; }
 
 /*--------------------------------------------------------------
@@ -2801,8 +2801,8 @@ a:hover,
 .CS-single-category,
 .CS-single-category a,
 .copy-extra-list a,
-.content-category,
-.content-date,
+.CS-content-category,
+.CS-content-date,
 .footer-copy,
 .copy-extra-button,
 .CS-site-description,
@@ -2835,7 +2835,7 @@ pre {
 
 body,
 pre,
-.content-title a,
+.CS-content-title a,
 .CS-site-social a,
 .CS-site-sidebar li a,
 .CS-site-sidebar li a:hover,
@@ -2921,12 +2921,12 @@ blockquote cite a,
   .copy-extra {
     margin-top: 14px; }
 
-  .content-title {
+  .CS-content-title {
     margin-bottom: 9px;
     margin-top: 4px;
     font-size: 23px; }
 
-  .content-content p {
+  .CS-content-content p {
     font-size: 16px; }
 
   .CS-404-title {

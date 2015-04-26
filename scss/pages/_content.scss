@@ -1,50 +1,50 @@
-.content-header,
-.content-content .more-link {
+.CS-content-header,
+.CS-content-content .more-link {
 	text-align: center;
 }
-.content-content,
-.content-content p {
+.CS-content-content,
+.CS-content-content p {
 	font-weight: 400;
   	-webkit-font-smoothing: subpixel-antialiased;
   	line-height: 1.75;
 
 }
 
-.content-date,
-.content-content .more-link {
+.CS-content-date,
+.CS-content-content .more-link {
 	display: block;
 	margin: 0 auto;
 	width: 50%;
 }
-.content {
+.CS-content {
 	margin-bottom: ms(4);
 }
 
-.content-header {
+.CS-content-header {
 	padding: ms(1);
 }
 
-.content-title {
+.CS-content-title {
 	line-height: 1.3;
 	margin-bottom: ms(-3);
 	margin: 0;
 	text-transform: capitalize;
 }
 
-.content-date {
+.CS-content-date {
 	font-weight: 200;
 	margin-top: ms(2);
 }
 
-.content-content .more-link {
+.CS-content-content .more-link {
 	margin-top: ms(2);
 }
 
-.content-content .CS-intro {
+.CS-content-content .CS-intro {
 	font-size: ms(1);
 	margin-bottom: 0;
 }
-.content-content p {
+.CS-content-content p {
 	margin-bottom: 0;
 }
 

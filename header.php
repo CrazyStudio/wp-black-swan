@@ -41,8 +41,7 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 
 <body <?php body_class(); ?>>
 
-<?php get_template_part( 'inc/parts/svg', 'system' ); ?> <!-- SVG System Ref: https://css-tricks.com/svg-sprites-use-better-icon-fonts/ -->
-	
+<?php get_template_part( 'inc/parts/svg', 'system' ); ?> 
 <div class="CS-site">
 
 	<div class="CS-site-header-fixed">
@@ -73,6 +72,7 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 
 					<h2 class="CS-site-description">
 						<?php bloginfo( 'description' ); ?>
+						
 					</h2>
 
 				</div> <!-- CS-site-branding -->

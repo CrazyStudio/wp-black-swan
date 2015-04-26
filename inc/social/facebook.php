@@ -2,12 +2,9 @@
 /**
  * Social button: Facebook
  *
- * @package Black Swan
  */
-global $CS_redux;
-$CS_facebook_link		= $CS_redux['CS-facebook'];
-?>
+global $CS_redux; ?>
 
-<?php if(!empty($CS_facebook_link)) : ?>
-	<a class="social-icon" href="http://facebook.com/<?php echo $CS_facebook_link; ?>" target="_blank"><i class="fa fa-facebook"></i></a>
+<?php if ( !empty( $CS_redux[ 'CS-facebook' ] ) ) : ?>
+	<a class="social-icon" href="http://facebook.com/<?php echo esc_url( $CS_redux[ 'CS-facebook' ] ); ?>" target="_blank"><i class="fa fa-facebook"></i></a>
 <?php endif; ?>

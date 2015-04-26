@@ -1,43 +1,46 @@
-<?php 
-
+<?php
+/**
+ * Create 1-3 related posts at the bottom of single-post.
+ * Those posts are based on category.
+ *
+ * @uses inc/layout/content-single.php
+ *
+ */
 $orig_post = $post;
 global $post;
 
-$categories = get_the_category($post->ID);
+$categories = get_the_category( $post->ID );
 
-if ($categories) {
+if ( $categories ) {
 
 	$category_ids = array();
 
-	foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id;
-	
+	foreach( $categories as $individual_category ) $category_ids[] = $individual_category->term_id;
+
 	$args = array(
-		'category__in'     => $category_ids,
-		'post__not_in'     => array($post->ID),
-		'posts_per_page'   => 3, // Number of related posts that will be shown.
-		'ignore_sticky_posts' => 1,
-		'orderby' => 'rand',
-		'meta_key' => '_thumbnail_id'
+		'category__in'          => $category_ids,
+		'post__not_in'          => array($post->ID),
+		'posts_per_page'        => 3, // Number of related posts that will be shown.
+		'ignore_sticky_posts'   => 1,
+		'orderby'               => 'rand',
+		'meta_key'              => '_thumbnail_id',
 	);
 
 	$my_query = new wp_query( $args );
 	if( $my_query->have_posts() ) { ?>
 		<div class="CS-related row">
-			<!-- <div class="CS-related-section">
-				<h4 class="CS-related-section-title"><?php _e('You Might Also Like', 'black-swan'); ?></h4>
-			</div> -->
+
 		<?php while( $my_query->have_posts() ) {
 			$my_query->the_post();?>
 				<div class="CS-related-item small-10 small-centered medium-uncentered medium-4 columns">
-					
-					<?php if ( (function_exists('has_post_thumbnail')) && (has_post_thumbnail()) ) : ?>
-					<a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+
+					<?php if ( ( function_exists( 'has_post_thumbnail' ) ) && ( has_post_thumbnail() ) ) : ?>
+						<a href="<?php echo esc_url( get_permalink() ) ?>"><?php the_post_thumbnail(); ?></a>
 					<?php endif; ?>
-					
+
 					<span class="CS-related-date"><?php the_time( get_option('date_format') ); ?></span>
-					<h3 class="CS-related-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
-					
-					
+					<h3 class="CS-related-title"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h3>
+
 				</div>
 		<?php
 		}

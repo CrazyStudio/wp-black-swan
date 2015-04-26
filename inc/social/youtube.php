@@ -2,12 +2,9 @@
 /**
  * Social button: Youtube
  *
- * @package Black Swan
  */
-global $CS_redux;
-$CS_youtube_link		= $CS_redux['CS-youtube'];
-?>
+global $CS_redux; ?>
 
-<?php if(!empty($CS_youtube_link)) : ?>
-	<a class="social-icon" href="http://youtube.com/<?php echo $CS_youtube_link; ?>" target="_blank"><i class="fa fa-youtube-play"></i></a>
+<?php if ( !empty( $CS_redux[ 'CS-youtube' ] ) ) : ?>
+	<a class="social-icon" href="http://youtube.com/<?php echo esc_url( $CS_redux[ 'CS-youtube' ] ); ?>" target="_blank"><i class="fa fa-youtube-play"></i></a>
 <?php endif; ?>
