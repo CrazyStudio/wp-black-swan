@@ -16,7 +16,7 @@ $CS_single_post_share       = $CS_redux['CS-single-post-share']['enabled'];
 	</div> <!-- single-thumbnail -->
 	<?php endif; ?>
 
-	<div class="CS-single-body <?php if(!empty($CS_single_sidebar)) : ?>small-12 large-12<?php else: ?>small-11 medium-8 large-8<?php endif; ?> small-centered columns">
+	<div class="CS-single-body <?php if(!empty($CS_redux['CS-single-sidebar'])) : ?> small-12 large-12<?php else: ?>small-11 medium-8 large-8<?php endif; ?> small-centered columns">
 
 		<?php if ( ! is_page() ) : ?>
 		<div class="single-header">
@@ -66,12 +66,7 @@ $CS_single_post_share       = $CS_redux['CS-single-post-share']['enabled'];
 		</div> <!-- CS-content-share -->
 		<?php endif; ?>
 
-
-
-
-
-
-		<h2 class="CS-single-title <?php if(!empty($CS_single_sidebar)) : ?>mq-single-title<?php endif; ?> "><?php the_title(); ?></h2>
+		<h1 class="CS-single-title <?php if(!empty($CS_single_sidebar)) : ?>mq-single-title<?php endif; ?> "><?php the_title(); ?></h1>
 
 
 		<div class="CS-single-content <?php if(!empty($CS_single_sidebar)) : ?>mq-single-content<?php endif; ?>">

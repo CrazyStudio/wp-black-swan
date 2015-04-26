@@ -5,10 +5,10 @@
  * @package Black Swan
  */
 global $CS_redux;
-$CS_single_sidebar;
+$CS_single_sidebar	= $CS_redux['CS-single-sidebar'];
 get_header(); ?>
 
-<main class="CS-site-content-main small-12 <?php if(!empty($CS_single_sidebar)) : ?>medium-7 <?php else: ?>medium-12 <?php endif; ?>  columns">
+<main class="CS-site-content-main small-12 <?php if(!empty($CS_redux['CS-single-sidebar'])) : ?>medium-7 CS-sidebar-text <?php else: ?>medium-12 <?php endif; ?>  columns">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -18,5 +18,5 @@ get_header(); ?>
 
 </main> <!-- CS-site-content-main -->
 
-<?php if(!empty($CS_single_sidebar)) : ?><?php get_sidebar(); ?><?php endif; ?>
+<?php if(!empty($CS_redux['CS-single-sidebar'])) : ?><?php get_sidebar(); ?><?php endif; ?>
 <?php get_footer(); ?>

@@ -16,7 +16,8 @@ if ($categories) {
 		'post__not_in'     => array($post->ID),
 		'posts_per_page'   => 3, // Number of related posts that will be shown.
 		'ignore_sticky_posts' => 1,
-		'orderby' => 'rand'
+		'orderby' => 'rand',
+		'meta_key' => '_thumbnail_id'
 	);
 
 	$my_query = new wp_query( $args );

@@ -25,6 +25,7 @@
 		margin: 0 auto;
 		max-width: 100%;
 		padding-left: 0;
+		padding-right: 0;
 	}
 	blockquote {
 		margin-bottom: ms(4);
@@ -178,9 +179,21 @@
 		margin-right: -102px;
 	}
 	.wp-caption-text {
-		padding: 0 ms(1) 0 ms(1);
+		padding: ms(-1) ms(1) 0 ms(1);
 	}
-
+	.CS-single-title {
+		font-size: ms(3);
+	}
+	.CS-intro {
+		font-size: ms(1);
+		line-height: 1.5;
+	}
+	.alignleft,
+	.wp-caption.alignleft,
+	.alignright,
+	.wp-caption.alignright {
+		max-width: ms(13);
+	}
 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 

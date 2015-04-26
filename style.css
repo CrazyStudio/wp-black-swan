@@ -2021,7 +2021,7 @@ table {
   width: 100%; }
 
 blockquote {
-  padding: 0 5% 23px 5%; }
+  padding: 16px 5% 23px 5%; }
 
 hr {
   margin: 37px 0 37px 0; }
@@ -2101,7 +2101,8 @@ object {
 /* End section for _underscore Framework */
 .CS-pull-right blockquote,
 .CS-pull-left blockquote {
-  padding: 0; }
+  padding: 0;
+  margin-top: 5px; }
 
 .CS-pull-left {
   margin-top: -5px;
@@ -2165,12 +2166,12 @@ object {
   margin-left: -16.666666666%;
   max-width: 133.333332%;
   margin-bottom: 37px;
-  margin-top: 0; }
+  margin-top: 37px; }
 
 .alignright,
 .wp-caption.alignright {
   margin: 0;
-  margin-right: -155px;
+  margin-right: -141px;
   float: right;
   padding-left: 37px;
   padding-bottom: 37px;
@@ -2179,7 +2180,7 @@ object {
 .alignleft,
 .wp-caption.alignleft {
   margin: 0;
-  margin-left: -155px;
+  margin-left: -141px;
   float: left;
   padding-right: 37px;
   padding-bottom: 37px;
@@ -2204,6 +2205,9 @@ object {
 .CS-intro,
 .CS-single-title {
   font-weight: 600; }
+
+.CS-single-title {
+  font-size: 37px; }
 
 .CS-intro {
   font-size: 1.125rem;
@@ -3007,7 +3011,8 @@ blockquote cite a,
     float: none;
     margin: 0 auto;
     max-width: 100%;
-    padding-left: 0; }
+    padding-left: 0;
+    padding-right: 0; }
 
   blockquote {
     margin-bottom: 37px;
@@ -3133,7 +3138,20 @@ blockquote cite a,
     margin-right: -102px; }
 
   .wp-caption-text {
-    padding: 0 16px 0 16px; } }
+    padding: 14px 16px 0 16px; }
+
+  .CS-single-title {
+    font-size: 26px; }
+
+  .CS-intro {
+    font-size: 16px;
+    line-height: 1.5; }
+
+  .alignleft,
+  .wp-caption.alignleft,
+  .alignright,
+  .wp-caption.alignright {
+    max-width: 287px; } }
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 /* min-width 1025px, large screens */
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
@@ -3145,3 +3163,70 @@ blockquote cite a,
 
 .CS-archive-title {
   margin-bottom: 37px; }
+
+.CS-sidebar-text .CS-pull-left {
+  margin-left: 0; }
+.CS-sidebar-text .aligncenter {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+.CS-sidebar-text .CS-pagination-section-middle {
+  margin: 14px 0 16px !important; }
+.CS-sidebar-text .CS-single-thumbnail {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+.CS-sidebar-text .CS-related-item {
+  padding: 0 14px 0 14px; }
+@media only screen and (min-width: 40.063em) {
+  .CS-sidebar-text .CS-related-title,
+  .CS-sidebar-text .CS-related-date {
+    font-size: 14px; }
+  .CS-sidebar-text .CS-single-share {
+    float: none;
+    margin-bottom: 14px;
+    margin-left: 0;
+    margin-top: 14px; }
+  .CS-sidebar-text .CS-single-share .CS-share-icon {
+    display: inline-block;
+    margin-bottom: 0; }
+  .CS-sidebar-text .CS-single-share .CS-share-icon:first-child {
+    margin-left: 0; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .CS-sidebar-text .CS-comments-header-title {
+    vertical-align: 0px;
+    font-size: 16px; }
+  .CS-sidebar-text .CS-comment-toggle-text {
+    font-size: 16px;
+    vertical-align: -4px; }
+  .CS-sidebar-text .CS-comments-number {
+    height: 26px;
+    width: 26px;
+    font-size: 14px;
+    padding-top: 2px; }
+  .CS-sidebar-text .CS-comment-toggle-border {
+    height: 26px;
+    width: 26px;
+    font-size: 14px;
+    padding-top: 2px; }
+  .CS-sidebar-text .CS-comment-toggle-icon {
+    width: 10px;
+    height: 10px; }
+  .CS-sidebar-text .CS-comment-toggle {
+    font-size: 14px; }
+  .CS-sidebar-text .CS-comments {
+    margin-bottom: 16px; }
+  .CS-sidebar-text .comment-replay {
+    float: left;
+    font-size: 14px;
+    height: 26px;
+    padding-top: 2px;
+    width: 26px; }
+  .CS-sidebar-text .comment-text {
+    margin-left: 37px; }
+  .CS-sidebar-text .comment-text .date {
+    display: block;
+    padding-left: 0; }
+  .CS-sidebar-text .comment-text p {
+    font-size: 14px; }
+  .CS-sidebar-text .children {
+    margin-left: 37px; } }
