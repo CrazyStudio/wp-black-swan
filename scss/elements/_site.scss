@@ -1,6 +1,15 @@
 .CS-site {
 	overflow: hidden;
+	margin-top: ms(6) + ms(5);
 }
+.CS-site-header-static.CS-site {
+	margin-top: 0;
+}
+
+.CS-site-header-static {
+	margin-top: ms(5);
+}
+
 
 p {
 	margin-bottom: ms(3);

@@ -15,6 +15,8 @@
 	font-size: ms(1);
 	color: $main_color;
 	transition: all 0.3s ease;
+	margin-right: - (ms(4) + ms(1));
+
 }
 
 .CS-search-submit:hover {
@@ -26,7 +28,7 @@
 }
 
 .CS-search-form-input {
-	width: calc(100% - 53px) !important;
+	width: 100%;
 	position: relative;
 	float: left;
 	-webkit-box-shadow: none !important;

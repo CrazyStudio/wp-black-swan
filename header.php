@@ -39,12 +39,12 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(''); ?>>
 
 <?php get_template_part( 'inc/parts/svg', 'system' ); ?> 
-<div class="CS-site">
+<div class="CS-site <?php if ( empty( $CS_redux[ 'CS-header-fixed' ] ) ) : ?>CS-site-header-static<?php endif; ?>">
 
-	<div class="CS-site-header-fixed">
+	<div class="<?php if ( !empty( $CS_redux[ 'CS-header-fixed' ] ) ) : ?>CS-site-header-fixed<?php endif; ?>">
 
 		<header class="CS-site-header" role="banner">
 
@@ -103,39 +103,43 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 					wp_nav_menu( $defaults ); ?>
 				</div> <!-- CS-site-primary-menu -->
 
-				<div class="CS-site-search row">
-					<?php get_search_form(); ?>
-				</div> <!-- CS-site-search -->
+				<?php if ( !empty( $CS_redux[ 'CS-header-search' ] ) ) : ?>
+					<div class="CS-site-search row">
+						<?php get_search_form(); ?>
+					</div> <!-- CS-site-search -->
+				<?php endif; ?>
+				
+				<?php if ( !empty( $CS_redux[ 'CS-header-social-buttons' ] ) ) : ?>
+					<div class="CS-site-social small-centered small-12 columns">
+						<?php if ($CS_header_social): foreach ($CS_header_social as $key=>$value) {
+							switch($key) {
+								case 'facebook': get_template_part( 'inc/social/facebook' );
+								break;
 
-				<div class="CS-site-social small-centered small-12 columns">
-					<?php if ($CS_header_social): foreach ($CS_header_social as $key=>$value) {
-						switch($key) {
-							case 'facebook': get_template_part( 'inc/social/facebook' );
-							break;
+								case 'twitter': get_template_part( 'inc/social/twitter' );
+								break;
 
-							case 'twitter': get_template_part( 'inc/social/twitter' );
-							break;
+								case 'google-plus': get_template_part( 'inc/social/googleplus' );
+								break;
 
-							case 'google-plus': get_template_part( 'inc/social/googleplus' );
-							break;
+								case 'pinterest': get_template_part( 'inc/social/pinterest' );    
+								break;
 
-							case 'pinterest': get_template_part( 'inc/social/pinterest' );    
-							break;
+								case 'instagram': get_template_part( 'inc/social/instagram' );    
+								break;
 
-							case 'instagram': get_template_part( 'inc/social/instagram' );    
-							break;
+								case 'tumblr': get_template_part( 'inc/social/tumblr' );    
+								break; 
 
-							case 'tumblr': get_template_part( 'inc/social/tumblr' );    
-							break; 
+								case 'youtube': get_template_part( 'inc/social/youtube' );    
+								break; 
 
-							case 'youtube': get_template_part( 'inc/social/youtube' );    
-							break; 
-
-							case 'rss': get_template_part( 'inc/social/rss' );    
-							break;     
-						}
-					} endif; ?>
-				</div> <!-- CS-site-social -->
+								case 'rss': get_template_part( 'inc/social/rss' );    
+								break;     
+							}
+						} endif; ?>
+					</div> <!-- CS-site-social -->
+				<?php endif; ?>
 
 			</nav> <!-- CS-site-navigation -->
 
@@ -143,4 +147,15 @@ $CS_header_social      = $CS_redux['CS-header-social']['enabled'];
 
 	</div> <!-- CS-site-header-fixed -->
 
-<div class="CS-site-content <?php if(!empty($CS_homepage_sidebar)) : ?>small-collapse medium-uncollapse<?php else: ?>small-collapse large-uncollapse<?php endif; ?> row">
+<div class="CS-site-content <?php if ( empty( $CS_redux[ 'CS-header-fixed' ] ) ) : ?>CS-site-header-static<?php endif; ?> <?php if(!empty($CS_homepage_sidebar)) : ?>small-collapse medium-uncollapse<?php else: ?>small-collapse large-uncollapse<?php endif; ?> row">
+
+
+
+
+
+
+
+
+
+
+

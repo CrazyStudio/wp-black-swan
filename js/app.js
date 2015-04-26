@@ -14,17 +14,11 @@ jQuery(document).ready(function($) {
 
 	// add offset depending on how many menu-items
 	if($( "#primary-menu > li" ).length === 1 ) {
-
 		$( "#primary-menu > li:first" ).addClass( "menu-offset-1-item" );
-
 	} else if ($( "#primary-menu > li" ).length === 2 ) {
-
 		$( "#primary-menu > li:first" ).addClass( "menu-offset-2-item" );
-
 	} else if ($( "#primary-menu > li" ).length === 3 ) {
-
 		$( "#primary-menu > li:first" ).addClass( "menu-offset-3-item" );
-
 	} else {
 	}
 
@@ -63,7 +57,7 @@ jQuery(document).ready(function($) {
 	    animation_to_close.beginElement();
 		}
 
-		// Fix a bugg in scroll function when the menu is to high (on weed...)
+		// Fix a bugg in scroll function when the menu is to high 
 		if ($( ".CS-site-header-fixed" ).css( "bottom" ) === "auto" ) {
 			$( ".CS-site-header-fixed" ).css( "bottom", "0px" );
 		} else {

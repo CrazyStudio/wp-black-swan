@@ -1970,7 +1970,14 @@ blockquote p {
 # site
 --------------------------------------------------------------*/
 .CS-site {
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 101px; }
+
+.CS-site-header-static.CS-site {
+  margin-top: 0; }
+
+.CS-site-header-static {
+  margin-top: 42px; }
 
 p {
   margin-bottom: 26px; }
@@ -2329,10 +2336,6 @@ object {
   width: 16px;
   height: 16px; }
 
-body,
-body.withsidebar {
-  margin-top: 101px; }
-
 .CS-site-header-fixed {
   position: fixed;
   top: 0;
@@ -2359,8 +2362,10 @@ body.withsidebar {
   font-weight: 200; }
 
 .CS-site-social {
-  margin-bottom: 14px;
   text-align: center; }
+
+.CS-site-primary-menu {
+  margin-bottom: 14px; }
 
 .CS-social-icon {
   margin-right: -2px;
@@ -2380,8 +2385,9 @@ body.withsidebar {
   vertical-align: 3px; }
 
 .js-css-toggle {
-  max-height: 2000px !important;
-  /* Important because this is an essential function, just to insure that it will not be overwritten */ }
+  max-height: 1500px !important;
+  /* Important because this is an essential function, just to insure that it will not be overwritten */
+  padding-bottom: 23px; }
 
 .js-css-toggle-animation {
   -webkit-transform: rotate(45deg);
@@ -2722,7 +2728,8 @@ ul.page-numbers {
   font-size: 16px;
   color: #cea525;
   -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease; }
+          transition: all 0.3s ease;
+  margin-right: -53px; }
 
 .CS-search-submit:hover {
   border: 1px solid #cea525;
@@ -2733,7 +2740,7 @@ ul.page-numbers {
   cursor: pointer; }
 
 .CS-search-form-input {
-  width: calc(100% - 53px) !important;
+  width: 100%;
   position: relative;
   float: left;
   box-shadow: none !important;

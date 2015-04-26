@@ -23,10 +23,6 @@
 	width: ms(1);
 	height: ms(1);
 }
-body,
-body.withsidebar { 
-	margin-top: ms(6) + ms(5);
-}
 
 .CS-site-header-fixed {
 	position: fixed;
@@ -59,10 +55,11 @@ body.withsidebar {
 } 
 
 .CS-site-social {
-	margin-bottom: ms(0);
 	text-align: center;
 }
-
+.CS-site-primary-menu {
+	margin-bottom: ms(0);
+}
 .CS-social-icon {
 	margin-right: -2px;
 	margin-left: -2px;
@@ -84,7 +81,8 @@ body.withsidebar {
 }
 
 .js-css-toggle {
-    max-height: 2000px !important; /* Important because this is an essential function, just to insure that it will not be overwritten */
+    max-height: 1500px !important; /* Important because this is an essential function, just to insure that it will not be overwritten */
+    padding-bottom: ms(2);
 }
 
 .js-css-toggle-animation {
