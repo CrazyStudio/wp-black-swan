@@ -43,6 +43,8 @@ global $CS_redux;
 					'type'			=> 'all'
 				));
 
+			echo "</div>";
+			echo "<div class='row'>";
 				comment_form(array(
 					'comment_field'			=> $custom_comment_field,
 					'comment_notes_after'	=> '',
@@ -52,8 +54,8 @@ global $CS_redux;
 					'cancel_reply_link'		=> __('Cancel Reply', 'black-swan'),
 					'label_submit'			=> __('Post Comment', 'black-swan')
 				));
-
 			echo "</div>";
+			
 			echo "</div>";
 			echo "<div id='comments_pagination'>";
 				paginate_comments_links(array('prev_text' => '&laquo;', 'next_text' => '&raquo;'));

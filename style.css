@@ -2362,7 +2362,7 @@ body.withsidebar {
   margin-bottom: 14px;
   text-align: center; }
 
-.social-icon {
+.CS-social-icon {
   margin-right: -2px;
   margin-left: -2px;
   padding: 0 6px 0 6px; }
@@ -2626,11 +2626,8 @@ body.withsidebar {
   padding-top: 59px; }
 
 .CS-pagination-arrow {
-  margin-top: -7px;
-  font-size: 42px; }
-
-.CS-pagination-next {
-  text-align: right; }
+  margin-top: 14px;
+  float: left; }
 
 .CS-pagination-next .CS-pagination-arrow {
   float: right;
@@ -2643,6 +2640,20 @@ body.withsidebar {
 .CS-pagination-share {
   margin-top: 9px;
   text-align: center; }
+
+.CS-pagination-section-right .CS-pagination-text {
+  text-align: right; }
+
+.CS-pagination-section-right:hover .CS-icon-arrow-right,
+.CS-pagination-section-left:hover .CS-icon-arrow-left {
+  fill: #999;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+
+.CS-icon-arrow-right,
+.CS-icon-arrow-left {
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
 
 .page-numbers .prev,
 .page-numbers .next {
@@ -3230,3 +3241,29 @@ blockquote cite a,
     font-size: 14px; }
   .CS-sidebar-text .children {
     margin-left: 37px; } }
+
+.CS-icon-share-svg,
+.CS-icon-social {
+  width: 14px;
+  height: 13px;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+
+.CS-social-icon:hover .CS-icon-social {
+  fill: #999;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+
+.CS-icon-share-svg {
+  fill: #cea525; }
+
+.CS-share-icon:hover .CS-icon-share-svg {
+  fill: #4c3d0e;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+
+.CS-icon-arrow-right,
+.CS-icon-arrow-left {
+  height: 37px;
+  width: 14px;
+  fill: #cea525; }

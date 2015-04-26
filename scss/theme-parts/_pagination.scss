@@ -4,12 +4,8 @@
 	padding-top: ms(6);
 }
 .CS-pagination-arrow {
-	margin-top: -7px;
-	font-size: ms(5);
-}
-
-.CS-pagination-next {
-	text-align: right;
+	margin-top: ms(0);
+	float: left;
 }
 
 .CS-pagination-next .CS-pagination-arrow {
@@ -26,7 +22,19 @@
 	margin-top: ms(-3);
 	text-align: center;
 }
+.CS-pagination-section-right .CS-pagination-text {
+	text-align: right;
+}
+.CS-pagination-section-right:hover .CS-icon-arrow-right,
+.CS-pagination-section-left:hover .CS-icon-arrow-left {
+	fill: #999;
+	transition: all 0.3s ease;
+}
 
+.CS-icon-arrow-right,
+.CS-icon-arrow-left {
+	transition: all 0.3s ease;
+}
 // Site Paginition
 .page-numbers .prev,
 .page-numbers .next {

@@ -18,7 +18,10 @@ global $CS_redux; ?>
 				
 				<a href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>">
 					<div class="CS-pagination-arrow">
-						<i class="fa fa-angle-left"></i>
+						<svg class="CS-icon-arrow-left">
+							<use xlink:href="#icon-arrow-left">
+							</use>
+						</svg>
 					</div>
 					<div class="CS-pagination-text">
 						<span>Previous Post</span>
@@ -60,7 +63,10 @@ global $CS_redux; ?>
 				
 				<a href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>">
 					<div class="CS-pagination-arrow">
-						<i class="fa fa-angle-right"></i>
+						<svg class="CS-icon-arrow-right">
+							<use xlink:href="#icon-arrow-right">
+							</use>
+						</svg>
 					</div>
 					<div class="CS-pagination-text">
 						<span>Next Post</span>

@@ -105,3 +105,28 @@
 
 	}
 }
+.CS-icon-share-svg,
+.CS-icon-social {
+	width: ms(0);
+	height: 13px;
+	transition: all 0.3s ease;
+}
+
+.CS-social-icon:hover .CS-icon-social {
+	fill: #999;
+	transition: all 0.3s ease;
+}
+.CS-icon-share-svg {
+	fill: $main_color;
+}
+
+.CS-share-icon:hover .CS-icon-share-svg {
+	fill: $social_dark;
+	transition: all 0.3s ease;
+}
+.CS-icon-arrow-right, 
+.CS-icon-arrow-left {
+	height: ms(4);
+	width: ms(0);
+	fill: $main_color;
+}

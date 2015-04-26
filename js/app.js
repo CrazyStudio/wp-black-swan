@@ -77,10 +77,15 @@ jQuery(document).ready(function($) {
 
 		if ($( "#respond" ).hasClass( "js-css-comments" )) {
 			$( "#respond" ).removeClass( "js-css-comments" );
-			document.getElementById('#CS-comments-header').scrollIntoView(true);
+
+			
+			var scroll_to_respond = (($("#respond").offset().top) - 100);
+
+			$('html, body').animate({
+			        scrollTop: scroll_to_respond
+			    }, 1500);
 		} else {
 			$( "#respond" ).addClass( "js-css-comments" );
-			document.getElementById('#CS-comments-header').scrollIntoView(true);
 		}
 
 	});	
