@@ -4,14 +4,10 @@
  *
  * Contains the closing of the #CS-site-content div and all content after
  *
- * @package Black Swan
  */
 global $CS_redux;
-$CS_footer_copy 	= $CS_redux['CS-footer-copy'];
-?>
+$CS_footer_copy 	= $CS_redux['CS-footer-copy']; ?>
 </div> <!-- CS-site-content: Found bottom of header.php -->
-
-
 
 <footer id="site-footer" class="site-footer <?php if( ! is_active_sidebar( 'footer-big-widget') && ! is_active_sidebar( 'footer-medium-widget') && ! is_active_sidebar( 'footer-small-widget') ) { echo "php-site-footer-no-widget"; } ?>">
 	
@@ -43,7 +39,7 @@ $CS_footer_copy 	= $CS_redux['CS-footer-copy'];
 	<section class="mq-footer-copy footer-copy row">
 
 		<div class="copy-body small-12 small-centered medium-uncentered medium-7 columns">
-			<copy><?php if(!empty($CS_footer_copy)) : ?><?php echo $CS_footer_copy;?><?php else: ?>Copyright © 2015 Black Swan. All rights reserved.<?php endif; ?></copy>
+			<copy><?php if ( !empty( $CS_redux[ 'CS-footer-copy' ] ) ) : ?><?php echo esc_attr( $CS_redux[ 'CS-footer-copy' ] );?><?php else: ?>Copyright © 2015 Black Swan. All rights reserved.<?php endif; ?></copy>
 		</div>
 
 		<div class="copy-extra small-12 medium-5 columns">

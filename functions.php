@@ -87,8 +87,6 @@ add_action( 'after_setup_theme', 'black_swan_setup' );
 function black_swan_scripts() {
 	wp_enqueue_style( 'black-swan-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'black-swan-awesome-font', get_template_directory_uri() . '/inc/font-awesome.min.css' );
-
 	wp_enqueue_script( 'black-swan-svg4everyone', get_template_directory_uri() . '/js/svg4everybody.ie8.min.js', '', false, false);
 
 	wp_enqueue_script( 'black-swan-modernizr', get_template_directory_uri() . '/bower_components/modernizr/modernizr.js', '', false, false);

@@ -582,8 +582,8 @@
 				array(
 					'id'       => 'CS-header-social',
 					'type'     => 'sorter',
-					'title'    => 'Share button manger',
-					'subtitle' => 'You can add multiple drop areas or columns.',
+					'title'    => 'Social button manger',
+					'subtitle' => 'Add and arange you social buttons. OBS: If you want a social button to show, you need to fill the respektiv textarea in: <br/> <br/>Important Settings > Add social information',
 					'compiler' => 'true',
 					'options'  => array(
 						'enabled'  => array(
@@ -604,16 +604,56 @@
 			)
 		) );
 		Redux::setSection( $opt_name, array(
-				'title'      => __( 'Post - Classic layout', 'redux-framework-demo' ),
+				'title'      => __( 'Posts - Classic layout', 'redux-framework-demo' ),
 				'id'         => 'CS-31321231',
 				'subsection' => true,
 				'desc'       => __( '', 'redux-framework-demo' ),
 				'fields'     => array(
 					array(
+					    'id'       => 'CS-classic-thumbnail',
+					    'type'     => 'checkbox',
+					    'title'    => __( 'Enable the thumbnail', 'redux-framework-demo' ),
+					    'subtitle' => __( '', 'redux-framework-demo' ),
+					    'desc'     => __( '', 'redux-framework-demo' ),
+					    'default'  => '1'// 1 = on | 0 = off
+					),
+					array(
+					    'id'       => 'CS-classic-category',
+					    'type'     => 'checkbox',
+					    'title'    => __( 'Show category', 'redux-framework-demo' ),
+					    'subtitle' => __( '', 'redux-framework-demo' ),
+					    'desc'     => __( '', 'redux-framework-demo' ),
+					    'default'  => '1'// 1 = on | 0 = off
+					),
+					array(
+					    'id'       => 'CS-classic-date',
+					    'type'     => 'checkbox',
+					    'title'    => __( 'Show date', 'redux-framework-demo' ),
+					    'subtitle' => __( '', 'redux-framework-demo' ),
+					    'desc'     => __( '', 'redux-framework-demo' ),
+					    'default'  => '1'// 1 = on | 0 = off
+					),
+					array(
+					    'id'       => 'CS-classic-author',
+					    'type'     => 'checkbox',
+					    'title'    => __( 'Show author', 'redux-framework-demo' ),
+					    'subtitle' => __( '', 'redux-framework-demo' ),
+					    'desc'     => __( '', 'redux-framework-demo' ),
+					    'default'  => '1'// 1 = on | 0 = off
+					),
+					array(
+					    'id'       => 'CS-classic-tag',
+					    'type'     => 'checkbox',
+					    'title'    => __( 'Show tags', 'redux-framework-demo' ),
+					    'subtitle' => __( '', 'redux-framework-demo' ),
+					    'desc'     => __( '', 'redux-framework-demo' ),
+					    'default'  => '0'// 1 = on | 0 = off
+					),
+					array(
 					'id'       => 'CS-classic-share',
 					'type'     => 'sorter',
-					'title'    => 'Share button manger',
-					'subtitle' => 'You can add multiple drop areas or columns.',
+					'title'    => __( 'Share button manger', 'redux-framework-demo' ),
+					'subtitle' => '',
 					'compiler' => 'true',
 					'options'  => array(
 						'enabled'  => array(
@@ -629,21 +669,7 @@
 					),
 				)
 			) );
-		Redux::setSection( $opt_name, array(
-				'title'      => __( 'Post - Grid layout', 'redux-framework-demo' ),
-				'id'         => 'CS-3132ds1231',
-				'subsection' => true,
-				'desc'       => __( '', 'redux-framework-demo' ),
-				'fields'     => array(
-					array(
-					'id'       => 'CS-232ds13123',
-					'type'     => 'media',
-					'title'    => __( 'Add Favicon', 'redux-framework-demo' ),
-					'desc'     => __( '', 'redux-framework-demo' ),
-					'subtitle' => __( ' ', 'redux-framework-demo' ) . '<a href="http://en.wikipedia.org/wiki/Favicon" target="_blank">http://en.wikipedia.org/wiki/Favicon</a>',
-					),
-				)
-			) );
+		
 		Redux::setSection( $opt_name, array(
 				'title'      => __( 'Single Post', 'redux-framework-demo' ),
 				'id'         => 'CS-31231',

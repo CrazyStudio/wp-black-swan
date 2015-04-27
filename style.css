@@ -3274,3 +3274,14 @@ blockquote cite a,
   height: 37px;
   width: 14px;
   fill: #cea525; }
+
+.CS-content-tags {
+  padding-top: 14px; }
+  .CS-content-tags a {
+    font-size: 14px;
+    font-weight: 300;
+    color: #999999;
+    padding: 0 14px 0 14px; }
+
+.CS-content-author {
+  font-weight: 300; }

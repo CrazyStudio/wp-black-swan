@@ -130,3 +130,16 @@
 	width: ms(0);
 	fill: $main_color;
 }
+
+.CS-content-tags {
+	padding-top: ms(0);
+	a {
+		font-size: ms(0);
+		font-weight: 300;
+		color: $light_text;
+		padding: 0 ms(0) 0 ms(0);
+	}
+}
+.CS-content-author {
+	font-weight: 300;
+}

@@ -11,18 +11,20 @@ global $CS_redux; ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'CS-content' ); ?>>
 
-	<?php if ( has_post_thumbnail() ) : ?>
+	<?php if ( has_post_thumbnail() && !empty( $CS_redux[ 'CS-classic-thumbnail' ])) : ?>
 		<div class="CS-content-thumbnail">
 			<a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_post_thumbnail(); ?></a>
 		</div> <!-- CS-content-thumbnail -->
 	<?php endif; ?> 
 
 	<div class="CS-content-header <?php if ( !empty( $CS_redux[ 'CS-homepage-sidebar' ] ) ) : ?>small-12 large-12<?php else: ?>small-11 medium-9 large-8<?php endif; ?> small-centered columns">
-
-		<span class="CS-content-category">
-			<?php the_category( ', ' ); ?>
-		</span> <!-- CS-content-category -->
-
+		
+		<?php if ( !empty( $CS_redux[ 'CS-classic-category' ] ) ) : ?>
+			<span class="CS-content-category">
+				<?php the_category( ', ' ); ?>
+			</span> <!-- CS-content-category -->
+		<?php endif; ?>
+		
 		<h2 class="CS-content-title <?php if ( !empty( $CS_redux[ 'CS-homepage-sidebar' ] ) ) : ?>mq-content-title<?php endif; ?>">
 			<a rel="bookmark" href="<?php echo esc_url( get_permalink() ); ?>">
 				<?php the_title(); ?>
@@ -53,11 +55,25 @@ global $CS_redux; ?>
 				}
 			} endif; ?>
 		</div> <!-- CS-content-share -->
+		<?php if ( !empty( $CS_redux[ 'CS-classic-date' ] ) ) : ?>
+			<time class="CS-content-date" datetime="<?php the_time( 'Y-m-d H:i' ); ?>">
+				<?php the_time( 'F j, Y' ); ?>
+			</time> <!-- CS-content-date -->
+		<?php endif; ?>
+		
+		<?php if ( !empty( $CS_redux[ 'CS-classic-author' ] ) ) : ?>
+			<time class="CS-content-author">
+				<span><?php the_author_posts_link(); ?> </span>
+			</time> <!-- CS-content-date -->
+		<?php endif; ?>
 
-		<time class="CS-content-date" datetime="<?php the_time( 'Y-m-d H:i' ); ?>">
-			<?php the_time( 'F j, Y' ); ?>
-		</time> <!-- CS-content-date -->
-
+		<?php if ( !empty( $CS_redux[ 'CS-classic-tag' ] ) ) : ?>
+			<?php if(has_tag()) : ?>
+				<div class="CS-content-tags">
+					<?php the_tags(" ", "  "); ?>
+				</div>
+			<?php endif; ?>	
+		<?php endif; ?>
 	</div>
 
 </article>
