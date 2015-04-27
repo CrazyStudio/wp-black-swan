@@ -8,8 +8,88 @@
 				"padding-top"
 			],
 			[
+				"marin",
+				"margin-top"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"CS-",
+				"CS-search-submit"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"m",
+				"mb	margin-bottom"
+			],
+			[
 				"marg",
-				"margin"
+				"margin-left"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"marig",
+				"margin-bottom"
+			],
+			[
+				"content",
+				"content-content"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"cur",
+				"cur:p	cursor:pointer"
+			],
+			[
+				"comment",
+				"comment-toggle-icon"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"d",
+				"d	display"
+			],
+			[
+				"t",
+				"te	text-emphasis"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"list",
+				"list:n	list-style-type:none"
 			],
 			[
 				"inl",
@@ -24,10 +104,6 @@
 				"get_template_directory"
 			],
 			[
-				"mar",
-				"margin"
-			],
-			[
 				"o",
 				"op	opacity"
 			],
@@ -36,16 +112,8 @@
 				"pos:a	position:absolute"
 			],
 			[
-				"po",
-				"pos:r	position:relative"
-			],
-			[
 				"wi",
 				"width"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"re",
@@ -64,10 +132,6 @@
 				"req1	require_once …"
 			],
 			[
-				"d",
-				"display"
-			],
-			[
 				"v",
 				"v	visibility"
 			],
@@ -80,10 +144,6 @@
 				"section"
 			],
 			[
-				"di",
-				"display"
-			],
-			[
 				"ls",
 				"list-style"
 			],
@@ -92,20 +152,12 @@
 				"bdt	border-top"
 			],
 			[
-				"font",
-				"font-size"
-			],
-			[
 				"ca",
 				"capitalize"
 			],
 			[
 				"f",
 				"fv	font-variant"
-			],
-			[
-				"m",
-				"mt	margin-top"
 			],
 			[
 				"no",
@@ -128,64 +180,101 @@
 	"buffers":
 	[
 		{
-			"file": "header.php",
+			"file": "ReduxFramework/sample/CS-config.php",
 			"settings":
 			{
-				"buffer_size": 3181,
+				"buffer_size": 38563,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "Searching 443 files for \"site-header\"\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/config.codekit:\n 4106  		\"useLibsass\": 0\n 4107  		},\n 4108: 	\"\\/scss\\/_site-header.scss\": {\n 4109  		\"createSourceMap\": 0,\n 4110  		\"debugStyle\": 0,\n ....\n 4113  		\"ignore\": 1,\n 4114  		\"ignoreWasSetByUser\": 0,\n 4115: 		\"inputAbbreviatedPath\": \"\\/scss\\/_site-header.scss\",\n 4116: 		\"outputAbbreviatedPath\": \"\\/_site-header.css\",\n 4117  		\"outputPathIsOutsideProject\": 0,\n 4118  		\"outputPathIsSetByUser\": 0,\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/header.php:\n   24  <?php get_template_part( 'inc/parts/svg', 'system' ); ?> <!-- SVG System Ref: https://css-tricks.com/svg-sprites-use-better-icon-fonts/ -->\n   25  	\n   26: <div id=\"site\" class=\"hfeed site site-header-fixed\">\n   27  	\n   28: 	<header id=\"site-header\" class=\"site-header\" role=\"banner\">\n   29  \n   30  		<div class=\"top-header row\">\n   ..\n   79          </nav> <!-- site-navigation -->\n   80  \n   81:     </header> <!-- site-header -->\n   82  \n   83  </div> <!-- header-fixed -->\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/index.html:\n   54      <div id=\"page\" class=\"hfeed site header-fixed\">\n   55          \n   56:         <header id=\"site-header\" class=\"site-header\" role=\"banner\">\n   57          \n   58              <div class=\"top-header row\">  \n   ..\n  159              </nav> <!-- site-navigation -->\n  160  \n  161:         </header> <!-- site-header -->\n  162  \n  163      </div> <!-- header-fixed -->\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/resources/WP-struture.txt:\n    2  \n    3  site\n    4: 	site-header\n    5: 		site-header-fixed\n    6  		site-branding\n    7  		site-description\n    .\n   61  site-elements\n   62  \n   63: site-header\n   64  \n   65  site-navigation\n   ..\n   88  div #page .hfeed site header-fixed\n   89  \n   90: header #site-header .site-header\n   91  \n   92  \n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_site-header.scss:\n    3  	margin-top: ms(6) + ms(5);\n    4  }\n    5: // ------------------------------- site-Header\n    6  .header-fixed  {\n    7  	position: fixed;\n    .\n   13  }\n   14  \n   15: .site-header {\n   16  	border-bottom: 1px solid map-get($site_static_color, border);\n   17  	width: 100%;\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/misc/_colors.scss:\n    1: .site-header {\n    2  	border-bottom-color: map-get($site_static_color, border);\n    3  }\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/style.scss:\n  226  # Header\n  227  --------------------------------------------------------------*/\n  228: //@import \"site-header\";\n  229  \n  230  /*--------------------------------------------------------------\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/theme-parts/_header.scss:\n    3  	margin-top: ms(6) + ms(5);\n    4  }\n    5: // ------------------------------- site-Header\n    6: .site-header-fixed  {\n    7  	position: fixed;\n    8      top: 0;\n    .\n   13  }\n   14  \n   15: .site-header {\n   16  	border-bottom: 1px solid #000;\n   17  	width: 100%;\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/style.css:\n 6257    margin-top: 101px; }\n 6258  \n 6259: .site-header-fixed {\n 6260    position: fixed;\n 6261    top: 0;\n ....\n 6265    overflow-x: hidden; }\n 6266  \n 6267: .site-header {\n 6268    border-bottom: 1px solid #000;\n 6269    width: 100%;\n ....\n 6393  # media queries\n 6394  --------------------------------------------------------------*/\n 6395: .site-header {\n 6396    border-bottom-color: #d6d6d6; }\n 6397  \n\n25 matches across 9 files\n\n\nSearching 443 files for \"toggle-title\"\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/header.php:\n   41  			<div id=\"site-navigation-toggle\" class=\"site-navigation-toggle small-8 medium-3 small-centered medium-uncentered columns\">\n   42  				<button>\n   43: 					<span id=\"toggle-title\" data-open=\"Explore\" data-close=\"Close\">Explore</span>\n   44  					<svg id=\"main-button\" class=\"icon-grid\">\n   45  						<use xlink:href=\"#icon-grid\">\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/index.html:\n   65                  <div id=\"site-navigation-toggle\" class=\"site-navigation-toggle small-8 medium-3 small-centered medium-uncentered columns\">\n   66                      <button>\n   67:                         <span id=\"toggle-title\" data-open=\"Explore\" data-close=\"Close\">Explore</span>\n   68                          <svg id=\"main-button\" class=\"icon-grid\">\n   69                              <use xlink:href=\"#icon-grid\">\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/js/app.js:\n   40  \n   41  		//Change the text of the toggle title\n   42: 		if ($( \"#toggle-title\" ).text() === \"Explore\" ) {\n   43: 			$( \"#toggle-title\" ).text($( \"#toggle-title\" ).data( \"close\" ));\n   44  		} else {\n   45: 			$( \"#toggle-title\" ).text($( \"#toggle-title\" ).data( \"open\" ));\n   46  		}\n   47  \n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/js/min/app-min.js:\n    1: jQuery(document).ready(function($){var e=document.getElementById(\"main-button\"),t=document.getElementById(\"animation-to-close\"),i=document.getElementById(\"animation-to-explore\");$(\"#primary-menu > li\").addClass(\"medium-3 columns\"),$(\"#primary-menu > li\").last().addClass(\"end\"),1===$(\"#primary-menu > li\").length?$(\"#primary-menu > li:first\").addClass(\"menu-offset-1-item\"):2===$(\"#primary-menu > li\").length?$(\"#primary-menu > li:first\").addClass(\"menu-offset-2-item\"):3===$(\"#primary-menu > li\").length&&$(\"#primary-menu > li:first\").addClass(\"menu-offset-3-item\"),$(\"#site-navigation-toggle\").on(\"click\",function(){$(\"#site-navigation\").hasClass(\"toggle\")?$(\"#site-navigation\").removeClass(\"toggle\"):$(\"#site-navigation\").addClass(\"toggle\"),$(\"#toggle-title\").text(\"Explore\"===$(\"#toggle-title\").text()?$(\"#toggle-title\").data(\"close\"):$(\"#toggle-title\").data(\"open\")),e.classList.contains(\"js-css-toggle-animation\")?(e.classList.remove(\"js-css-toggle-animation\"),i.beginElement()):(e.classList.add(\"js-css-toggle-animation\"),t.beginElement()),\"auto\"===$(\".header-fixed\").css(\"bottom\")?$(\".header-fixed\").css(\"bottom\",\"0px\"):$(\".header-fixed\").css(\"bottom\",\"auto\")})});\n\n11 matches across 4 files\n",
+			"file": "single.php",
 			"settings":
 			{
-				"buffer_size": 6675,
+				"buffer_size": 659,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inc/Layout/content-single.php",
+			"settings":
+			{
+				"buffer_size": 2847,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/elements/_wordpress.scss",
+			"settings":
+			{
+				"buffer_size": 536,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/elements/_site.scss",
+			"settings":
+			{
+				"buffer_size": 1215,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/pages/_single.scss",
+			"settings":
+			{
+				"buffer_size": 611,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/misc/_mq-single.scss",
+			"settings":
+			{
+				"buffer_size": 4039,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inc/parts/related_posts.php",
+			"settings":
+			{
+				"buffer_size": 1406,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 926 files for \"wp-caption-text\"\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/elements/_wordpress.scss:\n    1: .wp-caption-text {\n    2  	font-size: ms(0);\n    3    	padding: ms(-1) 0 0 0;\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/misc/_colors.scss:\n   32  .CS-comments .date,\n   33  .CS-single-date,\n   34: .wp-caption-text,\n   35  .CS-single-category,\n   36  .CS-single-category a,\n\n/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/misc/_mq-single.scss:\n  179  		margin-right: -102px;\n  180  	}\n  181: 	.wp-caption-text {\n  182  		padding: 0 ms(1) 0 ms(1);\n  183  	}\n  ...\n  195  		max-width: ms(13);\n  196  	}\n  197: 	.wp-caption-text {\n  198  		padding-top: ms(3); \n  199  	}\n\n4 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 878,
 				"line_ending": "Unix",
 				"name": "Find Results",
 				"scratch": true
 			}
 		},
 		{
-			"file": "style.css",
+			"file": "scss/elements/_short-css-codes.scss",
 			"settings":
 			{
-				"buffer_size": 205954,
+				"buffer_size": 721,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "scss/misc/_colors.scss",
+			"file": "scss/_experimental.scss",
 			"settings":
 			{
-				"buffer_size": 1118,
+				"buffer_size": 1906,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "scss/theme-parts/_header.scss",
+			"file": "comments.php",
 			"settings":
 			{
-				"buffer_size": 2516,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/app.js",
-			"settings":
-			{
-				"buffer_size": 2128,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Classes\n\nsite\n	site-header\n		site-header-fixed\n		site-branding\n		site-description\n		site-navigation\n			site-navigation-toggle\n				toggle-button\n					toggle-title\n					toggle-icon\n\n		site-menu-primary\n			menu-primary\n\n		site-menu-secendary\n			menu-secendary\n\n		site-search\n			site-search-form\n				search-input\n				search-submit\n				search-icon\n\n\n	site-social\n		site-social-primary\n\n		site-social-secendary\n\n		archive-share\n\n		content-share-standard\n\n		content-share-grid\n\n		content-share-[name]\n\n		single-share-primary\n\n		single-share-secendary\n\n		page-share-primary\n\n\n	site-footer\n		footer-widgetarea\n			footer-widget\n				widget-title\n				widget-body\n		footer-copy\n			copy-body\n			copy-extra\n\n\n\n	site-content\n	site-sidebar\n	site-menu << Need?\n\nsite-elements\n\nsite-header\n\nsite-navigation\n\nsite-search\n\nsite-social\n\n\n\n\n\n\n\n\n\nSVG\nCS-icon-[name]\n\n\n\n\nhtml no-js\nhead\nbody\ndiv #page .hfeed site header-fixed\n\nheader #site-header .site-header\n\n\n\n",
-			"file": "resources/WP-struture.txt",
-			"file_size": 664,
-			"file_write_time": 130737492910000000,
-			"settings":
-			{
-				"buffer_size": 939,
-				"line_ending": "Unix"
+				"buffer_size": 2424,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -231,21 +320,129 @@
 	"expanded_folders":
 	[
 		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/js/min",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/parts",
 		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/elements",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/misc",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/pages",
 		"/Users/MateuszRybinski/Documents/Development/black-swan",
-		"/Users/MateuszRybinski/Documents/Development/black-swan/inc",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock"
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/florence"
 	],
 	"file_history":
 	[
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_settings.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/parts/single-pagination.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/page.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/archive.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/elements/_site.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/theme-parts/_header.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/theme-parts/_searchform.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/searchform.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/theme-parts/_comments.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_experimental.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/index.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/misc/_colors.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/functions.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/page-sidebar.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/single.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/sidebar.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/content-search.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/header.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/content-none.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/search.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/Layout/content.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/comments.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/404.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/florence/page.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/florence/search.php",
+		"/Users/MateuszRybinski/Documents/Development/black-swan/content-search.php",
+		"/Users/MateuszRybinski/Documents/Development/black-swan/content-none.php",
+		"/Users/MateuszRybinski/Documents/Development/black-swan/search.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/resources/docs/What do I lack?",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/Layout/content-single.php",
+		"/Users/MateuszRybinski/Documents/Development/black-swan/archive.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock/archive.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/florence/archive.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/elements/_wordpress.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/misc/_mq-single.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/pages/_page.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/js/app.js",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/parts/related_posts.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/misc/_media-queries.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/pages/_content.scss",
+		"/Users/MateuszRybinski/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/MateuszRybinski/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/MateuszRybinski/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/theme-parts/_footer.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/footer.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/pages/_single.scss",
 		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/style.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_site.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/special-pages/_404.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/theme-parts/_related-posts.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/elements/_social-and-share.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/style.css",
+		"/Users/MateuszRybinski/Documents/Development/black-swan/404.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/theme-parts/_sidebar.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/share/comments.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/sidebar-footer.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/theme-parts/_pagination.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/ReduxFramework/sample/sample-config.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/ReduxFramework/sample/sample-config-legacy.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/ReduxFramework/CHANGELOG.md",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/js/min/app-min.js",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/share/facebook.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/share/google-plus.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/share/pinterest.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/share/twitter.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/resources/docs/WP-struture.txt",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/resources/docs/class-structure.txt",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/resources/docs/sass-list.css",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/elements/_short-css-codes.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/elements/_foreign-code.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_settings.scss",
 		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_bits.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/social/facebook.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/parts/post_pagination.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/resources/docs/You scored another kick-ass interview, keep them c",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/parts/svg-system.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/parts/icon.svg",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/florence/content.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/florence/comments.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/ReduxFramework/sample/CS-config.php",
+		"/Users/MateuszRybinski/Documents/Development/black-swan/sass/mixins/_mixins-master.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/resources/docs/text.txt",
+		"/Users/MateuszRybinski/Documents/Development/black-swan/content-single.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/social/youtube.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/social/twitter.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/social/tumblr.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/social/rss.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/social/pinterest.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/social/instagram.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/social/googleplus.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/florence/header.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/florence/functions/customizer/sp_customizer_settings.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/social/facebook",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock/index.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock/footer.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/edition/theme-options/themewich-config.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/edition/header.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/ReduxFramework/sample/parts/general-settings.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/ReduxFramework/sample/patterns/triangular_@2X.png",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/resources/docs/hemlock-custom.txt",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock/header.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-config.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/CS-config.php",
+		"/Users/MateuszRybinski/Documents/Development/black-swan/index.php",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/bower_components/foundation/scss/foundation/components/_flex-video.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/elements/_foundation-slim.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/style-test.css",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/resources/WP-struture.txt",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_content-article.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_site-header.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_site-footer.scss",
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_site.scss",
 		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_header.scss",
 		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_index.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/misc/_media-queries.scss",
 		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/misc/_media_queries.scss",
 		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_tag.scss",
 		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_searchform.scss",
@@ -261,89 +458,7 @@
 		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_content.scss",
 		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_page-sidebar.scss",
 		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_page.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_single.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/searchform.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_site-footer.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_404.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/header.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/footer.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/archive.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/index.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/search.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/searchform.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/footer.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/header.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_404",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/style.css",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_site-header.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/parts/svg-system.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/Layout/content.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_experimental.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/functions.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/index.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/layout/content.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_media_queries.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_content-article.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/index.html",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock/content.php",
-		"/Users/MateuszRybinski/Documents/Development/black-swan/content.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/Layout/content-split.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/Layout/content-grid.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/parts/thumbnail.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock/index.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/black-swan.sublime-project",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock/content-page.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/js/app.js",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock/searchform.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock/header.php",
-		"/Users/MateuszRybinski/Documents/Development/black-swan/functions.php",
-		"/Users/MateuszRybinski/Documents/Development/black-swan/header.php",
-		"/Users/MateuszRybinski/Documents/Development/black-swan/style.css",
-		"/Users/MateuszRybinski/Documents/Development/black-swan/sass/style.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/variables-site/_variables-site.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock/footer.php",
-		"/Users/MateuszRybinski/Documents/Development/black-swan/footer.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/hemlock/functions.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/svg-defs.php",
-		"/Users/MateuszRybinski/Documents/Development/black-swan/index.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_main.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/twentyfifteen/index.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/twentyfifteen/header.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_main_test.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/inc/svg-defs.svg",
-		"/Users/MateuszRybinski/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/js/min/app-min.js",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_hide.scss",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-includes/formatting.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-settings.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-includes/feed.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/wp-hooks/examples/export_wp_filter.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/wp-hooks/examples/search_core.txt",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/wp-hooks/examples/wp_title.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/twentyfourteen/functions.php",
-		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/wp-hooks/examples/add_filter_example.php",
-		"/Users/MateuszRybinski/Downloads/robot/js/mazespace.js",
-		"/Users/MateuszRybinski/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-		"/Users/MateuszRybinski/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
-		"/Users/MateuszRybinski/Documents/Development/something_new/js/app.js",
-		"/Users/MateuszRybinski/Documents/Development/something_new/scss/_bits.scss",
-		"/Users/MateuszRybinski/Documents/Development/something_new/scss/_main.scss",
-		"/Users/MateuszRybinski/Documents/Development/something_new/scss/_experimental.scss",
-		"/Users/MateuszRybinski/Documents/Development/something_new/images/grid 2.svg",
-		"/Users/MateuszRybinski/Downloads/AnimatedSVGIcons/svg/plus.svg",
-		"/Users/MateuszRybinski/Downloads/AnimatedSVGIcons/js/svgicons-config.js",
-		"/Users/MateuszRybinski/Downloads/AnimatedSVGIcons/svg/grid3.svg",
-		"/Users/MateuszRybinski/Downloads/AnimatedSVGIcons/svg/grid.svg",
-		"/Users/MateuszRybinski/Downloads/AnimatedSVGIcons/svg/nav-left-arrow.svg",
-		"/Users/MateuszRybinski/Downloads/AnimatedSVGIcons/css/demo.css",
-		"/Users/MateuszRybinski/Downloads/AnimatedSVGIcons/index.html",
-		"/Users/MateuszRybinski/Documents/Development/something_new/bower_components/modular-scale/stylesheets/_modular-scale.scss",
-		"/Users/MateuszRybinski/Documents/Development/something_new/images/nav_grid_large.svg",
-		"/Users/MateuszRybinski/Documents/Development/something_new/scss/app.scss",
-		"/Users/MateuszRybinski/Documents/Development/something_new/index.html",
-		"/Users/MateuszRybinski/Documents/Development/something_new/config.codekit",
-		"/Users/MateuszRybinski/Documents/Development/something_new/Gemfile",
-		"/Users/MateuszRybinski/Documents/Development/something_new/config.rb"
+		"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss/_single.scss"
 	],
 	"find":
 	{
@@ -351,9 +466,24 @@
 	},
 	"find_in_files":
 	{
-		"height": 104.0,
+		"height": 103.0,
 		"where_history":
 		[
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan,-*.txt,-*.md,-sample-config-legacy.php,-sample-config.php,-style.css,-app-min.js,-foundation.css",
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan,-*.txt,-*.md,-sample-config-legacy.php,-sample-config.php,-style.css,-app-min.js,-foundation.css,-bower_components",
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan,-*.txt,-*.md,-sample-config-legacy.php,-sample-config.php,-style.css,-app-min.js,-foundation.css",
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan,-*.txt,-*.md,-sample-config-legacy.php,-sample-config.php,-style.css,-app-min.js",
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan,-*.txt,-*.md,-sample-config-legacy.php,-sample-config.php,-style.css",
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan,-*.txt,-*.md,-sample-config-legacy.php,-sample-config.php",
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan,-*.txt,-*.md",
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan,-*.txt,*.md",
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan,-*.txt,",
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan,-*.txt",
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan",
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan/scss",
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/florence",
+			"/Users/MateuszRybinski/Documents/Development/black-swan",
+			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/florence",
 			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan",
 			"/Users/MateuszRybinski/Documents/Development/black-swan",
 			"/Users/MateuszRybinski/Documents/Development/wordpress_treehouse/wp-content/themes/black-swan",
@@ -373,93 +503,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"toggle-title",
-			"site-header",
-			"#",
-			"page",
-			"icon-top",
-			"footer-copyarea",
-			"fill",
-			"screen-reader-text",
-			"article-box",
-			"black_swan_posted_on",
-			"content",
-			"content-area",
-			"grid",
-			"search_form",
+			"wp-caption-text",
+			".wp-caption-text {\n    padding: 0 16px 0 16px; }",
+			"CS_redux",
+			"$CS_redux['CS-single-sidebar']",
+			"CS-homepage-sidebar",
+			"CS-single-pagination",
+			"Add Favicon",
+			"\nAdd Favicon",
+			".CS-site-search",
+			"wpex_pagination",
+			".date",
+			"<h1>",
+			"<span>",
+			"CS-search",
+			"CS-search-input",
+			"CS-search",
+			"solopine",
 			"search",
-			"<li class=\"menu-item medium-4 columns\">\n                        <a href=\"#\">Features</a>\n                            <ul class=\"sub-menu\">\n                                <li class=\"sub-item\"><a href=\"#\">Home with Sidebar</a></li>\n                                <li class=\"sub-item\"><a href=\"#\">Page with Sidebar</a></li>\n                                <li class=\"sub-item\"><a href=\"#\">Split post layout</a></li>\n                                <li class=\"sub-item\"><a href=\"#\">Grid post layout</a></li>\n                                <li class=\"sub-item\"><a href=\"#\">Full post layout</a></li>\n                                \n                            </ul>\n                        </li>",
-			"medium-3",
-			"<li class=\"menu-item medium-3 columns\">\n                            <a href=\"#\">About Black Swan</a>\n                            <ul class=\"sub-menu\">\n                                <li class=\"sub-item\"><a href=\"#\">Johan Smith</a></li>\n                                <li class=\"sub-item\"><a href=\"#\">Typography</a></li>\n                                <li class=\"sub-item\"><a href=\"#\">404 page</a></li>\n                                <li class=\"sub-item\"><a href=\"#\">Archive</a></li>\n                                <li class=\"sub-item\"><a href=\"#\">Contact</a></li>\n                            </ul>\n                        </li>",
-			"dropdown",
-			"add_theme",
-			"menus",
-			"\"#site-navigation-toggle\"",
-			"content-grid",
-			"main-header",
-			"page-wrap",
-			"Animation_to_close",
-			"animationToStart",
-			"animationToGreen",
-			"animationToYellow",
-			"solopine_contactmethods",
-			"medium",
+			"blockqoute",
+			"CS-comments",
+			"super+a",
+			"super+s",
+			"comments small-12 small-centered columns",
+			"class=\"CS-comments",
 			"small",
-			"target=\"_blank\"",
-			"<?php endif; ?>",
-			"<?php",
-			"font-weight: 200;",
-			"max-height",
-			"opacity: 0;",
-			"color: red;",
-			"color: map-get($site_static_color, light_text);",
-			"body_text",
-			"color: red; ",
-			"toggle-animation",
-			"js-css-toggle-animation",
-			"toggle-animation",
-			"toggle",
-			".toggle",
-			"js-",
-			"toggle",
-			"toggle-animation",
-			"toggle",
-			"cal_preview",
-			"0",
-			"all",
-			"toggle",
-			"icon_grid",
-			"main",
-			"saved",
-			"button",
+			".copy-extra-list li",
+			"site-pagination",
+			"single-title",
+			"single-content",
+			"single-share",
+			"single-category",
+			"single-author",
+			"single-category",
+			"single-author",
+			"single-date",
+			"comments",
+			"comments_pagination",
+			"comments",
+			"pre",
+			"#comment",
+			"comment",
+			"comment-form-comment",
+			"solopine",
+			"comment-toggle-icon",
+			".submit",
+			".CS-single-pagination",
+			".copy-extra-item",
+			"text-align: center;",
+			"float: left;",
+			"list-style: none;",
+			"margin-bottom: ms(4);",
+			"transition: all 0.3s ease;",
+			"display: block;",
+			"border: solid 1px #000;",
+			"width: ms(4);",
+			"comment-toggle-border",
+			"comment-toggle",
+			"comment-number",
+			"comment-toggle",
+			"block-heading",
+			"CS-comment-header",
+			"comment-header",
+			"comment-headering",
+			"comment-header",
+			"comments_wrapper",
+			"post-comments",
+			"#secondary",
+			"secondary",
+			"font-size: ms(0);",
+			"#secondary",
+			"secondary",
+			"#secondary",
+			"page-numbers",
+			"content-share",
+			"site-logo",
+			"search-button",
+			"search-submit",
+			"search-input",
+			"site-search-form",
+			"site-pagination",
+			"site-content-main",
+			"CS-site-content",
+			"site-content",
+			"site-social",
+			"site-search",
+			"site-primary-menu",
+			"site-navigation",
+			"toggle-icon",
+			"toggle-title",
+			"toggle-button",
 			"site-navigation-toggle",
-			"main-button",
-			".icon-grid",
-			"#site-navigation-toggle",
-			"body",
-			"columns",
-			"apply_filters",
-			"apply_filters( 'excerpt_length",
-			"do_action( 'init",
-			"apply_filters( 'wp_title",
-			"add_action( 'init",
-			"add_filter( 'wp_title",
-			"{\n",
-			"transparent",
-			"red",
-			"saved",
-			"button",
-			"</",
+			"site-description",
+			"site-title",
+			"site-branding",
+			"top-header",
+			"site-header",
+			"#site-header",
+			"#site",
+			"single-share",
+			"share-icon",
+			"icon",
+			"post",
+			"bottom-share",
+			"arrow",
+			"CS-",
+			".share-icon",
+			"out",
+			"single-thumbnail",
+			"toggle",
+			"#site-navigation",
 			"sketch:type=\"MSShapeGroup\"",
-			"300",
-			"svg",
-			"width: 300px;",
-			"svg",
-			"</",
-			"sketch:type=\"MSShapeGroup\"",
-			"sketch:type=\"MSLayerGroup\"",
-			"color:    #909;",
-			"#909"
+			"comments_template",
+			"comments",
+			"solopine_comments",
+			"',\n",
+			"comm",
+			"content-share",
+			"CS_single_post_share",
+			"$CS_classic_share",
+			"share",
+			"center-block",
+			"ali",
+			"color",
+			"content",
+			"_homepage",
+			"content",
+			"share",
+			"layout"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -467,6 +638,37 @@
 		"regex": false,
 		"replace_history":
 		[
+			"CS-single-share",
+			"CS-comment-form-comment",
+			"CS-comment-toggle-icon",
+			"CS-comment-toggle-border",
+			"CS-comments-number",
+			"CS-comments-header-number",
+			"CS-comments-header",
+			"CS-comment-header",
+			"CS-comments-wrap",
+			"CS-content-share",
+			"CS-site-logo",
+			"CS-search-submit",
+			"CS-search-input",
+			"CS-site-search-form",
+			"CS-site-pagination",
+			"CS-site-content-main",
+			"CS-site-content",
+			"CS-site-social",
+			"CS-site-search",
+			"CS-site-primary-menu",
+			"CS-toggle-icon",
+			"CS-toggle-title",
+			"CS-toggle-button",
+			"CS-site-navigation-toggle",
+			"CS-site-description",
+			"CS-site-title",
+			"CS-site-branding",
+			"CS-top-header",
+			"CS-site-header",
+			"CS-share-icon",
+			"CS-single-thumbnail",
 			"footer-copy",
 			"entry-header",
 			"site-header"
@@ -480,43 +682,246 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "header.php",
+					"file": "ReduxFramework/sample/CS-config.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3181,
+						"buffer_size": 38563,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1498,
-								1511
+								21433,
+								21433
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6980.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "single.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
-						"translation.x": 56.0,
-						"translation.y": 310.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
+					"file": "inc/Layout/content-single.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6675,
+						"buffer_size": 2847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2351,
+								2351
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 629.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "scss/elements/_wordpress.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 536,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								417,
+								384
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scss/elements/_site.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32,
+								32
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "scss/pages/_single.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 611,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								193,
+								209
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "scss/misc/_mq-single.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3303,
+								3303
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "inc/parts/related_posts.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1406,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								490,
+								490
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 878,
 						"regions":
 						{
 							"match":
@@ -525,148 +930,20 @@
 								"regions":
 								[
 									[
-										204,
-										215
+										176,
+										191
 									],
 									[
-										387,
-										398
+										431,
+										446
 									],
 									[
-										444,
-										455
+										678,
+										693
 									],
 									[
-										844,
-										855
-									],
-									[
-										893,
-										904
-									],
-									[
-										913,
-										924
-									],
-									[
-										1074,
-										1085
-									],
-									[
-										1343,
-										1354
-									],
-									[
-										1363,
-										1374
-									],
-									[
-										1552,
-										1563
-									],
-									[
-										1766,
-										1777
-									],
-									[
-										1787,
-										1798
-									],
-									[
-										1896,
-										1907
-									],
-									[
-										2010,
-										2021
-									],
-									[
-										2023,
-										2034
-									],
-									[
-										2256,
-										2267
-									],
-									[
-										2348,
-										2359
-									],
-									[
-										2580,
-										2591
-									],
-									[
-										2887,
-										2898
-									],
-									[
-										3193,
-										3204
-									],
-									[
-										3213,
-										3224
-									],
-									[
-										3309,
-										3320
-									],
-									[
-										3535,
-										3546
-									],
-									[
-										3651,
-										3662
-									],
-									[
-										3836,
-										3847
-									],
-									[
-										4249,
-										4261
-									],
-									[
-										4743,
-										4755
-									],
-									[
-										5127,
-										5139
-									],
-									[
-										5183,
-										5195
-									],
-									[
-										5209,
-										5221
-									],
-									[
-										5276,
-										5288
-									],
-									[
-										5302,
-										5314
-									],
-									[
-										6223,
-										6235
-									],
-									[
-										6259,
-										6271
-									],
-									[
-										6285,
-										6297
-									],
-									[
-										6318,
-										6330
+										794,
+										809
 									]
 								],
 								"scope": ""
@@ -675,15 +952,15 @@
 						"selection":
 						[
 							[
-								3928,
-								3928
+								687,
+								687
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
 							"line_numbers": false,
-							"output_tag": 2,
+							"output_tag": 1,
 							"result_base_dir": "",
 							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -691,32 +968,32 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1923.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "style.css",
+					"buffer": 9,
+					"file": "scss/elements/_short-css-codes.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 205954,
+						"buffer_size": 721,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								598,
-								602
+								84,
+								84
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -728,126 +1005,60 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "scss/misc/_colors.scss",
+					"buffer": 10,
+					"file": "scss/_experimental.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1118,
+						"buffer_size": 1906,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								692,
-								692
+								897,
+								897
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 164.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 4,
-					"file": "scss/theme-parts/_header.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2516,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								736,
-								712
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 656.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "js/app.js",
+					"buffer": 11,
+					"file": "comments.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2128,
+						"buffer_size": 2424,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1753,
-								1753
+								221,
+								221
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "resources/WP-struture.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 939,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								167,
-								178
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -870,18 +1081,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.458462982833,
 			1.0
 		],
 		"rows":
@@ -937,7 +1141,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 275.0,
+	"side_bar_width": 245.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

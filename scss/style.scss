@@ -73,8 +73,8 @@ Misc
 // @import "foundation/components/dropdown";
 // @import "foundation/components/dropdown-buttons";
 // @import "foundation/components/flex-video";
-@import "foundation/components/forms";
-@import "foundation/components/grid";
+// @import "foundation/components/forms";
+// @import "foundation/components/grid";
 // @import "foundation/components/inline-lists";
 // @import "foundation/components/joyride";
 // @import "foundation/components/keystrokes";
@@ -90,21 +90,25 @@ Misc
 // @import "foundation/components/split-buttons";
 // @import "foundation/components/sub-nav";
 // @import "foundation/components/switches";
-// @import "foundation/components/tables";
+@import "foundation/components/tables";
 // @import "foundation/components/tabs";
 // @import "foundation/components/thumbs";
 // @import "foundation/components/tooltips";
 // @import "foundation/components/top-bar";
-@import "foundation/components/type";
+// @import "foundation/components/type";
 // @import "foundation/components/offcanvas";
 // @import "foundation/components/visibility";
 
+@import "elements/foundation-slim";
 
 /*--------------------------------------------------------------
 # site
 --------------------------------------------------------------*/
 @import "elements/site";
-
+@import "elements/foreign-code";
+@import "elements/short-css-codes";
+@import "elements/social-and-share";
+@import "elements/wordpress";
 
 
 /* === Pages === */
@@ -226,6 +230,7 @@ Misc
 # media queries
 --------------------------------------------------------------*/
 @import "misc/media-queries";
+@import "misc/mq-single";
 
 
 

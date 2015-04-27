@@ -1,0 +1,40 @@
+.CS-site-sidebar,
+.CS-site-sidebar p,
+.CS-site-sidebar li {
+	font-size: ms(0);
+}
+
+.CS-site-sidebar {
+	margin-bottom: ms(5);
+}
+
+.CS-site-sidebar li {
+	list-style: none;
+	margin-bottom: ms(-4);
+}
+
+.CS-site-sidebar ul {
+	margin-left: 0;
+}
+
+.CS-site-sidebar h1 {
+	font-size: ms(2);
+}
+
+.CS-site-sidebar .widget {
+	margin-bottom: ms(3);
+}
+
+.CS-site-sidebar .post-date {
+	display: inherit;
+	list-style: none;
+	font-weight: 300;
+}
+
+.textwidget p:last-child {
+	margin-bottom: 0;
+}
+
+.widget p {
+	margin-bottom: ms(2);
+}

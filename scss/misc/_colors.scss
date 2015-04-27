@@ -1,67 +1,168 @@
-a {
-	color: map-get($site_dynamic_color, main_color);
+//broder
+.form-submit .submit,
+.CS-comment,
+.comment-form input,
+.comment-replay,
+.CS-comment-toggle-border,
+.CS-content-share .CS-share-icon {
+	border-color: $border;
 }
 
-.site-header {
-	border-bottom-color: map-get($site_static_color, border);	
+.comment-replay:hover,
+.CS-content-share .CS-share-icon:hover,
+.CS-comment-toggle-border:hover {
+	background-color: $border;
+}
+
+.CS-site-header {
+	border-bottom-color: $border;
 }
 
 .site-footer,
+.CS-single-pagination,
+.CS-site-pagination,
+.post-pagination,
 .footer-copy {
-	border-top-color: map-get($site_static_color, border);
-}
-
-.content-share .share-icon {
-	border-color: map-get($site_static_color, border);
-}
-
-.content-share .share-icon:hover {
-	background-color: map-get($site_static_color, border);		
-	border-color:map-get($site_dynamic_color, main_color);
-}
-
-.content-share .share-icon:hover i {
-	color: darken(map-get($site_dynamic_color, main_color), 30%);
+	border-top-color: $border;
 }
 
 
-.content-date,
+//Light_text
+a:hover,
+.CS-comments .date,
+.CS-single-date,
+.wp-caption-text,
+.CS-single-category,
+.CS-single-category a,
+.copy-extra-list a,
+.CS-content-category,
+.CS-content-date,
 .footer-copy,
 .copy-extra-button,
-.site-description,
-.site-social a:hover,
-.toggle-button .toggle-title,
-.site-navigation ul > li a:hover,
-.site-navigation .sub-menu > li a {
-	color: map-get($site_static_color, light_text);
+.CS-site-description,
+.page-numbers .prev,
+.page-numbers .next,
+.CS-site-social a:hover,
+.CS-toggle-button .CS-toggle-title,
+.CS-site-navigation ul > li a:hover,
+.CS-site-navigation .sub-menu > li a,
+.CS-site-sidebar .post-date {
+	color: $light_text;
 }
-.content-title a,
-.site-social a,
-.site-navigation ul > li a,
-.site-navigation .sub-menu > li a:hover {
-	color: map-get($site_static_color, body_text);
+pre {
+	border-color: $light_text;
 }
-.more-link,
-.share-icon i,
-.content-category a,
-.content-content .more-link {
-	color: map-get($site_dynamic_color, main_color);
+
+.icon-search {
+	fill: $light_text;
+}
+
+.CS-site-search ::-webkit-input-placeholder {
+	color: $light_text;
+}
+.CS-site-search :-moz-placeholder {
+	color: $light_text;
+}
+.CS-site-search ::-moz-placeholder {
+	color: $light_text;
+}
+.CS-site-search :-ms-input-placeholder {
+	color: $light_text;
+}
+
+//body_text
+body,
+pre,
+.CS-content-title a,
+.CS-site-social a,
+.CS-site-sidebar li a,
+.CS-site-sidebar li a:hover,
+.CS-site-navigation ul > li a,
+.CS-site-navigation .sub-menu > li a:hover {
+	color: $body_text;
+}
+
+//Social_dark
+.CS-comment-toggle-border:hover .CS-comment-toggle-icon {
+	fill: $social_dark;
+}
+.comment-replay:hover,
+.CS-content-share .CS-share-icon:hover i {
+	color: $social_dark;
+}
+
+//header_text
+h1,
+h2,
+h3,
+h4,
+h5,
+p.intro,
+strong,
+blockquote,
+blockquote p,
+.footer-widget li a,
+.author,
+.submit {
+	color: $header_text;
+}
+
+// #dynamic
+
+//main_color
+a,
+blockquote cite a,
+.CS-comment-toggle,
+.submit:hover,
+.single-category a:hover,
+.copy-extra-list a:hover,
+.CS-toggle-button:hover,
+.footer-widget li a:hover,
+.prev.page-numbers:hover,
+.next.page-numbers:hover,
+.CS-site-navigation .sub-menu > li a:hover {
+	color: $main_color;
+}
+.CS-content-share .CS-share-icon:hover,
+.comment-replay:hover,
+.submit:hover,
+.CS-comment-toggle-border:hover {
+	border-color: $main_color;
+}
+
+.CS-comment-toggle-icon,
+.icon-search:hover {
+	fill: $main_color;
 }
 
 
 
 
 
-.site-search ::-webkit-input-placeholder {
-	color: map-get($site_static_color, light_text);
-}
-.site-search :-moz-placeholder {
-	color: map-get($site_static_color, light_text);
-}
-.site-search ::-moz-placeholder {
-	color: map-get($site_static_color, light_text);
-}
-.site-search :-ms-input-placeholder {
-	color: map-get($site_static_color, light_text);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

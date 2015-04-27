@@ -1,0 +1,28 @@
+.CS-share-icon {
+	text-align: center;
+}
+
+.CS-share-icon,
+.CS-share-icon:hover {
+	border: 1px #000 solid;
+}
+
+.CS-share-icon:hover,
+.CS-share-icon:hover i,
+.CS-share-icon {
+	transition: all 0.3s ease;
+}
+
+.CS-share-icon {
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0 ms(-1) 0 ms(-1);
+	padding-top: 5px;
+	width: ms(4);
+	height: ms(4);	
+}
+
+.CS-content-share {
+	margin-top: ms(2);
+	margin-bottom: ms(1);
+}

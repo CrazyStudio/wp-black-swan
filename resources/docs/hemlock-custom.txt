@@ -1,0 +1,69 @@
+General Settings
+	Upload Favicon
+	Homepage Layout
+		Full posts
+		Grid posts
+
+	Grid layout: headering
+		text-area
+	Grid layout: sub headering
+		Text-area
+
+	Archive layout
+		Full posts
+		Grid posts
+
+	Enable sidebar on homepage
+	Enable sidebar on posts
+	Enable sidebar on Archives
+
+Logo and header
+	Upload logo
+	Upload logo (retina version)
+
+	Top & bottom header padding
+
+Top bar
+	Disable top bar social icons
+	Disable top bar search
+
+Featured Area
+	Enable featured slider
+	Select featured catgory
+		Dropdown
+	Hide Featured category
+	Amount of slides
+Post
+	Hide Category
+	Hide Date
+	Hide Tags
+	Hide Share buttons
+	Hide Author box
+	Hide Related Posts box
+	Hide featured image from top of post
+	Hide nex/prev post Navigation
+	Turn of Uppercase in post title
+Page
+	Hide Comments
+	Hide share buttons
+Social Media
+	"Enter your social media usernames. Icons will not show if left blank."
+	Facebook
+	Twitter
+	Instagram
+	Pinterest
+	Bloglovin
+	Google plus
+	Tumblr
+	Youtube
+footer
+	Disable footer social
+	Disable footer widget area
+	Disable footer logo area
+	uplpad footer logo
+Colors: top bar
+Colors: footer
+Colors: Sidebar
+Colors: general
+Custom CSS
+Widgets

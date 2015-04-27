@@ -1,73 +1,88 @@
-body { 
-	margin-top: ms(6) + ms(5);
+.CS-site-header,
+.CS-site-header-fixed {
+	width: 100%;
 }
 
-.site-header-fixed  {
+.CS-site-title,
+.CS-site-description {
+	display: inline-block;
+}
+
+.icon-search,
+.icon-search:hover {
+	transition: color 0.5s ease;
+}
+
+.CS-toggle-icon,
+.js-css-toggle {
+	transition: all 0.5s ease;
+}
+
+.CS-toggle-icon,
+.icon-search {
+	width: ms(1);
+	height: ms(1);
+}
+
+.CS-site-header-fixed {
 	position: fixed;
     top: 0;
     z-index: 999;
-    width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-.site-header {
+.CS-site-header {
 	border-bottom: 1px solid #000;
-	width: 100%;
-	min-height:  ms(6);
 	background: #fff;
+	min-height:  ms(6);
 }
 
-.site-title {	
-	display: inline-block;
+.CS-site-title {	
 	margin: ms(0) ms(-3) 0 0;
 	padding: 0;
 }
 
-.site-logo {
+.CS-site-logo {
 	display: block;
 	height: ms(3);
 }
 
-.site-description {
-	display: inline-block;
+.CS-site-description {
 	vertical-align: 3px;
 	font-size: ms(2) - ms(-6);
 	font-weight: 200;
 } 
 
-.site-social {
-	margin-bottom: ms(0);
+.CS-site-social {
 	text-align: center;
 }
-
-.social-icon i {
-	padding: 0 ms(-5) 0 ms(-5);
+.CS-site-primary-menu {
+	margin-bottom: ms(0);
+}
+.CS-social-icon {
+	margin-right: -2px;
+	margin-left: -2px;
+	padding: 0 ms(-4) 0 ms(-4);
 }
 
-.toggle-button {
+.CS-toggle-button {
 	float: right;
 	margin: ms(-6) 0 ms(-6) 0;
 	outline: none;
+	background: none;
 	padding: ms(0);
-	background: none !important;
 	font-weight: 200;
 }
 
-.toggle-icon {
-	width: ms(1);
-	height: ms(1);
-	transition: all 0.5s ease;
-}
-
-.toggle-title {
+.CS-toggle-title {
 	margin-right: ms(0);
 	vertical-align: 3px;
 }
 
 .js-css-toggle {
-    max-height: 3000px !important;
-    transition: max-height 0.9s ease-in;
+    max-height: 1500px !important; /* Important because this is an essential function, just to insure that it will not be overwritten */
+    padding-bottom: ms(2);
 }
 
 .js-css-toggle-animation {
@@ -75,16 +90,17 @@ body {
 	transition: all 0.7s ease;
 }
 
-.site-navigation {
+.CS-site-navigation {
 	max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.4s ease;
+    transition: all 0.6s ease;
 }
 
-.site-navigation ul > li {
+.CS-site-navigation ul > li {
 	padding: 0;
 	text-align: center;
 	list-style-type: none;
+	list-style-image: none;
 }
 
 .sub-menu {
@@ -95,63 +111,3 @@ body {
 	font-weight: 200;
 }
 
-.site-search {
-	margin-top: ms(0);
-}
-.search-input {
-	position: relative;
-}
-
-.search-submit {
-	position: absolute;
-	top: 11px;
-	left: 87%;
-	margin: 0;
-	padding: 0;
-	background: none;
-}
-
-.icon-search {
-	width: ms(1);
-	height: ms(1);
-}
-
-.site-search ::-webkit-input-placeholder {
-   font-weight: 200;
-   transition: opacity 0.5s ease-out;
-}
-
-.site-search :-moz-placeholder { /* Firefox 18- */
-   font-weight: 200;
-   transition: opacity 0.5s ease-out; 
-}
-
-.site-search ::-moz-placeholder {  /* Firefox 19+ */
-   font-weight: 200;
-   transition: opacity 0.5s ease-out; 
-}
-
-.site-search :-ms-input-placeholder {  
-   	font-weight: 200;
-	transition: opacity 0.5s ease-out; 
-}
-
-.site-search input:focus::-webkit-input-placeholder {
-	opacity: 0;
-	transition: opacity 0.5s ease-out;
-}
-
-.site-search input:focus:-moz-placeholder {
-	opacity: 0;
-	transition: opacity 0.5s ease-out;
-}
-
-.site-search input:focus::-moz-placeholder {
-	opacity: 0;
-	transition: opacity 0.5s ease-out;
-}
-
-.site-search input:focus:-ms-input-placeholder {
-	opacity: 0;
-	transition: opacity 0.5s ease-out;
-}

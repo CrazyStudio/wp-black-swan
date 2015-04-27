@@ -2,65 +2,63 @@
 /**
  * The template for displaying the footer.
  *
- * Contains the closing of the #site-content div and all content after
+ * Contains the closing of the #CS-site-content div and all content after
  *
- * @package Black Swan
  */
-?>
-</div> <!-- site-content: Found bottom of header.php -->
+global $CS_redux;
+$CS_footer_copy 	= $CS_redux['CS-footer-copy']; ?>
+</div> <!-- CS-site-content: Found bottom of header.php -->
 
-<footer id="site-footer" class="site-footer">
+<footer id="site-footer" class="site-footer <?php if( ! is_active_sidebar( 'footer-big-widget') && ! is_active_sidebar( 'footer-medium-widget') && ! is_active_sidebar( 'footer-small-widget') ) { echo "php-site-footer-no-widget"; } ?>">
 	
-	<section class="footer-widgetarea row">
-		
-		<div class="footer-widget large-6 columns">
-			<h3 class="widget-title">About</h3>
-			<p>This attention to details requires discipline. There is no room for sloppiness, for carelessness, for procrastination. Every detail is important because the end result is the sum of all the details involved in the creative process no matter what we are doing. There are no hierarchies when it comes to quality. Quality is there or is not there, and if is not there we have lost our time.</p>
+	<?php	if( is_active_sidebar( 'footer-big-widget') or is_active_sidebar( 'footer-medium-widget') or is_active_sidebar( 'footer-small-widget') ) : ?>
+	
+		<section class="footer-widgetarea row">
+			
+			<div class="mq-footer-widget footer-widget small-10 medium-6  small-centered medium-uncentered columns">
+				
+				<?php dynamic_sidebar( 'footer-big-widget' ); ?>
 
-			<a href="">Buy This Theme</a>
+			</div>
+
+			<div class="mq-footer-widget footer-widget small-5 medium-3 small-offset-1 medium-offset-0 large-offset-1 columns">
+				
+				<?php dynamic_sidebar( 'footer-medium-widget' ); ?>
+
+			</div>
+
+			<div class="mq-footer-widget footer-widget small-5 medium-3 large-2 small-offset-0 medium-offset-0 end columns">
+				
+				<?php dynamic_sidebar( 'footer-small-widget' ); ?>
+
+			</div>
+		</section> <!-- Footer-widgetarea -->
+
+	<?php endif; ?>	
+
+	<section class="mq-footer-copy footer-copy row">
+
+		<div class="copy-body small-12 small-centered medium-uncentered medium-7 columns">
+			<copy><?php if ( !empty( $CS_redux[ 'CS-footer-copy' ] ) ) : ?><?php echo esc_attr( $CS_redux[ 'CS-footer-copy' ] );?><?php else: ?>Copyright © 2015 Black Swan. All rights reserved.<?php endif; ?></copy>
 		</div>
 
-		<div class="footer-widget large-3 large-offset-1 columns">
-			<h3 class="widget-title">Categories</h3>
-			<ul>
-				<li>Happiness</li>
-				<li>Lifestyle</li>
-				<li>Travel</li>
-				<li>Design</li>
-				<li>Music</li>
-			</ul>
-		</div>
+		<div class="copy-extra small-12 medium-5 columns">
+			<?php $defaults = array(
+					'container' 		=> false,
+					'theme_location' 	=> 'footer',
+					'menu_class' 		=> 'copy-extra-list',
+					
+					);
+				wp_nav_menu( $defaults ); ?>
 
-		<div class=" footer-widget large-2 columns">
-			<h3 class="widget-title">Social</h3>
-			<ul>
-				<li>Instagram</li>
-				<li>Facebook</li>
-				<li>Youtube</li>
-				<li>Twitter</li>
-				<li>Tumblr</li>
-			</ul>
-		</div>
-	</section> <!-- Footer-widgetarea -->
-
-	<section class="footer-copy row">
-
-		<div class="copy-body small-10 columns">
-			<copy>Copyright © 2015 Black Swan. All rights reserved.</copy>
-		</div>
-
-		<div class="copy-extra small-2 columns">
-			<button class="copy-extra-button">
-			<span class="copy-extra-body">Top</span>
-				<svg id="CS-icon-arrow" class="CS-icon-arrow">
-					<use xlink:href="#icon-footer-arrow">
-					</use>
-				</svg>
-			</button>
 		</div>
 	</section> <!-- footer-copy -->
 
 </footer> <!-- site-footer -->
+
+</div> <!-- site -->
+
+<!-- <pre><?php print_r($CS_redux); ?></pre> -->
 
 <?php wp_footer(); ?>
 

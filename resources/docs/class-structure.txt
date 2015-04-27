@@ -1,0 +1,157 @@
+# content-single.php
+	CS-single-thumbnail
+	CS-single-body
+		single-header
+			single-author
+			single-date
+			single-category
+
+		single-share content-share
+		single-title
+		single-content
+
+
+
+# content.php
+content
+	content-thumbnail
+	content-header
+		content-category
+		content-title
+		content-content
+		content-share
+		content-date
+
+
+
+# post_pagination.php
+post-pagination
+	pagination-box
+		prev-post
+			arrow
+			pagi-text
+
+	pagination-box
+		single-bottom-share
+			content-share
+
+	pagination-box
+		next-post
+			arrow
+			pagi-text
+
+# single-pagination.php
+single-pagination
+	pagination-section-left
+		pagination-prev
+			pagination-arrow
+			pagination-text
+
+	pagination-section-middle
+		pagination-share
+
+	pagination-section-right
+		pagination-next
+			pagination-arrow
+			pagination-text
+
+
+
+
+# related_posts.php
+post-related
+	post-box
+		post-box-title
+
+		item-related
+			(lack)
+			date
+
+
+
+# svg-system.php
+	icon-grid
+	icon-comment-toggle
+	icon-footer-arrow
+	icon-search
+
+
+
+# comments.php
+#comments_wrapper .post-comments
+	#comment-header .comment-header
+		block-heading
+			comment-number
+			comment-header
+		coment-toggle-border
+			comment-toggle-icon
+
+	comment-form-comment
+		comment
+
+	comments
+
+	comments_pagination
+
+# footer.php
+site-footer
+	footer-widgetarea
+		footer-widget
+
+		footer-widget
+
+		footer-widget
+
+	footer-copy
+		copy-body
+		copy-extra
+
+# header.php
+site 
+	site-header-fixed
+		site-header
+			top-header
+				site-bradning
+					site-title
+					site-description
+
+				site-navigation-toggle
+					toggle-button
+						toggle-title
+						toggle-icon
+
+			site-navigation
+				site-primary-menu
+				site-search
+				site-social
+	
+	site-content < close in footer
+
+
+
+# index.php
+site-content-main
+	site-pagination
+
+
+
+# searchform.php
+site-search-form
+	search-input
+		search-submit
+		search-button <wrong
+
+# sidebar-footer.php
+weird
+
+#sidebar.php
+weird
+
+# single.php
+site-content-main
+
+
+
+
+
+

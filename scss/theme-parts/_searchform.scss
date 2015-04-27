@@ -1,0 +1,78 @@
+.CS-site-search {
+	margin-top: ms(0);
+}
+
+.CS-search-submit {
+	position: relative;
+	margin: 0;
+	outline: none;
+	background: none;
+	width: ms(4);
+	height: ms(4);
+	padding: 0;
+	float: right;
+	border: 1px solid $border;
+	font-size: ms(1);
+	color: $main_color;
+	transition: all 0.3s ease;
+	margin-right: - (ms(4) + ms(1));
+
+}
+
+.CS-search-submit:hover {
+	border: 1px solid $main_color;
+	background: $border;
+	color: $social_dark;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.CS-search-form-input {
+	width: 100%;
+	position: relative;
+	float: left;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+	border: 1px solid $border !important;
+}
+
+::-webkit-input-placeholder {
+   font-weight: 200;
+   transition: opacity 0.5s ease-out;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-weight: 200;
+   transition: opacity 0.5s ease-out; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-weight: 200;
+   transition: opacity 0.5s ease-out; 
+}
+
+:-ms-input-placeholder {  
+   	font-weight: 200;
+	transition: opacity 0.5s ease-out; 
+}
+
+input:focus::-webkit-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.5s ease-out;	
+}
+
+input:focus:-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+}
+
+input:focus::-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+}
+
+input:focus:-ms-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+}

@@ -1,3 +1,99 @@
+.CS-site {
+	overflow: hidden;
+	margin-top: ms(6) + ms(5);
+}
+.CS-site-header-static.CS-site {
+	margin-top: 0;
+}
+
+.CS-site-header-static {
+	margin-top: ms(5);
+}
+
+
+p {
+	margin-bottom: ms(3);
+}
+
+a,
+a:hover {
+	transition: color 0.3s ease;
+}
+
+ol,
+pre,
+table {
+	margin-bottom: ms(4);
+}
+
 h1 {
 	font-size: ms(5);
+}
+
+button  {
+	font-family: "lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+ul li {
+	list-style-type: square;
+	list-style-image: url(images/square.svg);
+}
+
+pre {
+	border: 1px solid #000;
+	padding: ms(2) ms(3) ms(2) ms(3);
+	position: relative;
+	white-space: pre-wrap;       /* CSS 3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+ol {
+	list-style-image: none;
+}
+
+.CS-site-content-main ul,
+.CS-site-content-main ol {
+	padding-left: ms(4);
+}
+
+
+table {
+	width: 100%;
+}
+
+blockquote {
+	padding: ms(1) 5% ms(2) 5%;
+}
+
+hr {
+	margin: ms(4) 0 ms(4) 0;
+}
+
+blockquote {
+  border: none;
+  //text-transform: uppercase;
+}
+
+blockquote p {
+	font-weight: 600;
+	font-size: ms(2);
+	margin-bottom: 0;
+}
+
+blockquote cite {
+	font-size: ms(0);
+	font-weight: 500;
+	line-height: 1.4;
+}
+
+blockquote cite {
+	font-size: ms(0);
+	font-weight: 500;
+}
+
+.text-center {
+	text-align: center;
 }

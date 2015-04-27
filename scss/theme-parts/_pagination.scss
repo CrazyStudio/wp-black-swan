@@ -1,0 +1,66 @@
+// Single Page Pagination
+.CS-single-pagination {
+	border-top: 1px solid #000;	
+	padding-top: ms(6);
+}
+.CS-pagination-arrow {
+	margin-top: ms(0);
+	float: left;
+}
+
+.CS-pagination-next .CS-pagination-arrow {
+	float: right;
+	margin-left: ms(2);
+}
+
+.CS-pagination-prev .CS-pagination-arrow {
+	float: left;
+	margin-right: ms(2);
+}
+
+.CS-pagination-share {
+	margin-top: ms(-3);
+	text-align: center;
+}
+.CS-pagination-section-right .CS-pagination-text {
+	text-align: right;
+}
+.CS-pagination-section-right:hover .CS-icon-arrow-right,
+.CS-pagination-section-left:hover .CS-icon-arrow-left {
+	fill: #999;
+	transition: all 0.3s ease;
+}
+
+.CS-icon-arrow-right,
+.CS-icon-arrow-left {
+	transition: all 0.3s ease;
+}
+// Site Paginition
+.page-numbers .prev,
+.page-numbers .next {
+	font-weight: 200;
+}
+.CS-site-pagination {
+	margin: ms(3) 0 ms(6) 0;
+    border-top: solid #000 1px;
+    padding: ms(3) 0 0 0;
+}
+
+.page-numbers {
+    list-style-type: none;
+    text-align: center;
+}
+.page-numbers li {
+	display: inline-block;
+}
+.page-numbers .prev {
+	margin-right: ms(3);
+}
+.page-numbers .next {
+	margin-left: ms(3);
+}
+
+ul.page-numbers {
+	margin-bottom: 0;
+    margin-left: 0;
+}

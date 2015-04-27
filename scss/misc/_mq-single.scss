@@ -1,0 +1,227 @@
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+// Small screens only
+@media only screen and (max-width: 40em) {
+	.CS-single-share {
+		float: none;
+		margin-bottom: ms(-1);
+		margin-left: 0;
+		margin-top: ms(-1);
+	}
+	.CS-single-share .CS-share-icon {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+	.CS-single-share .CS-share-icon:first-child {
+		margin-left: 0;
+	}
+	.alignleft,
+	.wp-caption.alignleft ,
+	.alignright,
+	.wp-caption.alignright {
+		float: none;
+		margin: 0 auto;
+		max-width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	blockquote {
+		margin-bottom: ms(4);
+		padding: 0;
+	}
+
+	blockquote p {
+		font-size: ms(2) - ms(-5);
+	}
+	.aligncenter {
+  		margin-left: -10%;
+  		max-width: 120%;
+  	}
+  	.CS-pull-left + .CS-pull-right {
+  		float: none;
+  		margin-right: 0;
+  		margin-top: 0;
+  		padding-left: 0;
+  		width: 100%;
+  	}
+
+	.CS-pull-right {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	.CS-pull-right,
+	.CS-pull-left {
+		padding-right: 10%;
+		padding-left: 10%;
+		margin-bottom: ms(4);
+	}
+
+	.CS-pull-left {
+		float: none;
+		margin-left: 0px;
+		width: 100%;
+		text-align: right;
+	}
+
+  	table thead tr th,
+	table tfoot tr th,
+	table tfoot tr td,
+	table tbody tr th,
+	table tbody tr td,
+  	table tr td {
+  		font-size: 11px;
+  	}
+
+  	.CS-related {
+  		border-top: solid 1px $main_color;
+  		padding-top: 0;
+  	}
+  	.CS-related-item:first-child {
+  		margin-top: 0;
+  		padding-top: ms(7);
+  	}
+  	.CS-related-item {
+  		margin-top: ms(4);
+  	}
+  	.CS-related-title {
+		font-size: ms(1);
+  	}
+  	.CS-pagination-section-middle {
+		margin: ms(1) 0 ms(1);
+  	}
+
+  	.CS-comments-header-title {
+  		vertical-align: 0px;
+  		font-size: 16px;
+  	}
+	.CS-comment-toggle-text {
+		font-size: 16px;
+		vertical-align: -4px;
+	}
+	.CS-comments-number {
+		height: ms(3);
+		width: ms(3);
+		font-size: ms(0);
+		padding-top: 2px;
+	}
+	.CS-comment-toggle-border {
+		height: ms(3);
+		width: ms(3);
+		font-size: ms(0);
+		padding-top: 2px;
+	}
+	.CS-comment-toggle-icon {
+	  width: ms(-2);
+	  height: ms(-2);
+	}
+	.CS-comment-toggle {
+		font-size: ms(0);
+	}
+	.CS-comments {
+		margin-bottom: ms(1);
+	}
+
+
+  	.comment-replay {
+  		float: left;
+  		font-size: ms(0);
+  		height: ms(3);
+  		padding-top: 2px;
+  		width: ms(3);
+  	}
+  	.comment-text {
+  		margin-left: ms(4);
+  	}
+  	.comment-text .date {
+		display: block;
+		padding-left: 0;
+  	}
+  	.comment-text p {
+  		font-size: ms(0);
+  	}
+  	.children {
+  		margin-left: ms(4);
+  	}
+
+
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+
+	
+
+} /* min-width 641px, medium screens */
+
+// Medium Screens Only
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	
+	.CS-pull-left {
+		// float: none;
+		// margin-left: 0px;
+		// padding-right: ms(5);
+		// padding-left: ms(5);
+		// width: 100%;
+		// text-align: right;
+		margin-left: -102px;
+		padding-bottom: ms(1);
+
+	}
+	.CS-single-thumbnail {
+		margin-left: -16px;
+		margin-right: -16px;
+	}
+	.alignright {
+		margin-right: -102px;
+	}
+	.wp-caption-text {
+		padding: ms(-1) ms(1) 0 ms(1);
+	}
+	.CS-single-title {
+		font-size: ms(3);
+	}
+	.CS-intro {
+		font-size: ms(1);
+		line-height: 1.5;
+	}
+	.alignleft,
+	.wp-caption.alignleft,
+	.alignright,
+	.wp-caption.alignright {
+		max-width: ms(13);
+	}
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
